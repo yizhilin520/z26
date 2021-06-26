@@ -1,0 +1,14 @@
+.container {
+  display: inline-table;
+  padding: 42px 35px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  font-size: 28px;
+  max-width: 90%;
+  line-height: 40px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, .75);
+  border-radius: 16px;
+}

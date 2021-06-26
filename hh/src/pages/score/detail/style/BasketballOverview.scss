@@ -1,0 +1,216 @@
+.container {
+  position: relative;
+  padding: 26px;
+  height: 100%;
+  background-color: #f6f6f9;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.scoreContainer {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+
+  .row {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+
+    &.isHeader {
+      height: 60px;
+      border-bottom: 1px solid #f2f2f2;
+    }
+  }
+
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 100%;
+    color: #a3a3a3;
+    font-size: 22px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &.isName {
+      padding-left: 24px;
+      flex: 1;
+      justify-content: left;
+    }
+
+    &.isLeftBorder {
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 8px;
+        height: 80%;
+        transform: translateY(-50%);
+        border-radius: 0 16px 16px 0;
+      }
+    }
+
+    &.isMain {
+      &:before {
+        background-color: #ffca43;
+      }
+    }
+
+    &.isGuest {
+      &:before {
+        background-color: #ff6443;
+      }
+    }
+  }
+}
+
+.dataContainer {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+
+  .header {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 126px;
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  .headerItem {
+    position: relative;
+  }
+
+  .headerVal {
+    position: absolute;
+    top: 50%;
+    color: #000;
+    font-size: 22px;
+    transform: translateY(-50%);
+
+    &.isLeft {
+      left: 0;
+      text-align: right;
+    }
+
+    &.isRight {
+      right: 0;
+      text-align: left;
+    }
+  }
+
+  .circleProgress {
+    position: relative;
+    margin: 0 60px;
+  }
+
+  .circleLabel {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    color: #adadad;
+    font-size: 22px;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+
+  .dataWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .pressSide {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .sideLabel {
+    margin-top: 26px;
+    color: #999;
+  }
+
+  .sideValue {
+    margin-top: 6px;
+    margin-bottom: 36px;
+    color: #000;
+  }
+
+  .pressMiddle {
+    margin: 0 30px;
+    margin-bottom: 36px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .middleLabel {
+    margin-top: 14px;
+    color: #999;
+    font-size: 22px;
+  }
+
+  .lineProgress {
+    margin-top: 4px;
+    position: relative;
+  }
+
+  .lineBar {
+    position: relative;
+    width: 260px;
+    height: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .barInner {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-radius: 5px;
+
+    &.isLeft {
+      left: 0;
+      background-color: #ffca43;
+    }
+
+    &.isRight {
+      right: 0;
+      background-color: #ff6443;
+    }
+
+    &.isMiddle {
+      left: 50%;
+      background-color: #ffca43;
+      transform: translateX(-50%);
+    }
+  }
+
+  .middleValue {
+    position: absolute;
+    top: 50%;
+    color: #000;
+    text-align: center;
+    transform: translateY(-50%);
+
+    &.isLeft {
+      left: -50px;
+    }
+
+    &.isRight {
+      right: -50px;
+    }
+  }
+}

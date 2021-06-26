@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<%
+var dayJs = require('dayjs')
+var {version} = require('./package.json')
+var NODE_MODE = process.env.NODE_MODE
+var NODE_ENV = process.env.NODE_ENV
+var isProd = NODE_MODE === 'prod'
+%>
+<head>
+    <!-- 构建信息 -->
+    <meta
+            build-time="<%= dayJs().format('YYYY-MM-DD HH:mm:ss') %>"
+            build-env="<%= NODE_ENV %>"
+            build-mode="<%= NODE_MODE || NODE_ENV %>"
+            build-version="<%= version %>"
+    >
+    <!-- 设置字符集格式 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- 设置网站标题 -->
+    <title>2021足球欧洲杯_欧洲杯体育视频直播_JRS直播_欧洲杯预算赛赛程_足球直播</title>
+    <!-- 设置关键字 -->
+    <meta name="keywords" content="欧洲杯JRS分组,欧洲杯最新消息,欧洲杯决赛冠军,nba直播" data-react-helmet="true"/>
+    <!-- 设置描述 -->
+    <meta
+            name="description"
+            content="免费提供各类高清足球直播,2021足球欧洲杯_欧洲杯体育视频直播_JRS直播_欧洲杯预算赛赛程_足球直播,包涵的赛事为提供英超,欧洲杯JRS分组,欧洲杯最新消息,欧洲杯决赛冠军,nba直播等。U球体育以最全最高清信号让您畅享各大联赛,打造最好体育直播吧。"
+            data-react-helmet="true"/>
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 网页不会被缓存 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<% if(isProd) { %>
+    <!--友盟统计-->
+    <script type="text/javascript">document.write(unescape("%3Cspan style='display: none' id='cnzz_stat_icon_1279740093'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279740093' type='text/javascript'%3E%3C/script%3E"));</script>
+    <!-- 百度统计 -->
+    <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?1d6e7f41051403347a1266f808a6c3a1";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <!-- 跳转移动端页面 -->
+    <!-- <script type="text/javascript">
+        window.onload = function () {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            if (/ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(sUserAgent)) {
+                //跳转移动端页面
+                window.location.href = "http://m.uqiu.com";
+            }
+        }
+    </script> -->
+    <script type="text/javascript">
+        //线上去掉react dev tools
+        if ('__REACT_DEVTOOLS_GLOBAL_HOOK__' in window) {
+            window.__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function () {
+            };
+        }
+        if ('__REDUX_DEVTOOLS_EXTENSION_COMPOSE__' in window) {
+            window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ = function () {
+            };
+        }
+
+        //解决 https调用 http
+        var protocol = window.location.protocol;
+        if (protocol.includes("https:")) {
+            var metaTag = document.createElement("meta");
+            metaTag.httpEquiv = "Content-Security-Policy";
+            metaTag.content = "upgrade-insecure-requests";
+            document.getElementsByTagName("head")[0].appendChild(metaTag);
+        }
+    </script>
+<% } %>
+<body>
+<div id="app-main"/>
+</body>
+</html>

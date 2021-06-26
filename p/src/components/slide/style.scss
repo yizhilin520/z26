@@ -1,0 +1,20 @@
+@import '@/scss/helpers/_helpers.scss';
+
+.grad {
+  height: 80px;
+  width: 320px;
+  margin-top: 70px;
+  background-image: linear-gradient(to right, #3977fe, #e3ecf3), linear-gradient(to bottom, #eeeeee, #d8d8d8);
+  border: solid 5px bule;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  line-height: 80px;
+  text-align: center;
+
+  span {
+    color: aqua;
+    font-size: 14px;
+  }
+}

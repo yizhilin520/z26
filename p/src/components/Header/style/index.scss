@@ -1,0 +1,79 @@
+$height: 60px;
+
+.container {
+  width: 100%;
+  height: $height;
+}
+
+.inner {
+  position: relative;
+  z-index: 999;
+
+  &.isFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &.white {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  &.transparent {
+    background-color: transparent;
+  }
+
+  &.fadeInDown {
+    animation-name: fadeInDown-keyframes;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+  }
+}
+
+.wrapper {
+  display: flex;
+  margin: auto;
+  width: 1400px;
+  height: $height;
+  align-items: center;
+}
+
+.logo {
+  .logoImage {
+    height: 44px;
+  }
+}
+
+// 适配1600以下的分辨率
+@media only screen and (max-width: 1700px) {
+  .wrapper{
+    width: 1300px;
+  }
+
+}
+@media only screen and (max-width: 1599px) {
+  .wrapper{
+    width: 1100px;
+  }
+
+}
+
+@media only screen and (max-width: 1399px) {
+  .wrapper{
+    width: 950px;
+  }
+
+}
+
+@keyframes fadeInDown-keyframes {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,0 +1,109 @@
+
+.dropdownlist{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.show1 .drop-icon{
+  transform: rotate(180deg);
+}
+.show1 .dropUl{
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+}
+.drop-text{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  border: solid 1px #a9adb9;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #2d2d2d;
+  position: relative;
+}
+.drop-value {
+  display: inline-block;
+  padding-left: 10px;
+  text-align: left;
+}
+.drop-icon {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 5px solid;
+  border-color: #c0c4cc transparent transparent;
+  border-bottom: 0;
+  position: absolute;
+  top: 46%;
+  right: 12px;
+  transition: transform .15s linear;
+}
+
+.dropUl{
+  display: block;
+  list-style: none;
+  margin: 0;padding: 0;
+  width: 100%;
+  border: 1px solid #e0e3e6;
+    border-radius: 5px;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 10;
+    background: #fff;
+    max-height: 110px;
+    overflow-y: auto;
+    box-shadow: 0 0 4px rgba(176,183,187,.6);
+    opacity: 0;
+    transform: scaleY(.7);
+    transform-origin: top;
+    transition: all .15s linear;
+    visibility: hidden;
+}
+
+.dropUl li{
+    padding: 0 0 0 10px;
+    width: 100%;
+    line-height: 25px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 14px;
+    color: #b0b7bb;
+  }
+  .dropUl li:hover{
+    background: #f3f3f3;
+    color: #434a66;
+  }
+
+
+
+  /* 国际区号 */
+  .drop-value2 {
+    display: inline-block;
+    padding-left: 8px;
+    text-align: center;
+  }
+  .drop-icon2 {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 5px solid;
+    border-color: #c0c4cc transparent transparent;
+    border-bottom: 0;
+    position: absolute;
+    top: 46%;
+    right: 8px;
+    transition: transform .15s linear;
+}
+.textleft{
+  display: inline-block;
+  width: 150px;
+}

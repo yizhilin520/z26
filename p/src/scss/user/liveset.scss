@@ -1,0 +1,440 @@
+@import '@/scss/helpers/_helpers.scss';
+
+.wrap{
+  padding: 45px 0 46px 30px;
+}
+.roomtab{
+  display: flex;
+  li{
+    width: 141px;
+    height: 50px;
+    background-color: #f2f6ff;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #5a5a5a;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    margin: 0 1px 0 0;
+    &.active{
+      background-image: url(network($user + 'room-Rectangle'));
+      background-size: 100% 100%;
+      span{
+        display: inline-block;
+        font-size: 16px;
+        background-image: linear-gradient(to right,#83c8ff, #3977fe);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+    }
+  }
+
+}
+
+.ctn1{
+  width: 1084px;
+  height: 763px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 0 0 0 26px;
+  box-sizing: border-box;
+}
+.titlectn{
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title{
+  font-size: 18px;
+  font-weight: 600;
+  color: #363636;
+  margin: 18px 0 6px 0;
+  line-height: 1;
+}
+.glss{
+  display: flex;
+  margin: 0 0 34px 0;
+}
+.glssselectiput{
+  position: relative;
+  cursor: pointer;
+  input{
+    width: 310px;
+    height: 38px;
+    border-radius: 4px;
+    border: solid 1px #e6eaf3;
+    padding: 0 12px;
+    box-sizing: border-box;
+    font-size: 13px;
+    cursor: pointer;
+    &:hover{
+      border: solid 1px #5697ff;
+    }
+  }
+  span{
+    position: absolute;
+    top: 42%;
+    right: 13px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #323232;
+  }
+}
+.glsstext{
+  width: 63px;
+  line-height: 38px;
+  font-size: 14px;
+  color: #5f5f5f;
+  margin: 0 36px 0 0;
+  text-align: right;
+  span {
+    color: #f63838;
+    vertical-align:middle;
+  }
+}
+.glssbtn{
+  width: 105px;
+  height: 38px;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 38px;
+  background-image: url(network($user + 'livebtn'));
+  background-size: 100% 100%;
+  margin: 0 0 0 26px;
+  cursor: pointer;
+}
+.glssbtn112{
+  width: 165px;
+  height: 38px;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 38px;
+  background-image: url(network($user + 'livebtn'));
+  background-size: 100% 100%;
+  margin: 0 0 0 102px;
+  cursor: pointer;
+}
+.submitCtn{
+  margin: 0 0 32px 0;
+}
+
+.glss2{
+  display: flex;
+  margin: 0 0 42px 0;
+}
+.glssinput2{
+  position: relative;
+  input{
+    width: 310px;
+    height: 38px;
+    border-radius: 4px;
+    border: solid 1px #e6eaf3;
+    padding: 0 12px;
+    box-sizing: border-box;
+    font-size: 13px;
+    &:hover{
+      border: solid 1px #5697ff;
+    }
+  }
+  p{
+    font-size: 10px;
+    line-height: 1;
+    color: #f63838;
+    position: absolute;
+    top: 40px;
+    left: 0;
+  }
+}
+
+.glss3{
+  display: flex;
+  margin: 0 0 35px 0;
+  .glsstext{
+    line-height: 28px;
+  }
+  .glssbtn{
+    position: relative;
+    top: 30px;
+  }
+}
+.glssinput3{
+  position: relative;
+  textarea{
+    width: 310px;
+    height: 68px;
+    border-radius: 4px;
+    border: solid 1px #e6eaf3;
+    box-sizing: border-box;
+    font-size: 13px;
+    margin: 0;
+    padding: 4px 11px;
+    background-color: #fff;
+    outline: none;
+    &:hover{
+      border: solid 1px #5697ff;
+    }
+  }
+  p{
+    font-size: 10px;
+    line-height: 1;
+    color: #f63838;
+    position: absolute;
+    top: 70px;
+    left: 0;
+  }
+}
+
+.live4{
+  display: flex;
+  margin: 0 0 43px 0;
+  .glsstext{
+    line-height: 28px;
+  }
+}
+.livectn4{
+  width: 310px;
+  position: relative;
+  .szwj{
+    width: 174px;
+    height: 114px;
+    background-image: url(network($user + 'upload'));
+    background-size: 100% 100%;
+  }
+  p{
+    font-size: 10px;
+    line-height: 1;
+    color: #f63838;
+    position: absolute;
+    top: 116px;
+    left: 0;
+  }
+}
+
+.tuiliudizi{
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #363636;
+  margin: 0 0 5px 0;
+}
+
+.tuiliudset5{
+  display: flex;
+  margin: 0 0 32px 0;
+  .glsstext5{
+    width: 177px;
+    line-height: 38px;
+    font-size: 16px;
+    color: #5f5f5f;
+    margin: 0 0 0 0;
+    text-align: left;
+  }
+}
+.tuiliuinput5{
+  position: relative;
+  input{
+    width: 310px;
+    height: 38px;
+    border-radius: 4px;
+    border: solid 1px #e6eaf3;
+    padding: 0 12px;
+    box-sizing: border-box;
+    font-size: 13px;
+    &:hover{
+      border: solid 1px #5697ff;
+    }
+  }
+  p{
+    font-size: 10px;
+    line-height: 1;
+    color: #f63838;
+    position: absolute;
+    top: 40px;
+    left: 0;
+  }
+}
+
+.downMenu{
+  width: 511px;
+  height: 350px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  z-index: 10;
+
+}
+.downMenuctn{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.menu{
+  width: 131px;
+  height: 100%;
+  overflow-y: auto;
+  font-size: 12px;
+  color: #5f5f5f;
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 60px
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 60px;
+    background-color: #e1e6e9;
+    -webkit-border-radius: 4px;
+    border: 2px solid #e1e6e9
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color:#f6f6f6;
+    -webkit-border-radius: 0
+  }
+  li{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px 0 11px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid #f6f6f6;
+    border-top: none;
+    border-left: none;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    span {
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 5px solid #323232;
+    }
+    &.nenuActive{
+      background-color: #5697ff;
+      color: #ffffff;
+      span {
+        border-left-color: #fff;
+      }
+    }
+    &:hover{
+      background-color: #5697ff;
+      color: #ffffff;
+      span {
+        border-left-color: #fff;
+      }
+    }
+  }
+}
+.menu2{
+  width: 141px;
+  height: 100%;
+  overflow-y: auto;
+  font-size: 12px;
+  color: #5f5f5f;
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 60px
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 60px;
+    background-color: #e1e6e9;
+    -webkit-border-radius: 4px;
+    border: 2px solid #e1e6e9
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color:#f6f6f6;
+    -webkit-border-radius: 0
+  }
+  li{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px 0 11px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid #f6f6f6;
+    border-top: none;
+    border-left: none;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    span {
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 5px solid #323232;
+    }
+    &.nenuActive{
+      background-color: #5697ff;
+      color: #ffffff;
+      span {
+        border-left-color: #fff;
+      }
+    }
+    &:hover{
+      background-color: #5697ff;
+      color: #ffffff;
+      span {
+        border-left-color: #fff;
+      }
+    }
+  }
+}
+.menu3{
+  width: 240px;
+  height: 100%;
+  overflow-y: auto;
+  font-size: 12px;
+  color: #5f5f5f;
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 5px;
+    background-color: #e1e6e9;
+    -webkit-border-radius: 4px;
+    border: 2px solid #e1e6e9
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #f6f6f6;
+    -webkit-border-radius: 0
+  }
+  li{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px 0 11px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid #f6f6f6;
+    border-top: none;
+    border-left: none;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    &.nenuActive{
+      background-color: #5697ff;
+      color: #ffffff;
+    }
+    &:hover{
+      background-color: #5697ff;
+      color: #ffffff;
+    }
+  }
+}
+.notclick{
+  pointer-events: none;
+  opacity: 0.62;
+}

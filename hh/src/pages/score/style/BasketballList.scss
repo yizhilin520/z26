@@ -1,0 +1,114 @@
+.footballContainer {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  .matchList{
+    padding: 0 24px;
+    .matchItem{
+      padding-bottom: 14px;
+      .matchDate{
+        height: 42px;
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+        line-height: 42px;
+        font-size: 24px;
+        color: #fff;
+        background: rgba($textColor, 0.6);
+        border-radius: 10px;
+      }
+      .matchWrapper{
+        display: block;
+        background: #fff;
+        border-radius: 16px;
+        .matchTop{
+          height: 42px;
+          display: flex;
+          align-items: center;
+          padding-right: 24px;
+          line-height: 42px;
+          color: #bbb;
+          font-size: 24px;
+          border-bottom: 1px solid #f2f2f2;
+          .leagueName{
+            width: 94px;
+            height: 40px;
+            text-align: center;
+            color: #fff;
+            background: #019901;
+            border-radius: 20px 0 20px 0;
+          }
+          .matchTime{
+            width: 126px;
+            margin-right: 84px;
+            text-align: center;
+          }
+          .matchStatus{
+            color: $textColor;
+            span{
+              display: inline-block;
+              line-height: 42px;
+            }
+          }
+          .isHot{
+            width: 26px;
+            height: 30px;
+            background: url('../../../assets/images/hot.png') no-repeat;
+            background-size: 100%;
+            margin-left: auto;
+          }
+        }
+        .matchBottom{
+          height: 110px;
+          display: flex;
+          align-items: center;
+          font-size: 24px;
+          .clock{
+            width: 28px;
+            height: 30px;
+            margin: 0 30px;
+            background: url('../../../assets/images/clock.png') no-repeat;
+            background-size: 100%;
+          }
+          .teamName{
+            width: 164px;
+            padding-right: 16px;
+            line-height: 36px;
+            color: #464646;
+            border-right: 1px solid #ececec;
+            p{
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+          .scoreBox{
+            width: 390px;
+            padding-left: 24px;
+            color: #bbb;
+            .teamScore{
+              padding: 6px 0;
+              line-height: 24px;
+              span{
+                display: inline-block;
+                width: 60px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                &.total{
+                  color: $textColor;
+                }
+              }
+            }
+          }
+          .videoBox{
+            width: 38px;
+            height: 36px;
+            &.hasVideo{
+              background: url('../../../assets/images/live.png') center/38px 36px no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+}

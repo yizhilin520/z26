@@ -1,0 +1,154 @@
+.container {
+  position: relative;
+  width: 362px;
+  padding: 14px 25px 16px;
+  box-sizing: border-box;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #464646;
+  line-height: 22px;
+}
+
+.liveList {
+  margin-bottom: 16px;
+
+  .liveItem {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .inner {
+    display: flex;
+    flex: 1;
+    font-size: 12px;
+    color: #323232;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .status {
+    margin-right: 10px;
+    position: relative;
+    width: 41px;
+    height: 18px;
+    border-radius: 8px 0 8px 8px;
+    background: $buttonActiveBackground;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 11px;
+      width: 18px;
+      height: 18px;
+      background: url("~@/assets/images/playing_icon.gif") no-repeat center;
+      background-size: 100% auto;
+    }
+  }
+
+  .userName {
+    margin-right: 10px;
+  }
+
+  .liveName {
+    margin-right: 10px;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .button {
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background: $buttonActiveBackground;
+    border-radius: 4px;
+  }
+}
+
+.noticeList {
+  .noticeItem {
+    display: flex;
+    margin-bottom: 12px;
+    height: 22px;
+    align-items: center;
+
+    &:last-child {
+      .dot {
+        &:before {
+          content: none;
+        }
+      }
+    }
+  }
+
+  .inner {
+    display: flex;
+    flex: 1;
+    font-size: 12px;
+    color: #323232;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .dot {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    background-color: rgba($textColor, .74);
+    border-radius: 50%;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 3px;
+      width: 1px;
+      height: 27px;
+      opacity: .37;
+      border-left: 1px solid rgba($textColor, .74);
+    }
+  }
+
+  .timer {
+    margin: 0 6px 0 14px;
+    font-size: 11px;
+    color: $textColor;
+  }
+
+  .userName {
+    margin-right: 10px;
+    max-width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .noticeName {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .button {
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background: $buttonActiveBackground;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

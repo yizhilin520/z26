@@ -1,0 +1,29 @@
+.container {
+  padding: 5px 0;
+  width: 120px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.item {
+  display: inline-flex;
+  margin: 10px;
+  height: 20px;
+  color: #aeaeae;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    color: $textColor;
+  }
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.label {
+  font-size: 14px;
+}

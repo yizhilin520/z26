@@ -1,0 +1,24 @@
+.container {
+  min-height: 100vh;
+  background: #F9F9FD;
+
+  &:before, &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.wrapper {
+  padding: 40px 32px;
+  margin: 16px;
+  background: #FFFFFF;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+
+  &:before, &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

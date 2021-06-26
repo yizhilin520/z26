@@ -1,0 +1,221 @@
+.container {
+  width: 276px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.userInfo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 260px;
+  background: url("../images/info_bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.signIn {
+  padding: 0 30px 0 10px;
+  position: absolute;
+  top: 16px;
+  right: 12px;
+  height: 25px;
+  line-height: 25px;
+  color: #fff;
+  font-size: 14px;
+  background: url("../images/signin_image.png") no-repeat right center #ff8925;
+  background-size: 30px auto;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.userImage {
+  width: 98px;
+  height: 98px;
+  padding: 4px;
+  border-radius: 50%;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+
+.userName {
+  display: flex;
+  align-items: center;
+  margin-top: 26px;
+  color: #505c74;
+  font-size: 22px;
+  line-height: 30px;
+
+  .level {
+    width: 44px;
+    height: 19px;
+    margin-left: 6px;
+    padding-top: 3px;
+    padding-left: 4px;
+    text-align: left;
+    line-height: 13px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+}
+
+.joinLabel {
+  margin-top: 4px;
+  color: #666;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.menu {
+  margin-top: 6px;
+  height: 800px;
+  background-color: #fff;
+  box-shadow: 0 3px 5px 0 rgba(58, 123, 211, 0.35);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.item {
+  margin-top: 10px;
+
+  .inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 51px;
+    cursor: pointer;
+
+    &.isActive, &:hover {
+      background-color: $ActiveOrHoverBackgroundColor;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        background-color: $textColor;
+      }
+
+      .label {
+        color: $textColor;
+      }
+    }
+  }
+
+  .icon {
+    width: 26px;
+  }
+
+  .label {
+    margin-left: 10px;
+    color: #9EAAD6;
+    font-size: 18px;
+  }
+  .unread {
+    &:after {
+      content: '';
+      position: absolute;
+      right: 78px;
+      top: 10px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #FD4739;
+    }
+  }
+}
+
+.button {
+  margin: 68px auto;
+  width: 158px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  background: $buttonActiveBackground;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.upgradeWrapper {
+  width: 380px;
+
+  .upgradeTitle {
+    position: relative;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $textColor;
+    font-size: 21px;
+    font-weight: 600;
+    background: url('~@/pages/user/images/upgrade-bg.png') center/cover no-repeat;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      left: 89px;
+      background: $buttonActiveBackground;
+      border-radius: 1px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      right: 88px;
+      background: $buttonActiveBackground;
+      border-radius: 1px;
+    }
+  }
+
+  .upgradeBody {
+    padding-left: 48px;
+    padding-top: 19px;
+
+    .upgradeMethod {
+      display: flex;
+      align-items: center;
+      margin-top: 24px;
+      color: #333;
+      font-size: 16px;
+      font-weight: 600;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      img {
+        width: 42px;
+        height: 42px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .upgradeFooter {
+    width: 210px;
+    height: 42px;
+    margin: 24px auto 29px;
+    text-align: center;
+    line-height: 42px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    background: $buttonActiveBackground;
+    border-radius: 26px;
+    cursor: pointer;
+  }
+}

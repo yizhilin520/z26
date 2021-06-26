@@ -1,0 +1,74 @@
+@import '@/scss/helpers/_helpers.scss';
+.container {
+  max-width: 1043px;
+  background-color: black;
+  color: #ffffff;
+  padding: 20px 40px;
+  font-size: 13px;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .box {
+    width: 55px;
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 22px;
+    }
+    i {
+      display: inline-block;
+      // background-color: red;
+      width: 19px;
+      height: 28px;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+    .qizi {
+      width: 26px;
+      background-image: url(network($room + 'jiao-qiu'));
+      background-size: 100% 100%;
+    }
+    .yellow {
+      // background-image: url(network($room + 'huang-pai'));
+      background-color: #ffca43;
+      background-size: 100% 100%;
+    }
+    .red {
+      // background-image: url(network($room + 'hong-pai'));
+      background-color: #ff6443;
+      background-size: 100% 100%;
+    }
+  }
+  .progress {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      width: 170px;
+      transform: rotateY(180deg);
+    }
+    .right {
+      width: 170px;
+    }
+    .kd {
+      transform: rotateY(0);
+    }
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .text112{
+    display: inline-block;
+
+  }
+}

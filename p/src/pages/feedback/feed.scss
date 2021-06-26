@@ -1,0 +1,227 @@
+main{
+    background: #f9fbff;
+}
+.feedback{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 49px;
+    background: #fff;
+}
+.title{
+    padding: 21px 0 19.5px 75px;
+    border-bottom: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1D78F1;
+}
+.backform{
+    padding: 20px 0 0 0;
+}
+
+.formitem{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    .itemlabel{
+        display: inline-block;
+        width: 165px;
+        font-size: 14px;
+        color: #333;
+        line-height: 20px;
+        text-align: right;
+        margin: 0;
+        padding: 10px 12px 10px 0;
+        &::before{
+            content: "*";
+            display: inline-block;
+            margin-right: 4px;
+            line-height: 1;
+            font-family: SimSun;
+            font-size: 12px;
+            color: #f38816;
+        }
+
+    }
+    .itemCont{
+        display: inline-block;
+        color: #666;
+        position: relative;
+        font-size: 12px;
+    }
+    .radioGroup{
+        display: inline-block;
+        font-size: 12px !important;
+        vertical-align: middle;
+    }
+    .wrapinput{
+        width: 500px;
+        height: 128px;
+        resize: none;
+        line-height: 24px;
+        border: 1px solid #e6eaf3;
+        border-radius: 6px 2px 6px 6px;
+        font-size: 14px;
+        padding: 4px 7px;
+        color: #515a6e;
+        background-color: #fff;
+        background-image: none;
+        position: relative;
+        cursor: text;
+        outline: 0;
+        &:focus{
+            border-color: #3AC5FD;
+        }
+        &:hover{
+            border-color: #3AC5FD;
+        }
+    }
+
+}
+.formitem2{
+    align-items: flex-start;
+}
+.textError{
+    line-height: 1;
+    color: #ed4014;
+    display: none;
+    position: absolute;
+    left: 0;
+    &.show{
+        display: block;
+    }
+}
+.phoneError{
+    font-size: 12px;
+    color: #ed4014;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+}
+.formitem3{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    .itemlabel{
+        display: inline-block;
+        width: 165px;
+        font-size: 14px;
+        color: #333;
+        line-height: 20px;
+        text-align: right;
+        padding: 10px 12px 10px 0;
+    }
+    .rightCont{
+        color: #666;
+        font-size: 12px;
+    }
+    .uploadcot{
+        display: flex;
+    }
+    .uploadimg{
+        display: flex;
+        li{
+            width: 110px;
+            height: 100px;
+            margin: 0 10px 0 0;
+            img{
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+                border: 0;
+            }
+        }
+    }
+    .upload{
+        width: 110px;
+        height: 100px;
+        position: relative;
+        
+    }
+    .plusA{
+        height: 100%;
+        line-height: 100px;
+        text-align: center;
+        background: #f3f3f3;
+        cursor: pointer;
+        &:hover{
+            span{
+                color: #3683ff;
+            }
+        }
+        span{
+            display: inline-block;
+            font-size: 35px;
+            color: #cacaca;
+        }
+        .file{
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+        }
+    }
+    .tip{
+        font-size: 12px;
+        color: #999;
+        margin-top: 10px;
+        line-height: 12px;
+    }
+}
+.formitem4{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    .itemlabel{
+        display: inline-block;
+        width: 165px;
+        font-size: 14px;
+        color: #333;
+        line-height: 20px;
+        text-align: right;
+        margin: 0;
+        padding: 10px 12px 10px 0;
+    }
+    .iteminput{
+        width: 300px;
+        height: 32px;
+        line-height: 32px;
+        border: 1px solid #e6eaf3;
+        border-radius: 6px 2px 6px 6px;
+        font-size: 14px;
+        color: #515a6e;
+        background-color: #fff;
+        padding: 4px 7px;
+        box-sizing: border-box;
+        outline: 0;
+        &:focus{
+            border-color: #3AC5FD;
+        }
+    }
+    .rightCot{
+        position: relative;
+    }
+}
+.saveBtn{
+    padding: 0 15px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #3AC5FD;
+    height: 32px;
+    line-height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    margin: 0 0 0 177px;
+    transition: all .3s;
+    outline: 0;
+    &:hover{
+        background-color: #3AC5FD;
+    }
+}

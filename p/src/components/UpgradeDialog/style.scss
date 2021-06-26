@@ -1,0 +1,85 @@
+.container {
+  width: 366px;
+  background: #fff;
+  border-radius: 10px;
+
+  &:before, &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.title {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+
+  .label {
+    color: #1E1E1E;
+    font-size: 20px;
+
+    &.isPrimary {
+      color: #1C75F0;
+    }
+  }
+}
+
+.summary {
+  margin-top: 16px;
+  color: #040B27;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.wrapper {
+  margin: 0 30px;
+}
+
+.item {
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  height: 42px;
+  background: #F5F5F5;
+  border-radius: 6px;
+
+  .text {
+    width: 0;
+    flex: 1;
+    color: #040B27;
+    font-size: 14px;
+  }
+
+  .levelImage {
+    width: 36px;
+    height: 16px;
+    line-height: 16px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 2px;
+  }
+
+  .image {
+    max-height: 28px;
+    object-fit: contain;
+  }
+}
+
+.button {
+  margin: 22px 30px 34px 30px;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  background: $buttonActiveBackground;
+  box-shadow: 0 6px 16px -2px rgba(#3D89EA, .39);
+  border-radius: 4px;
+  cursor: pointer;
+}

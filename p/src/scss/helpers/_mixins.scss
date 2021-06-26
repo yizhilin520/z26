@@ -1,0 +1,105 @@
+// 使用 @include flex;
+/**
+* 使用flex进行布局
+*/
+@mixin flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/**
+* flex居中显示
+* @param $direction 显示方向 [ horizontal | vertical | middle ]
+* horizontal 水平居中
+* vertical 垂直居中
+* middle 水平垂直居中
+* 默认水平居中
+*/
+@mixin flexCenter($direction: horizontal) {
+  @if ($direction==horizontal or $direction==middle) {
+    justify-content: center;
+  }
+
+  @if ($direction==vertical or $direction==middle) {
+    align-items: center;
+  }
+}
+
+/**
+* 超出n行，使用...显示
+* @param $line 显示行数
+* 默认显示1行
+*/
+@mixin ellipsis($line: 1) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+}
+
+/**
+* 定位居中显示
+* @param $direction 显示方向 [ horizontal | vertical | middle ]
+* horizontal 水平居中
+* vertical 垂直居中
+* middle 水平垂直居中
+* 默认水平居中
+*/
+@mixin pointCenter($direction: horizontal) {
+  position: absolute;
+
+  @if ($direction==horizontal or $direction==middle) {
+    left: 50%;
+  }
+
+  @if ($direction==vertical or $direction==middle) {
+    top: 50%;
+  }
+
+  @if ($direction==horizontal) {
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  @if ($direction==vertical) {
+    transform: translate3d(0, -50%, 0);
+  }
+
+  @if ($direction==middle) {
+    transform: translate3d(-50%, -50%, 0);
+  }
+}
+
+/**
+* 默认主题色渐变按钮样式
+* @param $direction 渐变方向
+* 默认从左渐变到右
+*/
+@mixin userLinearBtn($direction: right) {
+  background: linear-gradient(to $direction, $color_theme_linear);
+  color: $color_white;
+}
+
+/**
+* 自定义盒子背景渐变样式
+* @param $direction 渐变方向
+* 默认从左渐变到右
+* @param $bgColor 自定义渐变色
+*/
+@mixin linearBg($direction, $bgColor) {
+  background: linear-gradient(to $direction, $bgColor);
+}
+
+/**
+* 根据兼容设置webp格式背景图片
+* @param $url 静态资源路径
+* @param $repeat 图片重叠
+*/
+@mixin webp($url, $repeat: no-repeat) {
+  background-image: url(link($url));
+  background-repeat: $repeat;
+
+  @at-root :global(.webpa) & {
+    background-image: url(link($url + '.webp'));
+  }
+}

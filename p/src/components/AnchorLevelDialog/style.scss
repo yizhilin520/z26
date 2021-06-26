@@ -1,0 +1,92 @@
+.container {
+  position: absolute;
+  width: 312px;
+  left: 16px;
+  top: 78px;
+  z-index: 10;
+  background: #fff;
+  border-radius: 8px;
+  .top{
+    height: 73px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    .lvBadge{
+      width: 115px;
+      height: 115px;
+      margin-top: -51px;
+    }
+    .level{
+      margin-top: -16px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+  .bottom{
+    padding-top: 17px;
+    padding-bottom: 14px;
+    .nextLvExp{
+      text-align: center;
+      color: #333;
+      font-size: 13px;
+      font-weight: 600;
+      .expVal{
+        color: #FF7900;
+      }
+    }
+    .lvExp{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5px;
+      .currentLv, .nextLv{
+        width: 50px;
+        height: 24px;
+        text-align: right;
+        padding-top: 6px;
+        padding-right: 8px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        box-sizing: border-box;
+      }
+      .expBar{
+        width: 168px;
+        height: 14px;
+        margin: 3px 5px 0;
+        background: #E1E1E1;
+        border-radius: 7px;
+        overflow: hidden;
+        .currentExp{
+          height: 12px;
+          margin-top: 1px;
+          border-radius: 7px;
+        }
+      }
+    }
+    .expTips{
+      display: flex;
+      justify-content: center;
+      margin-top: 18px;
+      .tipItem{
+        display: flex;
+        align-items: center;
+        &:last-child{
+          margin-left: 29px;
+        }
+        img{
+          width: 42px;
+        }
+        .tipTxt{
+          width: 80px;
+          margin-left: 4px;
+          line-height: 17px;
+          color: #666;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

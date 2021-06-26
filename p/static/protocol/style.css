@@ -1,0 +1,20 @@
+body{
+  background: #F9F9FD;
+}
+.container{
+  padding: 20px 16px;
+  margin: 8px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.item{
+  margin-bottom: 20px;
+  color: #999;
+  font-size: 14px;
+  line-height: 20px;
+}
+.item.bold{
+  color: #333;
+  font-size: 16px;
+}

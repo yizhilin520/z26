@@ -1,0 +1,39 @@
+.tabWrapper {
+  margin-top: 0;
+  .titles {
+    width: 100%;
+    height: initial;
+    line-height: initial;
+    align-items: center;
+    justify-content: left;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+    display: flex;
+    .title {
+      flex: 1;
+      position: relative;
+      width: auto;
+      font-size: 24px;
+      padding: 20px 0px;
+      text-align: center;
+      color: #999999;
+      &.activeTitle {
+        background: none;
+        color: $textColor;
+        &::after {
+          position: absolute;
+          left: 30%;
+          bottom: 0;
+          display: block;
+          content: "";
+          background: $buttonActiveBackground;
+          border-radius: 6px 6px 0 0;
+          width: 68px;
+          height: 6px;
+        }
+      }
+    }
+  }
+}

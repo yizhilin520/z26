@@ -1,0 +1,47 @@
+// 文字颜色
+$textColor: #1d78f1;
+
+// border 颜色
+$borderColor: #5697ff;
+
+// 按钮选中背景
+$buttonActiveBackground: linear-gradient(127deg, #3AC5FD 17%, $textColor 82%);
+
+// 按钮不可选中背景
+$buttonIsDisableBackground: linear-gradient(127deg, #A8DDF3 17%, #a4c4ff 82%);
+
+// 直播状态按钮颜色
+$liveStatusButtonColor: linear-gradient(127deg, #faae40 17%, #fd6802 82%);
+
+// 我的资产卡片背景
+$moneyBoxBackgroundImage: linear-gradient(to right, #dcdded, #c2c3d2), linear-gradient(to right, #888cff 0%, #4e53fd 100%);
+
+// LeftMenu列表选中或者hover时的背景色
+$ActiveOrHoverBackgroundColor: #F3FAFD;
+
+// 默认Button背景色
+$defaultButtonBackgroundColor: linear-gradient(to right, #dcdded 0%, #bebfd7 56%, #a6a8c6 100%);
+
+// 头像等级边框
+$borderLv10background: url('~@/pages/user/images/border-lv10.png') center/100% no-repeat;
+$borderLv20background: url('~@/pages/user/images/border-lv20.png') center/100% no-repeat;
+$borderLv30background: url('~@/pages/user/images/border-lv30.png') center/100% no-repeat;
+$borderLv40background: url('~@/pages/user/images/border-lv40.png') center/100% no-repeat;
+$borderLv50background: url('~@/pages/user/images/border-lv50.png') center/100% no-repeat;
+
+// 等级标签颜色
+$lvLabel10background: linear-gradient(135deg, #6AE7FF 0%, #00BBFF 100%);
+$lvLabel20background: linear-gradient(135deg, #6FB8FF 0%, #5486FF 100%);
+$lvLabel30background: linear-gradient(135deg, #94A0FF 0%, #7771FF 100%);
+$lvLabel40background: linear-gradient(135deg, #FDA5C9 0%, #FF5284 100%);
+$lvLabel50background: linear-gradient(135deg, #FFD05F 0%, #FF7028 100%);
+
+// 聊天等级背景颜色
+$msgBgLv10background: rgba(12, 192, 255, 0.08);
+$msgBgLv20background: rgba(68, 140, 255, 0.08);
+$msgBgLv30background: rgba(120, 115, 255, 0.08);
+$msgBgLv40background: rgba(255, 65, 135, 0.08);
+$msgBgLv50background: rgba(255, 121, 45, 0.08);
+
+// 聊天室用户名颜色
+$userColor: #3597EF;

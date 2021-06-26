@@ -1,0 +1,699 @@
+@import '@/scss/helpers/_helpers.scss';
+
+// .chatInput {
+//   width: 100%;
+//   height: 100%;
+//   border: 1px solid red;
+//   float: left;
+//   box-sizing: border-box;
+// }
+
+// .ChatReview {
+//   width: 100%;
+//   height: 80%;
+//   min-height: 300px;
+//   background: yellowgreen;
+//   overflow-y: scroll;
+//   border: 1px solid #000;
+//   box-sizing: border-box;
+// }
+
+// @media (max-width: 800px) {
+//   .chatInput {
+//     display: none;
+//   }
+
+//   .ChatReview {
+//     display: none;
+//   }
+// }
+.ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+// 右边room
+.roomright {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 317px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #ffffff;
+  .flexWrap{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .roomRen{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.devetoTop:hover+.devetoListOther{
+  // height:calc(100% - 170px);
+  min-height: 100vh;
+
+}
+
+.deveto {
+  display: flex;
+  flex-direction: column;
+  // height: calc(100% - 90px);
+  cursor: pointer;
+
+  .devetoTopTitle {
+    height: 36px;
+    border-radius: 4px;
+    background-color: #f5f7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .devetoBtnGroup {
+    display: inline-flex;
+    align-items: center;
+    height: 32px;
+    border-radius: 4px;
+    border: solid 1px #4895ff;
+  }
+
+  .devetoBtn {
+    width: 103px;
+    height: 32px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    color: #3977fe;
+  }
+
+  .devetoBtnActive {
+    color: #ffffff;
+    background-image: url(network($room + 'btn-bg'));
+    background-size: 100% 100%;
+  }
+}
+
+// list
+.devetoListTop {
+  height: 175px;
+  background: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 12px 30px;
+  padding-bottom: 6px;
+  box-sizing: border-box;
+  order: 1;
+  .nickname{
+    color: #14162c;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+  img{
+    width: 100%;
+  }
+
+  .devetoListItem {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .level {
+      z-index: 2;
+    }
+  }
+
+  .devetoListItem:nth-of-type(1) {
+    width: 80px;
+    order: 2;
+
+    .avatar {
+      width: 79px;
+      height: 79px;
+      top: 28px;
+      left: 3px;
+    }
+
+    .level {
+      position: absolute;
+      top: 103px;
+      left: 17px;
+    }
+  }
+
+  .devetoListItem:nth-of-type(2),
+  .devetoListItem:nth-of-type(3) {
+    width: 70px;
+
+    .avatar {
+      width: 66px;
+      height: 66px;
+      top: 18px;
+      left: 2px;
+    }
+
+    .level {
+      position: absolute;
+      top: 80px;
+      left: 12px;
+    }
+    .reward {
+      top: 105px;
+    }
+  }
+
+  .devetoListItem:nth-of-type(2) {
+    order: 1;
+    margin-top: 10px;
+
+    // peath
+    .level {
+      top: 84px;
+    }
+
+    .avatar {
+      top: 22px;
+    }
+
+    .reward {
+      top: 110px;
+    }
+  }
+
+  .devetoListItem:nth-of-type(3) {
+    margin-top: 15px;
+    order: 3;
+  }
+
+  // icon
+  .avatarBg {
+    position: relative;
+    z-index: 1;
+    // height: 100%;
+  }
+
+  .avatar {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .reward {
+    // position: absolute;
+    top: 130px;
+    left: 50%;
+    // margin-left: -26px;
+    margin: 0 auto;
+    width: 35px;
+    font-size: 11px;
+    height: 15px;
+    line-height: 15px;
+    padding: 0 8px;
+    border-radius: 4px;
+    color: #85a8ff;
+    background-color: #f1f5ff;
+    text-align: center;
+  }
+
+  .level {
+    font-size: 12px;
+    width: 45px;
+    text-align: center;
+  }
+}
+
+.devetoListMiddle {
+  height: 49px;
+  border-radius: 4px;
+  background-color: #f5f7ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  flex: 0 0 49px;
+  .chatBtn{
+    width: 42px;
+    height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3977fe;
+  }
+
+  .chatCount {
+    display: flex;
+    align-items: center;
+    opacity: 0.61;
+    font-size: 11px;
+    color: #2d2d2d;
+
+    .allPeople {
+      width: 20px;
+      height: 15px;
+      display: inline-block;
+      background-image: url(/static/images/room/all-people.webp);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+    }
+  }
+}
+
+.devetoListOther {
+  background-color: #fff;
+  overflow-y: auto;
+  height:0;
+  // height:calc(100% - 170px);
+  transition: all .2s ease-in-out;
+  .devetiListOtherWrap{
+    padding:13px 23px 0 21px;
+  }
+
+  .otherItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+
+  .rank {
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #2883ff;
+    font-size: 9.9px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-right: 9px;
+  }
+
+  .avatar {
+    margin-right: 3px;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .userName {
+    margin-right: 2px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 500;
+    color: #2d2d2d;
+  }
+
+  .level {
+    font-weight: 500;
+    color: #753206;
+    height: 19px;
+    background-image: linear-gradient(#ffd24d, #FFBB45, #FA5521);
+    border-radius: 19px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+    color: #fff;
+
+    .levelIcon {
+      display: inline-block;
+      height: 19px;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .reward {}
+  }
+
+  .empty {
+    flex: 1;
+  }
+
+  .reward {
+    color: #85a8ff;
+    font-size: 11px;
+  }
+}
+
+// list item
+.devetoListItem {
+  position: relative;
+}
+
+.roomtop {
+  height: 62px;
+  padding: 22px 18px 0;
+  color: #757575;
+  font-family: PingFangSC;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 0.5px #999999;
+  box-sizing: border-box;
+}
+
+.roomlts {
+  font-family: PingFangSC;
+  font-size: 18px;
+  line-height: 1;
+  color: #2d2d2d;
+}
+
+.roomtou {
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  background-image: url(network($room + 'all-people'));
+  background-size: 100% 100%;
+  margin: 0 0 0 3px;
+}
+
+.roomRen {
+  padding: 0 12px;
+  background-color: #ffffff;
+  // height: calc(100% - 139px);
+  flex: 1;
+  overflow: hidden;
+  &.showDeveto {
+    // padding-top: 260px; // 211 + 49
+    // height: calc(100% - 350px); //360+90
+  }
+}
+
+.roomMsg {
+  // height: calc(100% - 60px);
+  overflow-y: auto;
+  font-size: 11px;
+  padding: 5px 0;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    background: #fff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #EBF0FB;
+    border-radius: 2px;
+  }
+
+  li {
+    height: auto;
+    line-height: 25px;
+
+    .name {
+      font-size: 13px;
+      background-image: linear-gradient(to right, #83c8ff, #3977fe);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .desc {
+      font-size: 13px;
+      color: #2d2d2d;
+      margin: 0 0 0 4px;
+    }
+
+    &.lge {
+      background-color: #e7f4ff;
+    }
+  }
+
+  .gift {
+    color: #f79525;
+
+    .userName {
+      color: #51a1f5;
+      cursor: pointer;
+    }
+  }
+
+  .forbidden {
+    color: #f54850;
+  }
+
+  .level {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 1px 5px;
+    color: #fff;
+    background-color: #50e5f2;
+    border-radius: 3px;
+    margin-right: 5px;
+  }
+
+  .msg {
+    .isUp {
+      font-size: 10px;
+      font-weight: 500;
+      padding: 1px 6px;
+      color: #fff;
+      background-image: linear-gradient(90deg, #3597ef 60%, #50e5f2 90%);
+      border-radius: 3px;
+      margin-right: 5px;
+    }
+
+    .userName {
+      color: #51a1f5;
+      cursor: pointer;
+    }
+
+    .text {
+      display: inline-block;
+      line-height: 18px;
+      color: #f79525;
+    }
+  }
+
+  .isUpText {
+    color: #3597ef;
+  }
+
+  .text {
+    color: #2d2d2d;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .roomIn {
+    .welcome {
+      color: #b2a7ff;
+    }
+
+    .userName {
+      color: #f79524;
+      cursor: pointer;
+    }
+  }
+}
+
+// 输入框
+
+.roombottom {
+  position: relative;
+  // border-top: solid 0.5px #999999;
+  box-sizing: border-box;
+  border-radius: 0 0 4px 4px;
+  height: 87px;
+}
+
+.msginput {
+  position: relative;
+  height: 100%;
+  border: none;
+  // opacity: 0.45;
+  border-top: solid 1.2px rgba(94, 146, 255, 0.3);
+}
+
+.inputBox::placeholder {
+  color: #999999;
+}
+
+.inputBox {
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #14162c;
+  resize: none;
+  outline: none;
+}
+
+.msgBtn {
+  position: absolute;
+  right: 11px;
+  bottom: 8px;
+  width: 70px;
+  height: 32px;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 32px;
+  background-image: url(network($room + 'btn-bg'));
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.gongGao {
+  font-family: PingFangSC;
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: -0.17px;
+  color: #ff404b;
+
+  .icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    background-image: url(network($room + 'gonggao'));
+    background-size: 100% 100%;
+  }
+
+  span {
+    color: #ff404b;
+  }
+}
+
+// 礼物组件
+.giftSvga {
+  position: absolute;
+  top: 0;
+  // left: 20%;
+  height: 80%;
+  text-align: center;
+  width: 100%;
+
+  // background-color: red;
+  // width: 100%;
+
+  // background-color: red;
+  // border: 1px solid red;
+  z-index: 2;
+}
+
+// 主播欢迎语
+.zhubowelcome{
+  font-size: 14px;
+  margin: 5px 0 0 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  .welcomeImg{
+    border: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    max-width: 100%;
+    vertical-align: middle;
+    margin: 0 4px 0 0;
+  }
+  .welcomeText{
+    color: #ff6762;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+  }
+}
+
+
+.kickUser {
+  width: 320px;
+  height: 180px;
+  background: #ffffff;
+  box-shadow: 0px 2px 10px 0px rgba(152, 152, 152, 0.4);
+  border-radius: 10px;
+  padding: 34px 16px 0;
+  box-sizing: border-box;
+
+  .kickText {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    color: #6d6f89;
+    line-height: 22px;
+  }
+  .textColor {
+    color: #ff404b;
+  }
+  .kickBtn{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+  }
+  .kickOk{
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid #949BB1;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #76809C;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover{
+      font-size: 16px;
+    }
+  }
+  .kickOk22{
+    margin: 0 30px 0 0;
+  }
+}
+.forbiddenMain{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  &.forbidIsShow{
+    display: none;
+  }
+  .forbiddenWrap{
+    width: 100%;
+    height: calc(100% - 87px);
+    border-radius: 8px 8px 0 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(167, 184, 255, 0.31));
+  }
+  .forbiddenText{
+    padding: 6px 10px 0;
+    height: 40px;
+    background: #fff;
+    font-family: PingFangSC;
+    font-size: 14px;
+    color: #ff404b;
+  }
+}
+

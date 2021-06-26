@@ -1,0 +1,20 @@
+.codeSelect {
+  padding-right: 16px;
+  margin-right: -16px;
+  height: 22px;
+  line-height: 22px;
+  color: #1E1E1E;
+  font-size: 16px;
+  border-right: 1px solid #eee;
+}
+
+.codeButton {
+  color: $textColor;
+  font-size: 16px;
+  cursor: pointer;
+
+  &.isDisable {
+    color: #A9ADB9;
+    cursor: not-allowed;
+  }
+}

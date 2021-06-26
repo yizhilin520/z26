@@ -1,0 +1,91 @@
+.container {
+  background-color: #161731;
+}
+
+.wrapper {
+  display: flex;
+  margin: auto;
+  width: 1400px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  height: 92px;
+
+  &.isLeft, &.isRight {
+    flex: 1;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: auto 100%;
+    overflow: hidden;
+  }
+
+  &.isCenter {
+    width: 280px;
+  }
+
+  &.isLeft {
+    background-image: url("./images/score_home_bg.png");
+    background-position-x: left;
+
+    .logo {
+      margin-left: 100px;
+    }
+
+    .name {
+      text-align: right;
+    }
+  }
+
+  &.isRight {
+    justify-content: flex-end;
+    background-image: url("./images/score_guest_bg.png");
+    background-position-x: right;
+
+    .logo {
+      margin-right: 100px;
+    }
+
+    .name {
+      text-align: left;
+    }
+  }
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.name {
+  width: 200px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.score {
+  flex: 1;
+  margin: 0 10px;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.infos {
+  width: 100%;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2.4px;
+  text-align: center;
+}
+
+.bigStatus {
+  font-size: 14px;
+}
+
+.text, .smallStatus {
+  margin-top: 8px;
+}

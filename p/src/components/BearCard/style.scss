@@ -1,0 +1,449 @@
+@import "@/scss/helpers/_helpers.scss";
+.root {
+  margin-top: 250px;
+  position: absolute;
+}
+.block {
+  display: block !important;
+  // transition: 1s;
+  // opacity: 1;
+}
+.none {
+  display: none !important;
+  // transition: 1s;
+  // opacity: 0;
+}
+.usercontainer {
+  width: 259px;
+  height: auto;
+  padding: 0;
+  margin-left: 10px;
+  box-shadow: 0 1px 8px 0 rgba(138, 137, 137, 0.37);
+  box-sizing: border-box;
+  .content {
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+    padding: 15px 0;
+    border-bottom: solid 1.2px rgba(94, 146, 255, 0.3);
+  }
+  .footer {
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+    width: 100%;
+    padding: 18px 0;
+    cursor: pointer;
+  }
+  .red {
+    color: red;
+  }
+  .buttons {
+    font-size: 14px;
+    color: #999999;
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    // padding: 18px 0;
+    cursor: pointer;
+    display: flex;
+    .ifself {
+      text-align: center;
+      width: 100%;
+    }
+    .btn {
+      width: 33%;
+      text-align: center;
+      &:hover {
+        color: #4895ff;
+      }
+    }
+  }
+
+  .userContent {
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      cursor: pointer;
+    }
+    .user {
+      margin: auto;
+      img {
+        padding: 2px;
+        width: 66px;
+        height: 66px;
+        object-fit: contain;
+        border-radius: 33px;
+        border: 1px solid #19a7ff;
+        box-sizing: border-box;
+      }
+      i {
+        display: inline-block;
+        width: 66px;
+        height: 66px;
+        border: 1.5px solid #2883ff;
+        border-radius: 50%;
+      }
+    }
+
+    .title {
+      font-family: PingFangSC;
+      font-size: 17px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.1px;
+      color: #333333;
+      margin: 5px 0;
+    }
+    .tip {
+      margin: auto;
+      margin: 5px 0 10px 0;
+      i {
+        font-style: normal;
+        display: inline-block;
+        border-radius: 2.2px;
+        background-color: #50e5f2;
+        color: #fff;
+        font-size: 10px;
+        padding: 2px 5px;
+      }
+    }
+    .number {
+      font-family: PingFangSC;
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.08px;
+      color: #999999;
+    }
+  }
+}
+
+.container {
+  width: 259px;
+  height: auto;
+  padding: 0;
+  margin-left: 10px;
+  box-shadow: 0 1px 8px 0 rgba(138, 137, 137, 0.37);
+  .content {
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+    // padding:45px 0 40px 0;
+    border-bottom: solid 1.2px rgba(94, 146, 255, 0.3);
+  }
+  .shutUpcontent {
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+    padding: 47px 0 36px 0;
+    border-bottom: solid 1.2px rgba(94, 146, 255, 0.3);
+  }
+  .footer {
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+    width: 100%;
+    padding: 18px 0;
+    cursor: pointer;
+  }
+  .red {
+    color: red;
+  }
+  .buttons {
+    font-size: 14px;
+    color: #999999;
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    // padding: 18px 0;
+    cursor: pointer;
+    display: flex;
+    .btn {
+      width: 33%;
+      text-align: center;
+      &:hover {
+        color: #4895ff;
+      }
+    }
+  }
+
+  .stopContent {
+    padding: 20px 0;
+    .title {
+      font-family: PingFangSC;
+      font-size: 17px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      color: #333333;
+      text-align: left;
+      margin-left: 30px;
+      margin-bottom: 25px;
+    }
+  }
+  .input {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    .left {
+      margin-right: 20px;
+    }
+  }
+  .stopButtons {
+    .btn {
+      width: 50%;
+      &:nth-child(1) {
+        border-right: solid 1.2px rgba(94, 146, 255, 0.3);
+      }
+    }
+  }
+}
+
+.userInfoBox {
+  width: 259px;
+  min-height: 225px;
+  background: #fff;
+  box-shadow: 0px 2px 10px 0px rgba(152, 152, 152, 0.4);
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  text-align: center;
+  z-index: 9;
+
+  .infoClose {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #9b9b9b;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: rotate(180deg);
+    }
+  }
+  .touxian {
+    padding: 16px 0 0 0;
+    display: flex;
+    justify-content: center;
+  }
+  .touxianLine {
+    width: 72px;
+    height: 72px;
+    border-radius: 72px;
+    border: 1.5px solid #19a7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .touxianImg {
+    width: 66px;
+    height: 66px;
+    border-radius: 66px;
+  }
+  .infoText1 {
+    font-family: PingFangSC;
+    font-size: 17px;
+    color: #333333;
+    margin: 5px 0 7px;
+  }
+  .lv {
+    width: 34px;
+    height: 15px;
+    border-radius: 2.2px;
+    background-color: #50e5f2;
+    font-family: PingFangSC;
+    font-size: 10px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 15px;
+    margin: 0 auto 12px;
+  }
+  .guanzhu {
+    font-family: PingFangSC;
+    font-size: 14px;
+    color: #adadad;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 15px 0;
+  }
+  .guanzhuText {
+    margin: 0 28px 0 0;
+  }
+  .bottom {
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1.2px solid rgba(94, 146, 255, 0.3);
+    font-family: PingFangSC;
+    font-size: 14px;
+    color: #a3a3a3;
+  }
+  .guanzhuText2 {
+    font-size: 14px;
+    margin: 0 53px 0 0;
+    cursor: pointer;
+    &:hover {
+      color: #4895ff;
+    }
+    &.active {
+      color: #4895ff;
+    }
+  }
+  .guanzhuText3 {
+    font-size: 14px;
+    cursor: pointer;
+    &:hover {
+      color: #4895ff;
+    }
+    &.active {
+      color: #4895ff;
+    }
+  }
+
+  .bottomZbao {
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1.2px solid rgba(94, 146, 255, 0.3);
+    font-family: PingFangSC;
+    font-size: 14px;
+    color: #a3a3a3;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  .bottomtext {
+    cursor: pointer;
+    &:hover {
+      color: #3977fe;
+    }
+    &:focus {
+      color: #3977fe;
+    }
+  }
+}
+
+.kickUser {
+  width: 320px;
+  height: 180px;
+  background: #ffffff;
+  box-shadow: 0px 2px 10px 0px rgba(152, 152, 152, 0.4);
+  border-radius: 10px;
+  padding: 34px 16px 0;
+  box-sizing: border-box;
+
+  .kickText {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    color: #6d6f89;
+    line-height: 22px;
+  }
+  .textColor {
+    color: #ff404b;
+  }
+  .kickBtn{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+  }
+  .kickOk{
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid #949BB1;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #76809C;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover{
+      font-size: 16px;
+    }
+  }
+  .kickOk22{
+    margin: 0 30px 0 0;
+  }
+}
+
+
+.kickTimeSele{
+  padding: 30px 30px 40px 30px;
+  overflow: auto;
+  .speech{
+    line-height: 27px;
+    font-family: PingFangSC;
+    font-size: 17px;
+    color: #333333;
+    margin: 0 0 32px 0;
+  }
+  .item{
+    margin: 0 0 32px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+    position: relative;
+    .label{
+      font-size: 14px;
+    color: #323232;
+    }
+   
+  }
+  .contentss{
+    height: 38px;
+    position: relative;
+    .error{
+      margin-top: 4px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      line-height: 14px;
+      font-size: 10px;
+      color: #e04e4e;
+    }
+  }
+
+  .kickBtn{
+    margin: auto;
+    width: 190px;
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    background-image: linear-gradient(
+    127deg
+    , #3AC5FD 17%, #1D78F1 82%);
+        border-radius: 21px;
+        cursor: pointer;
+  }
+
+
+}

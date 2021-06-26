@@ -1,0 +1,79 @@
+/*  UI4.0  */
+
+// 页面左右边距
+$page_padding: 0.28rem;
+// 默认边框颜色
+$default_border: #eee;
+$default_border1: #e8e7e7;
+$default_border2: #ddd;
+$table_border: #f2f2f2;
+// 页面Tabbar高度
+$page_tabbar_height: 0.96rem;
+// 页面Header高度
+$page_header_height: 0.88rem;
+// 全局品牌色-主色
+$color_theme: #b1987f;
+// 全局品牌色-辅色
+$color_theme_assist: #d2b79c;
+// 全局品牌渐变色
+$color_theme_linear: #dccab8, #d2b496;
+// 不可用文本
+$color_disabled: #cbced8; // rgb(203, 206, 216)
+// 默认链接颜色
+$color_link: #6aaaf5;
+// 遮罩层颜色
+$color-black-mask: rgba(0, 0, 0, 0.5);
+$color-black-mask4: rgba(0, 0, 0, 0.4);
+// 默认阴影颜色
+$color-box-shadows: rgba(65, 70, 92, 0.3);
+$color-box-shadows1: rgba(0, 0, 0, 0.1);
+// 选择阴影颜色
+$color-active-box-shadows: rgba(168, 135, 102, 0.5);
+// 默认背景色
+$color_bg: #f8f8f8;
+$color_bg1: #fafbfc;
+// 白色
+$color_white: #ffffff;
+$color_black: #000;
+$color_brown: #d6ac83;
+$color_white1: rgba(255, 255, 255, 0.5);
+$gray_color8: #f8f8f8;
+// 全局灰色（字体、边框）
+$gray_color3: #333333;
+$gray_color6: #666666;
+$gray_color9: #999999;
+$gray_color7: #878787;
+$gray_color5: #555;
+$gray_background_color: #f7f8fc;
+$gray_shadow: #ddd;
+// 标题文本
+$color_title: #414655;
+$color_title1: #5c6379;
+$color_title2: #767c89;
+$color_caption: #a5a9b3;
+$color_circleTip: #db6372;
+$color_cancel: #56576e;
+// 以屏幕为375基准下 1rem = 50px
+// 标题字号/行高
+$title_size_24: 0.48rem;
+$title_size_20: 0.4rem;
+$title_size_18: 0.36rem;
+$title_size_17: 0.34rem;
+$title_size_16: 0.32rem;
+$title_size_15: 0.3rem;
+$title_line_height: 1.3;
+// 默认文本
+$color_text_default: #9aa4c2;
+// 文本字号
+$text_size_14: 0.28rem;
+$text_size_12: 0.24rem;
+$text_size_11: 0.22rem;
+$text_size_10: 0.2rem;
+$text_size_9: 0.18rem;
+$text_size_8: 0.16rem;
+$text_line_height: 1.5;
+
+
+// 边框
+$box_shadow: 0 1px 2px 0 rgba(118, 155, 237, 0.34);
+$border_radius: 10px

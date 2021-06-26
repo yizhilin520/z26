@@ -1,0 +1,10 @@
+.container {
+  position: relative;
+  padding: 0 30px 40px 120px;
+  min-width: 1310px;
+  min-height: calc(100vh - 60px);
+  background-color: #f9fbff;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 1;
+}

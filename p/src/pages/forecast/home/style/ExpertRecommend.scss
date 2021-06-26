@@ -1,0 +1,64 @@
+.container {
+  position: relative;
+}
+
+.wrapper {
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: 1px solid #E6EAF3;
+  overflow: hidden;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  height: 138px;
+}
+
+.item {
+  margin-right: 20px;
+  width: 90px;
+  flex-shrink: 0;
+}
+
+.image {
+  display: block;
+  margin: auto;
+  width: 52px;
+  height: 52px;
+  border-radius: 26px;
+  object-fit: cover;
+}
+
+.label {
+  margin-top: 14px;
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.page {
+  position: absolute;
+  top: 50%;
+  margin-top: -26px;
+  width: 22px;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  background: rgba(20, 22, 44, 0.4);
+  border-radius: 4px;
+  cursor: pointer;
+
+  &.left {
+    left: -30px;
+  }
+
+  &.right {
+    right: -30px;
+  }
+}

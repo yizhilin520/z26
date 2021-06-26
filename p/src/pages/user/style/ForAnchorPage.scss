@@ -1,0 +1,183 @@
+@import "@/scss/helpers/_helpers.scss";
+
+.container {
+  position: relative;
+  padding: 25px 0;
+}
+
+.title {
+  color: #363636;
+  font-size: 20px;
+  display: flex;
+  height: 26px;
+  line-height: 26px;
+  margin: 0 28px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #D8DCE7;
+
+  &Left {
+    margin-right: 72px;
+    cursor: pointer;
+  }
+
+  &Right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .active {
+    color: $textColor;
+    cursor: default;
+  }
+
+  .item {
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+  }
+
+  .dateIcon {
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    color: #999999;
+    background-image: url(network($score1 + "bife13"));
+    background-size: 100% 100%;
+  }
+
+  .search,
+  .order {
+    border: 1px solid $borderColor;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: $textColor;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .search {
+    width: 50px;
+    height: 26px;
+  }
+
+  .order {
+    width: 76px;
+    height: 26px;
+  }
+
+  input {
+    padding: 0 8px;
+    width: 206px;
+    height: 26px;
+    border: 1px solid #e6eaf3;
+    border-radius: 6px;
+    cursor: pointer;
+    appearance: none;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #434a66;
+
+    &:focus,
+    &:hover {
+      border-color: $borderColor;
+    }
+  }
+}
+
+.cancel {
+  font-size: 12px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: $textColor;
+  cursor: pointer;
+}
+
+.button {
+  width: 98px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #464646;
+  font-size: 14px;
+  border: 1px solid #464646;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.notData {
+  margin: 150px auto;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  color: #afafb2;
+}
+
+.expertInfo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 16px;
+
+  .achievement {
+    display: flex;
+  }
+}
+
+.matchInfo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 16px;
+  .matchItemInfo{
+    width: 90%;
+    margin-top: 8px;
+    line-height: 16px;
+    overflow: hidden;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+}
+
+.operation {
+  display: flex;
+  justify-content: center;
+
+  .operateBtn {
+    width: 48px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: $textColor;
+    cursor: pointer;
+  }
+}
+
+.tableHandle {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.roomTitle{
+  width: 100%;
+  padding: 0 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+

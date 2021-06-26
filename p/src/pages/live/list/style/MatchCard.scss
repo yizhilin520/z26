@@ -1,0 +1,134 @@
+.container {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e6eaf3;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 0 10px;
+  display: flex;
+  height: 38px;
+  align-items: center;
+  background-color: rgba(40, 131, 255, .16);
+
+  .headerItem {
+    flex: 1;
+    font-size: 14px;
+    overflow: hidden;
+    color: #4c97ff;
+    &.title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &.status {
+      flex: none;
+    }
+
+    &.link {
+      text-align: right;
+      color: #ff5338;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  padding: 22px;
+  height: 128px;
+  box-sizing: border-box;
+
+  .name {
+    flex: 1;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .image {
+    margin: auto;
+    display: block;
+    width: 52px;
+    height: 52px;
+  }
+
+  .label {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #434a66;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .score {
+    margin-top: 6px;
+    width: 106px;
+    text-align: center;
+  }
+
+  .scoreInner {
+    position: relative;
+    height: 32px;
+  }
+
+  .scoreText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 26px;
+    color: #5a5a5a;
+    transform: translate(-50%, -50%);
+  }
+
+  .button {
+    display: flex;
+    margin: auto;
+    margin-top: 16px;
+    width: 82px;
+    height: 30px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      font-weight: bold;
+    }
+
+    &.isReserve {
+      color: #4c97ff;
+      border: 1px solid #4c97ff;
+
+      &.isDisable {
+        color: #999;
+        border-color: #999;
+
+        &:hover {
+          font-weight: normal;
+        }
+      }
+    }
+
+    &.isLive {
+      color: #fff;
+      background: linear-gradient(134deg, #FFB445 0%, #FD6501 100%);
+    }
+
+    .buttonIcon {
+      width: 18px;
+      height: 18px;
+      margin-right: 4px;
+      font-size: 16px;
+      object-fit: cover;
+    }
+
+    .buttonLabel {
+      font-size: 14px;
+    }
+  }
+}

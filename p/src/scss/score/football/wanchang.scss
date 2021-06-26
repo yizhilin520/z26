@@ -1,0 +1,610 @@
+@import '@/scss/helpers/_helpers.scss';
+
+.wanchang {
+  display: block;
+  height: auto;
+  padding: 86px 0 0 0;
+
+}
+
+.saicheng {
+  display: block;
+  padding: 86px 0 0 0;
+}
+
+.fixed {
+  width: 1434px;
+  position: fixed;
+  top: 118px;
+  // z-index: 10;
+}
+
+.fixed {}
+
+.rilitop {
+  height: 54px;
+  padding: 0 72px 0 61px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #f4f5f8;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.rilictn {
+  font-size: 11px;
+  color: #2d2d2d;
+  display: flex;
+  align-items: center;
+  margin: 0 20px 0 0;
+}
+
+.tubiao {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background-image: url(network($score1 + 'bife13'));
+  background-size: 100% 100%;
+  margin: 0 5px 0 0;
+}
+
+.xiadown {
+  display: inline-block;
+  width: 5px;
+  height: 9px;
+  background-image: url(network($score + 'arrow-left'));
+  background-size: 100% 100%;
+  margin: 0 0 0 5px;
+}
+
+.rili {
+  display: flex;
+
+  .rililis {
+    width: 167px;
+    height: 100%;
+    background-color: #f4f5f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &.actives {
+      background-color: #ffffff;
+    }
+
+    span {
+      font-size: 11px;
+      color: #2d2d2d;
+    }
+  }
+
+  .rilidata {
+    font-size: 13px;
+    font-weight: bold;
+    color: #2d2d2d;
+    text-align: center;
+  }
+}
+
+.listheader {
+  height: 32px;
+  border-radius: 0;
+  background-color: #434a68;
+
+}
+
+.listheader2 {
+  width: 1434px;
+  // position: fixed;
+  z-index: 10;
+  top: 118px;
+}
+
+.listtop {
+  display: flex;
+  overflow: hidden;
+
+  .cell {
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: solid 2px #a1a4b3;
+  }
+
+  .cell1 {
+    width: 66px;
+    background-color: #161731;
+    cursor: pointer;
+    border: none;
+  }
+
+  .cell2 {
+    width: 86.5px;
+
+  }
+
+  .cell3 {
+    width: 85px;
+  }
+
+  .cell4 {
+    width: 140px;
+  }
+
+  .cell5 {
+    width: 65px;
+  }
+
+  .cell6 {
+    width: 368px;
+  }
+
+  .cell7 {
+    width: 85px;
+  }
+
+  .cell8 {
+    width: 85px;
+  }
+
+  .cell9 {
+    width: 85px;
+  }
+
+  .cell10 {
+    width: 129px;
+  }
+
+  .cell11 {
+    width: 102px;
+  }
+
+  .cell12 {
+    width: 125px;
+    border: none;
+  }
+}
+
+// 内容
+.wraper1 {
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.22);
+  background-color: #ffffff;
+}
+
+.ligame {
+  display: flex;
+  height: 39px;
+  color: #2d2d2d;
+}
+
+.lic1 {
+  width: 66px;
+  height: 100%;
+  cursor: pointer;
+  text-align: left;
+  line-height: 39px;
+  font-size: 13px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.lic2 {
+
+  width: 86.5px;
+  font-size: 13px;
+  color: #2d2d2d;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  text-align: left;
+
+  .xjicon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    // background-image: url(network($score + 'xijia'));
+    background-size: 100% 100%;
+    margin: 0 4px 0 0;
+  }
+}
+
+.lic3 {
+  width: 85px;
+  font-size: 13px;
+  text-align: center;
+  color: #2d2d2d;
+  line-height: 39px;
+}
+
+.lic4 {
+  width: 140px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 39px;
+  cursor: pointer;
+
+  .jt {
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-image: url(network($score + 'arrow-left'));
+    background-size: 100% 100%;
+    margin: 0 0 0 3px;
+  }
+}
+
+.lic5 {
+  width: 65px;
+  font-size: 13px;
+  text-align: center;
+  color: #2d2d2d;
+  line-height: 39px;
+}
+
+.lic6 {
+  width: 368px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: #a9adb9;
+
+  .bileft {
+    span {
+      display: inline-block;
+      color: #2d2d2d;
+      margin: 0 0 0 10px;
+    }
+  }
+
+  .nubmer {
+    margin: 0 14px 0 19px;
+    color: #2d2d2d;
+  }
+
+  .biright {
+    span {
+      display: inline-block;
+      color: #2d2d2d;
+      margin: 0 12px 0 0;
+    }
+  }
+}
+
+.lic7 {
+  width: 85px;
+  line-height: 39px;
+  text-align: center;
+
+  .bang {
+    display: inline-block;
+    width: 48px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 13px;
+    color: #3f7bfe;
+    background-image: url(network($score + 'border'));
+    background-size: 100% 100%;
+    cursor: pointer;
+  }
+}
+
+.lic8 {
+  width: 85px;
+  line-height: 39px;
+  text-align: center;
+}
+
+.lic9 {
+  width: 85px;
+  line-height: 39px;
+  text-align: center;
+
+  span {
+    &.red {
+      color: #f74a4a;
+    }
+
+    &.green {
+      color: #4af766;
+    }
+
+    &.blue {
+      color: #3f7bfe;
+    }
+  }
+}
+
+.lic10 {
+  width: 129px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lic11 {
+  width: 102px;
+  text-align: center;
+  line-height: 39px;
+  font-size: 13px;
+  color: #2d2d2d;
+
+  span {
+    cursor: pointer;
+
+    &.red {
+      color: #f74a4a;
+    }
+
+    &.grren {
+      color: #4af766;
+    }
+
+    &.blue {
+      color: #3f7bfe;
+    }
+  }
+
+}
+
+.lic12 {
+  width: 125px;
+  font-size: 13px;
+  color: #2d2d2d;
+  text-align: center;
+  line-height: 39px;
+
+  span {
+    cursor: pointer;
+  }
+
+  .zousi {
+    display: inline-block;
+    margin: 0 9px 0 0;
+  }
+}
+
+
+// 赛程
+.listtop33 {
+  display: flex;
+  overflow: hidden;
+
+  .cl {
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: solid 2px #a1a4b3;
+  }
+
+  .cl1 {
+    width: 66px;
+    background-color: #161731;
+    cursor: pointer;
+    border: none;
+  }
+
+  .cl2 {
+    width: 176px;
+  }
+
+  .cl3 {
+    width: 85px;
+  }
+
+  .cl4 {
+    width: 137.5px;
+  }
+
+  .cl5 {
+    width: 368px;
+  }
+
+  .cl6 {
+    width: 122.5px;
+  }
+
+  .cl7 {
+    width: 178.5px;
+  }
+
+  .cl8 {
+    width: 136px;
+  }
+
+  .cl9 {
+    width: 148px;
+    border: 0;
+  }
+
+}
+
+.saichen {
+  display: flex;
+  height: 39px;
+  color: #2d2d2d;
+
+  &:nth-child(even) {
+    background: #fbfcff;
+  }
+}
+
+.sai1 {
+  width: 66px;
+  height: 100%;
+  cursor: pointer;
+  text-align: center;
+  line-height: 39px;
+  font-size: 13px;
+}
+
+.sai2 {
+  width: 176px;
+  font-size: 13px;
+  color: #2d2d2d;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+  box-sizing: border-box;
+
+  .xjicon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    // background-image: url(network($score + 'xijia'));
+    background-size: 100% 100%;
+    margin: 0 4px 0 0;
+  }
+}
+
+.sai3 {
+  width: 85px;
+  font-size: 13px;
+  text-align: center;
+  color: #2d2d2d;
+  line-height: 39px;
+}
+
+.sai4 {
+  width: 137.5px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 39px;
+  cursor: pointer;
+
+  .jt {
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-image: url(network($score + 'arrow-left'));
+    background-size: 100% 100%;
+    margin: 0 0 0 3px;
+  }
+}
+
+.sai5 {
+  width: 377.5px;
+  font-size: 13px;
+  text-align: center;
+  color: #2d2d2d;
+  line-height: 39px;
+}
+
+.sai6 {
+  width: 122.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+
+  .bang {
+    display: inline-block;
+    width: 48px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 13px;
+    color: #3f7bfe;
+    background-image: url(network($score + 'border'));
+    background-size: 100% 100%;
+    cursor: pointer;
+  }
+}
+
+.sai7 {
+  width: 178.5px;
+  line-height: 39px;
+  text-align: center;
+
+  .nubtext {
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+    color: #2d2d2d;
+    margin: 0 10px;
+  }
+}
+
+.sai8 {
+  width: 136px;
+  line-height: 39px;
+  text-align: center;
+
+  .caozuo {
+    display: inline-block;
+    width: 18px;
+    height: 15px;
+    background-image: url(network($score + 'xinxin'));
+    background-size: 100% 100%;
+    cursor: pointer;
+  }
+}
+
+.sai9 {
+  width: 148px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.steam1 {
+  width: 62px;
+  height: 29px;
+  background-image: url(network($live + 'liverect'));
+  background-size: 100% 100%;
+  position: relative;
+  margin: 0 auto 0;
+  cursor: pointer;
+
+  .steam2 {
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+  }
+
+  .steam3 {
+    display: inline-block;
+    color: #ffffff;
+    margin: 0 0 0 5px;
+    font-size: 10px;
+    line-height: 1;
+    position: absolute;
+    top: 6px;
+    right: 12px;
+  }
+}
+
+.bisai1 {
+  display: block;
+  width: 26px;
+  height: 21px;
+  background-image: url(network($score1 + 'bisai'));
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+.nodata{
+  margin-top:40px;
+  p{
+    color:#6a7491 !important;
+    opacity: .7;
+  }
+}
+.jiaoqiu{
+  display: inline-block;
+  width: 17px;
+  height: 14px;
+  background-image: url(network($score1 + 'bife02'));
+  background-size: 100% 100%;
+  margin-right: 4px;
+}

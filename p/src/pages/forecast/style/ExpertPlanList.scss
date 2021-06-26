@@ -1,0 +1,183 @@
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #E6EAF3;
+}
+
+.wrapper {
+  margin: 0 20px;
+}
+
+.item {
+  position: relative;
+  padding-bottom: 18px;
+  margin: 18px auto;
+  border-bottom: 1px solid #E6EAF3;
+
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.userInfo {
+  display: flex;
+  height: 58px;
+  align-items: center;
+
+
+  .image {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    object-fit: cover;
+  }
+
+  .content {
+    flex: 1;
+    margin-left: 10px;
+  }
+
+  .name {
+    color: #434A66;
+    font-size: 16px;
+  }
+
+  .meta {
+    margin-top: 14px;
+    display: flex;
+  }
+
+  .metaItem {
+    margin-right: 16px;
+    font-size: 12px;
+
+    &.isSummary {
+      color: #434A66;
+    }
+
+    &.isSuccess {
+      padding: 0 6px;
+      color: #CE6A00;
+      background: rgba(255, 150, 38, 0.14);
+      box-shadow: 0px 4px 12px 0px rgba(143, 73, 37, 0.04);
+      border-radius: 10px;
+    }
+
+    &.isWarning {
+      padding: 0 6px;
+      color: #FD3C05;
+      background: rgba(255, 83, 56, 0.1);
+      border-radius: 10px;
+    }
+  }
+}
+
+.statusImage {
+  width: 45px;
+  height: 45px;
+
+  &.isAbsolute {
+    position: absolute;
+    top: -14px;
+    right: 0;
+  }
+}
+
+.result {
+  margin-left: 14px;
+  text-align: center;
+
+  .resultVal {
+    color: #FF5338;
+    font-size: 26px;
+    font-weight: 900;
+  }
+
+  .resultSummary {
+    margin-top: 5px;
+    color: #949BB1;
+    font-size: 12px;
+  }
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 14px;
+  color: #434A66;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  &.isPadding {
+    padding-right: 56px;
+  }
+}
+
+.planItem {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  height: 38px;
+  color: #6D6F89;
+  font-size: 14px;
+  background-color: #F4F5F7;
+  border-radius: 2px;
+
+  .planType {
+    margin-left: 15px;
+  }
+
+  .planName {
+    flex: 1;
+    text-align: center;
+
+    .mainText {
+      margin-left: 4px;
+      color: #999;
+      font-size: 13px;
+    }
+  }
+
+  .planDate {
+    margin-right: 10px;
+  }
+
+  .planTime {
+    margin-right: 10px;
+  }
+}
+
+.publish {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  font-size: 12px;
+
+  .price {
+    color: $textColor;
+  }
+
+  .time {
+    flex: 1;
+    margin-left: 8px;
+    color: #949BB1;
+  }
+
+  .link {
+    color: #949BB1;
+
+    .icon {
+      padding-left: 2px;
+      color: #2C2F57;
+      font-size: 10px;
+    }
+  }
+}

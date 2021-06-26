@@ -1,0 +1,21 @@
+.ui-widget-Pagination {
+  .MuiPagination-root .MuiPaginationItem-root {
+    margin: 0 6px 0 0;
+    padding: 0;
+    height: 28px;
+    min-width: 28px;
+    color: #8b93a3;
+  }
+
+  .MuiPagination-root .MuiPaginationItem-page.Mui-selected {
+    background-image: url('/static/images/user/pagin.webp');
+    background-size: 100% 100%;
+    border: 0;
+    color: #ffffff;
+
+  }
+
+  .MuiPagination-root .MuiPaginationItem-outlined {
+    border: solid 1px #8b93a3;
+  }
+}

@@ -1,0 +1,138 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 90px;
+  background-color: #202020;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  height: 14px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.delimiter {
+  margin: 0 20px;
+  margin-bottom: -10px;
+  width: 1px;
+  height: 19px;
+  background-color: #000;
+}
+
+.score {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+
+  &.isFlag {
+    background-image: url("./images/flag_image.png");
+  }
+
+  &.isYellow {
+    background-image: url("./images/yellow_image.png");
+  }
+
+  &.isRed {
+    background-image: url("./images/red_image.png");
+  }
+}
+
+.text {
+  margin-left: 2px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.progress {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  overflow: hidden;
+
+  .progressText {
+    margin: 0 4px;
+    width: 134px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .progressLabel {
+    width: 30px;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .progressItem {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+
+    &.isLeft {
+      .progressLabel {
+        text-align: left;
+      }
+
+      .progressBox, .progressBoxInner {
+        border-radius: 3px 0 0 3px;
+      }
+
+      .progressBoxInner {
+        right: 0;
+        background-color: #EEC383;
+      }
+    }
+
+    &.isRight {
+      .progressLabel {
+        text-align: right;
+      }
+
+      .progressBox, .progressBoxInner {
+        border-radius: 0 3px 3px 0;
+      }
+
+      .progressBoxInner {
+        left: 0;
+        background-color: #949BB1;
+      }
+    }
+  }
+
+  .progressBox {
+    position: relative;
+    flex: 1;
+    height: 6px;
+    background-color: #000;
+    overflow: hidden;
+  }
+
+  .progressBoxInner {
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+}

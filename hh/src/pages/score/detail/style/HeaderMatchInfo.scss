@@ -1,0 +1,126 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &.isBasketball {
+    background-image: url("../images/basketball_bg.jpg");
+  }
+
+  &.isFootball {
+    background-image: url("../images/fooball_bg.jpg");
+  }
+}
+
+.back {
+  position: absolute;
+  top: 28px;
+  left: 26px;
+  color: #fff;
+  font-size: 38px;
+  cursor: pointer;
+}
+
+.leagueName {
+  margin-top: 36px;
+  font-size: 28px;
+}
+
+.matchTime {
+  margin-top: 12px;
+  font-size: 20px;
+}
+
+.matchContent {
+  padding: 0 20px;
+  margin-top: 60px;
+  display: flex;
+}
+
+.info {
+  flex: 1;
+  overflow: hidden;
+}
+
+.matchLogo {
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.matchName {
+  margin-top: 10px;
+  font-size: 24px;
+  line-height: 26px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.score {
+  position: relative;
+  margin-top: 10px;
+  width: 280px;
+}
+
+.smallStatus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 22px;
+}
+
+.scoreText {
+  position: absolute;
+  top: 36px;
+  left: 50%;
+  font-size: 60px;
+  font-weight: bold;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.buttons {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, .5);
+  transform: translateX(-50%) translateZ(0);
+  border-radius: 28px;
+  overflow: hidden;
+
+  .btn {
+    display: inline-block;
+    margin-left: 40px;
+    padding-left: 40px;
+    font-size: 26px;
+    height: 56px;
+    line-height: 60px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 34px auto;
+    cursor: pointer;
+
+    &.isVideo {
+      background-image: url("~@/assets/images/live.png");
+    }
+
+    &:last-child {
+      margin-right: 40px;
+    }
+  }
+}

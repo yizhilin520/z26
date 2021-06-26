@@ -1,0 +1,284 @@
+main{
+    background: #f9fbff;
+}
+.feedback{
+    width: 1200px;    
+    height: 790px;
+    margin: 10px auto 32px;
+    background: #fff;
+    box-shadow: 0px 3px 5px 0px rgba(93, 162, 255, 0.24);
+    border-radius: 11px;
+}
+.title{
+    padding: 21px 0 30px 43px;
+    border-bottom: 1px solid #D8DCE7;
+    box-sizing: border-box;
+    line-height: 25px;
+    display: flex;
+    .titleLab1{
+        color: #3977FE;
+        font-weight: 600;
+        font-size: 20px;
+        margin: 0 15px 0 0;
+    }
+    .titleLab2{
+        font-size: 14px;
+        color: #91A0CE;
+        line-height: 25px;
+        span{
+            color: #ED4113;
+        }
+    }
+}
+.backform{
+    padding: 32px 0 0 122px;
+}
+
+.formitem{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    
+    .itemlabel{
+        display: inline-block;
+        width: 100px;
+        font-size: 18px;
+        color: #151515;
+        line-height: 20px;
+        text-align: left;
+        margin: 0;
+        padding: 10px 15px 10px 0;
+        &::before{
+            content: "*";
+            display: inline-block;
+            margin-right: 4px;
+            line-height: 20px;
+            font-family: SimSun;
+            font-size: 12px;
+            color: #ED4113;
+        }
+
+    }
+    .itemCont{
+        display: inline-block;
+        color: #666;
+        position: relative;
+        font-size: 12px;
+    }
+    .radioGroup{
+        display: inline-block;
+        font-size: 12px !important;
+        vertical-align: middle;
+    }
+    .wrapinput{
+        width: 560px;
+        height: 140px;
+        resize: none;
+        line-height: 24px;
+        border: 1px solid #D8DCE7;
+        border-radius: 6px;
+        font-size: 14px;
+        padding: 4px 7px;
+        color: #515a6e;
+        background-color: #fff;
+        background-image: none;
+        position: relative;
+        box-sizing: border-box;
+        cursor: text;
+        outline: 0;
+        &:focus{
+            border-color: #3AC5FD;
+        }
+        &:hover{
+            border-color: #3AC5FD;
+        }
+    }
+    .inputTit{
+        margin: 12px 0 0 0;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #999999;
+    }
+
+}
+.lienr{
+    width: 675px;
+    height: 1px;
+    background: #D8DCE7;
+}
+.formitem2{
+    align-items: flex-start;
+}
+.textError{
+    line-height: 1;
+    color: #ed4014;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    &.show{
+        display: block;
+    }
+}
+.phoneError{
+    font-size: 12px;
+    color: #ed4014;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+}
+.formitem3{
+    margin-bottom: 36px;
+    padding: 32px 0 0 0;
+    display: flex;
+    align-items: flex-start;
+    .itemlabel{
+        display: inline-block;
+        width: 100px;
+        font-size: 18px;
+        color: #151515;
+        line-height: 30px;
+        text-align: left;
+        padding: 0 15px 0 0;
+        &::before{
+            content: "*";
+            display: inline-block;
+            margin-right: 4px;
+            line-height: 20px;
+            font-family: SimSun;
+            font-size: 12px;
+            color: #ED4113;
+        }
+    }
+    .rightCont{
+        color: #666;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        .errorTip{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            line-height: 1;
+            padding-top: 6px; 
+            color: #ed4014;
+            display: block;
+          
+        }
+    }
+    .uploadcot{
+        display: flex;
+    }
+    .uploadimg{
+        display: flex;
+        li{
+            width: 110px;
+            height: 100px;
+            margin: 0 10px 0 0;
+            img{
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+                border: 0;
+            }
+        }
+    }
+    .upload{
+        width: 80px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+    }
+    .plusA{
+        width: 80px;
+        height: 30px;
+        border: 1px solid #4C84FE;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 28px;
+        background: #f3f3f3;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #3683ff;
+        cursor: pointer;
+        .file{
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+        }
+    }
+    .tip{
+        display: inline-block;
+        height: 30px;
+        font-size: 14px;
+        color: #999999;
+        margin: 0 0 0 15px;
+        line-height: 30px;
+    }
+}
+.formitem4{
+    margin-bottom: 60px;
+    padding: 30px 0 0 0;
+    display: flex;
+    align-items: center;
+    .itemlabel{
+        display: inline-block;
+        width: 100px;
+        font-size: 18px;
+        color: #151515;
+        line-height: 20px;
+        text-align: right;
+        margin: 0;
+        padding: 10px 15px 10px 0;
+    }
+    .iteminput{
+        width: 192px;
+        height: 52px;
+        line-height: 52px;
+        border: 1px solid #D8DCE7;
+        border-radius: 6px;
+        font-size: 14px;
+        color: #515a6e;
+        background-color: #fff;
+        padding: 4px 7px;
+        box-sizing: border-box;
+        outline: 0;
+        &:focus{
+            border-color: #3AC5FD;
+        }
+    }
+    .rightCot{
+        position: relative;
+    }
+}
+.formitem5{
+    display: flex;
+    align-items: center;
+}
+.saveBtn{
+    width: 98px;
+    border-radius: 6px;
+    color: #fff;
+    background-image: linear-gradient(127deg, #3AC5FD 17%, #1D78F1 82%);
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    margin: 0 0 0 115px;
+    transition: all .3s;
+    outline: 0;
+   
+}
+.goHome{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #999999;
+    cursor: pointer;
+    margin: 0 0 0 36px;
+}

@@ -1,0 +1,87 @@
+@import '@/scss/helpers/_helpers.scss';
+
+// 图片使用方法
+.networkImg {
+  width: 400px;
+  height: 100px;
+  background-image: url(network($home + 'footer-bg'));
+}
+
+.btn {
+  font-size: 20px;
+  color: $color_black;
+}
+
+.mt10 {
+  margin-top: 19px;
+  margin-bottom: 15px;
+}
+
+.active {
+  color: #fff;
+}
+
+.commonBg {
+  width: 100%;
+  background-image: url(network($home + 'content-bg'));
+  background-size: cover;
+  // padding: 30px 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 1000px;
+  background-image: url(network($home + 'bg'));
+  background-size: 100% 100%;
+  margin-bottom: 60px;
+}
+
+.bg {
+  width: 600px;
+  height: 496px;
+  background: url('https://webstatic.0am08m.com/assets/v4_home/image-slotgame@2x.png.webp');
+  background-size: 100% 100%;
+}
+
+.bg2 {
+  width: 600px;
+  height: 496px;
+  background: url('https://webstatic.0am08m.com/assets/v4_home/image-slotgame@2x.png');
+  background-size: 100% 100%;
+}
+
+.highlight {
+  position: absolute;
+  top: 0;
+  left: 50;
+  // width: 100%;
+  // height: 100%;
+  width: 129px;
+  height: 71px;
+  border: 2px solid #ff9c00;
+  border-radius: 6px;
+}
+
+.arrow {
+  position: absolute;
+  display: block;
+  margin-top: -6px;
+  top: 50%;
+  left: -14px;
+  width: 0;
+  height: 0;
+  content: "";
+  border: 6px solid transparent;
+  border-right-color: #1d1d22;
+}
+
+// 新的css
+.content {
+  width: 1414px;
+  margin: 0 auto;
+  // background-image: url(network($home + 'content-bg'));
+  // background-size: cover;
+  padding: 0 0;
+  box-sizing: border-box;
+  text-align: center;
+}

@@ -1,0 +1,192 @@
+/* 重置播放器全屏弹幕不滚动 */
+.dplayer:-webkit-full-screen .dplayer-danmaku .dplayer-danmaku-right.dplayer-danmaku-move{
+  animation-play-state:running!important;
+}
+// 公共滚动条样式
+.bestScroll {
+  &::-webkit-scrollbar {
+    width: 2px;
+    background: #fff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #EBF0FB;
+    border-radius: 3px;
+  }
+
+  &.bigScroll {
+    &::-webkit-scrollbar {
+      width: 4px;
+      border-radius:3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+    }
+  }
+}
+
+// 头像等级边框
+.borderLv10{
+  background: $borderLv10background;
+}
+.borderLv20{
+  background: $borderLv20background;
+}
+.borderLv30{
+  background: $borderLv30background;
+}
+.borderLv40{
+  background: $borderLv40background;
+}
+.borderLv50{
+  background: $borderLv50background;
+}
+// 等级标签颜色
+.lvLabel10{
+  background: $lvLabel10background;
+}
+.lvLabel20{
+  background: $lvLabel20background;
+}
+.lvLabel30{
+  background: $lvLabel30background;
+}
+.lvLabel40{
+  background: $lvLabel40background;
+}
+.lvLabel50{
+  background: $lvLabel50background;
+}
+// 聊天等级背景颜色
+.msgBgLv10{
+  background: $msgBgLv10background;
+}
+.msgBgLv20{
+  background: $msgBgLv20background;
+}
+.msgBgLv30{
+  background: $msgBgLv30background;
+}
+.msgBgLv40{
+  background: $msgBgLv40background;
+}
+.msgBgLv50{
+  background: $msgBgLv50background;
+}
+
+// 主播等级相关
+// 弹窗背景颜色
+.anchorDialogBgLv10{
+  background: linear-gradient(360deg, #CB6742 0%, #FC9E56 100%);
+}
+.anchorDialogBgLv20{
+  background: linear-gradient(180deg, #34D6BA 0%, #00987E 100%);
+}
+.anchorDialogBgLv30{
+  background: linear-gradient(180deg, #FFB53B 0%, #F35A00 100%);
+}
+.anchorDialogBgLv40{
+  background: linear-gradient(180deg, #44B5FF 0%, #006DF4 100%);
+}
+.anchorDialogBgLv50{
+  background: linear-gradient(180deg, #CF61EA 0%, #8A41F3 100%);
+}
+// 进度条颜色
+.anchorProgressBgLv10{
+  background: linear-gradient(360deg, #BB6A4C 0%, #F2B281 100%);
+}
+.anchorProgressBgLv20{
+  background: linear-gradient(360deg, #00B090 0%, #12F6C0 100%);
+}
+.anchorProgressBgLv30{
+  background: linear-gradient(360deg, #FF7100 0%, #FFBD00 100%);
+}
+.anchorProgressBgLv40{
+  background: linear-gradient(180deg, #48C5FF 0%, #0085FF 100%);
+}
+.anchorProgressBgLv50{
+  background: linear-gradient(180deg, #E276FF 0%, #B933DD 100%);
+}
+// 等级标签
+.anchorLabelLv10{
+  background: url('~@/assets/images/anchor/anchor_label_10.png') center/100% no-repeat;
+}
+.anchorLabelLv20{
+  background: url('~@/assets/images/anchor/anchor_label_20.png') center/100% no-repeat;
+}
+.anchorLabelLv30{
+  background: url('~@/assets/images/anchor/anchor_label_30.png') center/100% no-repeat;
+}
+.anchorLabelLv40{
+  background: url('~@/assets/images/anchor/anchor_label_40.png') center/100% no-repeat;
+}
+.anchorLabelLv50{
+  background: url('~@/assets/images/anchor/anchor_label_50.png') center/100% no-repeat;
+}
+// 等级徽章
+.anchorBadgeLv10{
+  background: url('~@/assets/images/anchor/anchor_badge_10.png') center/100% no-repeat;
+}
+.anchorBadgeLv20{
+  background: url('~@/assets/images/anchor/anchor_badge_20.png') center/100% no-repeat;
+}
+.anchorBadgeLv30{
+  background: url('~@/assets/images/anchor/anchor_badge_30.png') center/100% no-repeat;
+}
+.anchorBadgeLv40{
+  background: url('~@/assets/images/anchor/anchor_badge_40.png') center/100% no-repeat;
+}
+.anchorBadgeLv50{
+  background: url('~@/assets/images/anchor/anchor_badge_50.png') center/100% no-repeat;
+}
+
+
+
+// 适配1600以下的分辨率
+@media only screen and (max-width: 1700px) {
+  .module-section {
+    width: 1300px !important;
+    margin: auto;
+  }
+  .module-container {
+    height: calc(100% - 300px) !important;
+    background-size: 100% 100% !important;
+    margin-bottom: 0 !important;
+  }
+
+}
+
+@media only screen and (max-width: 1599px){
+  .module-section {
+    width: 1100px !important;
+    margin: auto;
+  }
+  .module-container {
+    height: calc(100% - 300px) !important;
+    background-size: 100% 100% !important;
+    margin-bottom: 0 !important;
+  }
+  .module-item {
+    width: 176px !important;
+  }
+ 
+} 
+@media only screen and (max-width: 1399px){
+  .module-section {
+    width: 950px !important;
+    margin: auto;
+  }
+  .module-container {
+    height: calc(100% - 500px) !important;
+    background-size: 100% 100% !important;
+    margin-bottom: 0 !important;
+  }
+  .module-item {
+    width: 156px !important;
+  }
+
+  .module-leftMenu{
+    width: 160px !important;
+  }
+} 

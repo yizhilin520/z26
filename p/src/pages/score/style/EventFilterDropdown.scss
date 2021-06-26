@@ -1,0 +1,100 @@
+.container {
+  width: 434px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+  overflow: hidden;
+}
+
+.wrapper {
+  margin-left: 20px;
+  padding-top: 16px;
+  height: 224px;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(115, 159, 255, .39);
+    border-radius: 2px;
+  }
+}
+
+.item {
+  float: left;
+  width: 116px;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.checkbox, .name, .number {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.name {
+  margin-left: 8px;
+  max-width: 72px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.number {
+  max-width: 16px;
+  margin-left: 4px;
+  padding-bottom: 2px;
+  font-size: 12px;
+  color: #76809c;
+}
+
+.footer {
+  display: flex;
+  height: 32px;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f0f2f8;
+}
+
+.selectNumber {
+  flex: 1;
+  color: #14162c;
+  font-size: 14px;
+  overflow: hidden;
+
+  .important {
+    color: #ce995b;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+
+  .btn {
+    margin-left: 10px;
+    width: 68px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    color: #14162c;
+    border-radius: 2px;
+    background: #fff;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+      background: $buttonActiveBackground;
+    }
+  }
+}

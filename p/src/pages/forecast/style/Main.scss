@@ -1,0 +1,15 @@
+.container {
+  background-color: #F9FBFF;
+}
+
+.wrapper {
+  padding-bottom: 40px;
+  margin: auto;
+  width: 1200px;
+
+  &:before {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

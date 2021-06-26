@@ -1,0 +1,101 @@
+$tabHeight: 80px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.player {
+  position: relative;
+  padding-bottom: (9 / 16 * 100%);
+  background-color: #000;
+}
+
+.playerInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.back {
+  position: absolute;
+  top: 28px;
+  left: 26px;
+  color: #fff;
+  font-size: 38px;
+  cursor: pointer;
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: $tabHeight;
+  background: #FBFBFB;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+
+  &.isShowFollow {
+    padding-right: 170px;
+  }
+}
+
+.tabItem {
+  padding: 0 10px;
+  height: $tabHeight;
+  line-height: $tabHeight;
+  color: #5A5A5A;
+  font-size: 28px;
+  cursor: pointer;
+
+  &.isActive {
+    position: relative;
+    color: $textColor;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 6px;
+      background: $buttonActiveBackground;
+      border-radius: 6px 6px 0 0;
+    }
+  }
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 170px;
+  height: $tabHeight;
+  color: #fff;
+  text-align: center;
+  background: $buttonActiveBackground;
+  cursor: pointer;
+}
+
+.followLabel {
+  margin-top: 4px;
+  font-size: 28px;
+}
+
+.followValue {
+  margin-top: 4px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.wrapper {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}

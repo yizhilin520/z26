@@ -1,0 +1,19 @@
+.container {
+  margin: 16px auto;
+  width: 1400px;
+
+  &:before, &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  &.isShadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.22);
+  }
+
+  &.isRadius {
+    border-radius: 4px;
+    overflow: hidden;
+  }
+}

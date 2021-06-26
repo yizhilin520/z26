@@ -1,0 +1,242 @@
+@import '@/scss/helpers/_helpers.scss';
+
+// .lis+.lis{
+//   margin-left: 30px;
+// }
+.lis {
+  width: 264px;
+  height: 211px;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  background-color: #ffffff;
+  float: left;
+  margin: 0 0 30px 0;
+  margin-right: 30px;
+  overflow: hidden;
+  list-style: none;
+
+  @media screen and (max-width: 1920px) and (min-width: 1680px) {
+    &:nth-child(6n + 6) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 1680px) and (min-width: 1600px) {
+    &:nth-child(5n + 5) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 1600px) and (min-width: 1313px) {
+    &:nth-child(4n + 4) {
+      margin-right: 0;
+    }
+  }
+}
+.images {
+  width: 264px;
+  height: 140px;
+  background: url("~@/assets/images/default_image.jpg")no-repeat center;
+  background-size: 100% auto;
+  border-radius: 10.8px 10.8px 0 0;
+  margin: 0 0 11px 0;
+  transition: all 0.6s;
+  position: relative;
+  cursor: pointer;
+
+  .play {
+    display: none;
+    transition: all 0.6s;
+  }
+
+  &:hover {
+    transform: scale(1.15);
+    filter: brightness(50%);
+
+    .play {
+      display: block;
+      height: 50px;
+      filter: brightness(100%);
+      position: absolute;
+      top: calc(50% - 25px);
+      left: calc(50% - 25px);
+      // opacity: 1;
+      // transition: opacity 0.3s;
+      // transition-property: opacity;
+      // transition-duration: 0.3s;
+      // transition-timing-function: ease;
+      // transition-delay: 0s;
+    }
+  }
+}
+.headImage {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  margin-right: 5px;
+  span {
+    font-size: 12px;
+  }
+}
+.steam {
+  width: 62px;
+  height: 29px;
+  background-image: url('/static/images/live/liverect.webp');
+  background-size: 100% 100%;
+  position: absolute;
+  top: 9px;
+  right: 10px;
+
+  .steamplay {
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+  }
+
+  .steamtext {
+    display: inline-block;
+    color: #ffffff;
+    margin: 0 0 0 5px;
+    font-family: PingFangSC;
+    font-size: 12px;
+    line-height: 1;
+    position: absolute;
+    top: 6px;
+    right: 12px;
+  }
+}
+
+.ouzhoubei {
+  font-family: PingFangSC;
+  font-size: 14.7px;
+  height: 16px;
+  font-weight: 500;
+  color: #323232;
+  padding: 0 0 0 8px;
+  margin: 0 0 9px 0;
+  text-align: left;
+  overflow: hidden; //超出的文本隐藏
+  text-overflow: ellipsis; //用省略号显示
+  white-space: nowrap;
+}
+.people {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 26px;
+  padding: 0 9px 0 8px;
+  font-size: 12.7px;
+  color: #505c74;
+  box-sizing: border-box;
+
+  .name {
+    height: 26px;
+    line-height: 26px;
+    display: flex;
+    position: relative;
+    top: -5px;
+  }
+
+  .touxiang {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 4px 7px 0 0;
+    background-image: url(network($home + 'heat'));
+    background-size: 100% 100%;
+  }
+
+  .nubmer {
+    height: 26px;
+    line-height: 26px;
+    display: flex;
+    .fb {
+      width: 36px;
+      height: 15px;
+      line-height: 15px;
+      border-radius: 4px;
+      background: rgba(28, 99, 255, 0.09);
+      color: #91b4ff;
+      font-size: 10px;
+      position: relative;
+      zoom: 0.9;
+      top: 4px;
+      margin-left: 5px;
+      padding: 2px 0;
+      text-align: center;
+    }
+  }
+
+  .hotimg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(network($live + 'huo'));
+    background-size: 100% 100%;
+    margin: 4px 7px 0 0;
+  }
+}
+.qiugame {
+  display: flex;
+  padding: 0 0 0 7px;
+  margin: 0 0 8px 0;
+
+  .qiugamename {
+    font-family: PingFangSC;
+    font-size: 14.7px;
+    font-weight: 500;
+    color: #323232;
+    padding: 0;
+    margin: 0 0 0 9px;
+    text-align: left;
+    line-height: 20px;
+  }
+}
+
+.qiugametitle {
+  width: 50px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid #3171fc;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 4px;
+
+  span {
+    font-family: PingFangSC;
+    font-size: 13px;
+    background-image: linear-gradient(to right, #83c8ff, #3977fe);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+.black{
+  background: black !important;
+}
+.closeContent{
+  color:#fff;
+  height: 140px;
+  padding-top: 45px;
+  .top{
+    width: 100px;
+    margin: auto;
+    background: #3e3e3e;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+      width: 28px;
+      height: 28px;
+      font-style: normal;
+      display: inline-block;
+      background-image: url(network($score + 'shizhong'));
+      position: relative;
+      top: 3px;
+    }
+  }
+}

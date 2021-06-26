@@ -1,0 +1,75 @@
+.tabs {
+  padding: 8px 0;
+  display: flex;
+  background-color: #f7faff;
+  align-items: center;
+
+  .item {
+    margin-left: 30px;
+    padding: 0 8px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #929bb0;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 8px 0 8px 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &:hover, &.isActive {
+      color: $textColor;
+      border-color: $borderColor;
+    }
+  }
+}
+
+.filter {
+  padding: 0 28px;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+
+  .item {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .timer {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #808080;
+
+    .icon {
+      font-size: 23px;
+    }
+
+    .label {
+      margin-left: 8px;
+    }
+
+    .select {
+      position: relative;
+      margin-right: 10px;
+
+      * {
+        outline: none;
+      }
+
+      input {
+        padding: 0 8px;
+        width: 126px;
+        height: 38px;
+        border: 1px solid #e6eaf3;
+        border-radius: 6px;
+        cursor: pointer;
+        appearance: none;
+
+        &:focus, &:hover {
+          border-color: $borderColor;
+        }
+      }
+    }
+  }
+}

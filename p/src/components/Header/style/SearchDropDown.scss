@@ -1,0 +1,102 @@
+.container {
+  padding: 14px 12px 20px;
+  width: 422px;
+  .partItem{
+    &.secondPart{
+      &:nth-child(2){
+        margin-top: 20px;
+      }
+    }
+    .partTitle{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #333;
+      font-size: 16px;
+      .imgTitle{
+        display: flex;
+        align-items: center;
+        color: #A9ADB9;
+        font-size: 16px;
+        img{
+          width: 20px;
+          height: 20px;
+          margin-right: 4px;
+        }
+      }
+      .clear{
+        color: #2D2D2D;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+    .historyList{
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 6px;
+      .historyItem{
+        margin-right: 6px;
+        margin-top: 10px;
+        padding: 4px 12px;
+        color: #434A66;
+        border: 1px solid #E6EAF3;
+        border-radius: 14px;
+        cursor: pointer;
+        &:hover{
+          color: $textColor;
+          background: #EBF0FB;
+          border-color: transparent;
+        }
+      }
+    }
+    .hotList{
+      display: flex;
+      flex-wrap: wrap;
+      .hotItem{
+        width: 192px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+        padding-left: 12px;
+        color: #434A66;
+        border-radius: 2px;
+        cursor: pointer;
+        &:hover{
+          background: #EBF0FB;
+        }
+        &:nth-child(2n){
+          margin-left: 14px;
+        }
+        .rankNo{
+          width: 18px;
+          height: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 8px;
+          color: #A3A3A3;
+          font-size: 14px;
+          border-radius: 50%;
+          background: #D9DFEC;
+          &.first{
+            color: #fff;
+            background: linear-gradient(180deg, #FA7C00 0%, #F05D41 100%);
+          }
+          &.second{
+            color: #fff;
+            background: linear-gradient(180deg, #FA9900 0%, #F76B16 100%);
+          }
+          &.third{
+            color: #fff;
+            background: linear-gradient(180deg, #FFB846 0%, #FF9148 100%);
+          }
+        }
+        .hotKey{
+          color: #434A66;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

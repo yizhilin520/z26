@@ -1,0 +1,188 @@
+.container {
+  width: 1400px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 30px;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.outsLeft {
+  width: 160px;
+
+  .text {
+    display: flex;
+    align-items: center;
+    margin: 26px 0;
+
+    img {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      // background-color: red;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    span {
+      font-size: 13px;
+      color: #999999;
+    }
+  }
+}
+
+.outsRight {
+  width: 1170px;
+  color: #6e88a5;
+  font-size: 13px;
+  position: relative;
+
+  .tips {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+
+    span {
+      position: relative;
+      left: -3px;
+    }
+  }
+
+  .bg {
+    height: 20px;
+    background: #f8f8f8;
+  }
+
+  .bottombg {
+    background: rgba(216, 216, 216, .3);
+  }
+}
+
+.cell {
+  width: 195px;
+  position: absolute;
+  top: 20px;
+  height: 84px;
+  border-left: 1px solid #c5c2c2;
+
+  .cellContent {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    top: 5px;
+  }
+}
+
+.cellRow1 {
+  left: 0;
+}
+
+.cellRow2 {
+  left: 195px;
+}
+
+.cellRow3 {
+  left: 390px;
+}
+
+.cellRow4 {
+  left: 585px;
+}
+
+.cellRow5 {
+  left: 780px;
+}
+
+.cellRow6 {
+  left: 975px;
+}
+
+.bgline {
+  border-top: 1px solid gainsboro;
+}
+
+.cellLine {
+  width: 5px;
+  // height: 2px;
+  margin: 0 4px;
+  background-color: red;
+  display: inline-block;
+}
+
+.cellYellow {
+  background-color: #ffca43;
+}
+
+.cellTop {
+  display: flex;
+  align-items: flex-end;
+  transition: 2s;
+  height: 40px;
+}
+
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -35px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cellBottom {
+  display: flex;
+  align-items: flex-start;
+  transition: 2s;
+  height: 40px;
+
+  .icon {
+    position: absolute;
+    top: 85px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.jiao-qiu {
+  background-image: url('./images/jiao-qiu.png');
+}
+
+.huang {
+  background-image: url('./images/live03.png');
+}
+
+.huang-pai {
+  width: 20px !important;
+  background-image: url('./images/huang-pai.png');
+}
+
+.hong-pai {
+  width: 20px !important;
+  background-image: url('./images/hong-pai.png');
+}
+
+.jin-qiu {
+  background-image: url('./images/jin-qiu.png');
+}
+
+.dian-qiu {
+  background-image: url('./images/dian-qiu.png');
+}
+
+.dian-shi {
+  background-image: url('./images/dian-shi.png');
+}
+
+.wu-long {
+  background-image: url('./images/wu-long.png');
+}
+
+.hong-huang {
+  background-image: url('./images/hong-huang.png');
+}
+
+.replacement {
+  background-image: url('./images/replacement.png');
+}

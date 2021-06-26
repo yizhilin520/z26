@@ -1,0 +1,31 @@
+.container {
+  background: url("../images/protocol_bg.jpg") no-repeat center top #ececf0;
+  background-size: 100% auto;
+
+  &:before, &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.wrapper {
+  margin: 8px auto 75px auto;
+  width: 1200px;
+  box-shadow: 0 3px 5px 0 rgba(93, 162, 255, 0.24);
+  border-radius: 10px;
+  background-color: #fff;
+
+  &:before, &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.main {
+  padding: 25px 20px;
+  margin: 25px 20px;
+  border-radius: 10px;
+  border: 1px solid #E6EAF3;
+}

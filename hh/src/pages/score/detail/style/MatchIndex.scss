@@ -1,0 +1,57 @@
+.container {
+  position: relative;
+  text-align: center;
+  padding: 26px;
+  height: 100%;
+  background-color: #f6f6f9;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.tabs {
+  position: relative;
+  display: inline-flex;
+  background-color: #f8f8f6;
+  border-radius: 10px;
+  border: 1px solid $textColor;
+  transform: translateZ(0);
+  overflow: hidden;
+  z-index: 2;
+
+  .item {
+    margin-left: -1px;
+    position: relative;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    color: $textColor;
+    font-size: 22px;
+    border-radius: 6px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 1px;
+      height: 22px;
+      background-color: $textColor;
+      transform: translateY(-50%);
+    }
+
+    &.isActive {
+      color: #fff;
+      background: $buttonActiveBackground;
+    }
+
+    &:last-child, &.isActive {
+      &:before {
+        content: none;
+      }
+    }
+  }
+}
+
+.wrapper {
+  margin-top: 20px;
+}

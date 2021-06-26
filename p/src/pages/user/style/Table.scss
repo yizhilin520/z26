@@ -1,0 +1,62 @@
+.container {
+  margin: 20px 28px;
+  min-height: 360px;
+
+  .item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E6EAF3;
+    border-left: 1px solid #E6EAF3;
+
+    &.isHeader {
+      border-top: 1px solid #E6EAF3;
+      background-color: #F6F8FD;
+
+      .cell {
+        height: 42px;
+        line-height: 42px;
+        color: #14162C;
+        font-size: 14px;
+      }
+      .sortCell{
+        cursor: pointer;
+        .sortIcon{
+          position: absolute;
+          opacity: 0;
+          transform: scale(0.5);
+          color: #c0c4cc;
+          font-size: 20px;
+          &.desc{
+            opacity: 1;
+          }
+          &.asc{
+            opacity: 1;
+            transform: scale(0.5) rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+
+  .cell {
+    position: relative;
+    height: 38px;
+    line-height: 38px;
+    color: #434A66;
+    font-size: 12px;
+    text-align: center;
+    border-right: 1px solid #E6EAF3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .notData {
+    margin: 40px auto;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 12px;
+    color: #8b93a3;
+  }
+}

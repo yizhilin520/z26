@@ -1,0 +1,269 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F7FF;
+
+  .tabButton {
+    position: relative;
+    margin: 0 -2px;
+    width: 102px;
+    height: 32px;
+    line-height: 30px;
+    color: $textColor;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid $textColor;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1;
+
+    &.isActive {
+      line-height: 32px;
+      color: #fff;
+      border: none;
+      background: $buttonActiveBackground;
+      z-index: 2;
+    }
+  }
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+
+  &:hover {
+    overflow: visible;
+  }
+}
+
+.wrapper {
+  height: 166px;
+  background: url("../images/billboard_wrapper_bg.jpg") no-repeat left top #fff;
+  background-size: 100% 100%;
+  border-bottom: 1px solid #F5F7FF;
+  cursor: pointer;
+}
+
+.notBillboard {
+  padding-top: 132px;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  font-size: 13px;
+  text-align: center;
+  background: url("../images/billboard_not_image.png") no-repeat center;
+  background-size: 128px auto;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+.rank {
+  position: absolute;
+  top: 35px;
+  width: 68px;
+  height: 72px;
+
+  &.isOne {
+    top: 20px;
+    left: 50%;
+    width: 80px;
+    height: 86px;
+    transform: translateX(-50%);
+
+    .rankImage {
+      top: 6px;
+      left: 50%;
+      width: 72px;
+      height: 72px;
+      border-radius: 36px;
+    }
+
+    .rankBackground {
+      background-image: url("../images/billboard_one_bg.png");
+    }
+
+    .rankUserName {
+      top: 94px;
+      color: #EF8A1E;
+    }
+
+    .rankLabel {
+      top: 117px;
+    }
+  }
+
+  &.isTwo {
+    left: 22px;
+
+    .rankBackground {
+      background-image: url("../images/billboard_two_bg.png");
+    }
+
+    .rankUserName {
+      color: $textColor;
+    }
+  }
+
+  &.isThree {
+    right: 22px;
+
+    .rankBackground {
+      background-image: url("../images/billboard_three_bg.png");
+    }
+
+    .rankUserName {
+      color: #A07B52;
+    }
+  }
+
+  .rankImage {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translateX(-50%);
+    border-radius: 30px;
+  }
+
+  .rankBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .rankUserName {
+    position: absolute;
+    top: 78px;
+    left: 50%;
+    width: 84px;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    transform: translateX(-50%);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .rankLabel {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 102px;
+    left: 50%;
+    height: 17px;
+    line-height: 17px;
+    font-size: 12px;
+    transform: translateX(-50%);
+
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    .amountValue {
+      color: #C1880E;
+    }
+
+    .amountLabel {
+      color: #8895B2;
+    }
+  }
+}
+
+.listWrapper {
+  position: relative;
+  box-sizing: border-box;
+}
+
+//显示个数
+$visibleNumber: 12;
+// 距离像素
+$marginTop: 16px;
+// 每个的高度
+$itemHeight: 24px;
+
+.list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-height: #{$visibleNumber * ($itemHeight + $marginTop) + $marginTop};
+  background-color: #fff;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #AAAEC8;
+    border-radius: 2px;
+  }
+}
+
+.item {
+  margin-top: $marginTop;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  height: $itemHeight;
+  font-size: 13px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: $marginTop;
+  }
+
+  .index {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    border-radius: 10px;
+    text-align: center;
+    color: #8894B2;
+    background-color: #EAEBF2;
+  }
+
+  .userImage {
+    margin-left: 12px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 12px;
+  }
+
+  .label {
+    margin-left: 12px;
+    color: #333;
+    flex: 1;
+    line-height: 20px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .value {
+    margin-left: 12px;
+    color: #C1880E;
+  }
+
+  .text {
+    margin-left: 2px;
+    color: #8895B2;
+  }
+}

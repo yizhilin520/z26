@@ -1,0 +1,59 @@
+.container {
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  height: 54px;
+  background-color: #fff;
+}
+
+.button {
+  margin-right: 10px;
+  padding: 0 15px;
+  height: 28px;
+  line-height: 28px;
+  color: #2d2d2d;
+  font-size: 13px;
+  border: 1px solid #d8d8d8;
+  border-radius: 2px;
+  box-sizing: content-box;
+  cursor: pointer;
+
+  &:hover {
+    padding: 0 16px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: $buttonActiveBackground;
+    border: none;
+  }
+}
+
+.count {
+  margin-left: 10px;
+  color: #2d2d2d;
+  font-size: 13px;
+
+  .point {
+    color: #fd6703;
+  }
+}
+
+.direction {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  overflow: hidden;
+
+  .dir {
+    margin-left: 10px;
+    font-size: 12px;
+
+    &.isUp {
+      color: #f74a4a;
+    }
+
+    &.isDown {
+      color: #4af766;
+    }
+  }
+}

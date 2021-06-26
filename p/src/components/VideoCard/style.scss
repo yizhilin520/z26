@@ -1,0 +1,156 @@
+.container {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 5px 12px 0 rgba(43, 67, 136, 0.1);
+  border-radius: 6px;
+  transform: translateZ(0);
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    .imageWrapper {
+      .image {
+        transform: scale(1.1);
+      }
+
+      .imageHover {
+        opacity: 1;
+
+        .playImage {
+          transform: none;
+        }
+      }
+    }
+
+    .label {
+      color: $textColor;
+    }
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  padding-bottom: 142 / 262 * 100%;
+  overflow: hidden;
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.1s ease-out;
+  }
+
+  .imageHover {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 22, 44, 0.5);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    transform: translateZ(0);
+
+    .playImage {
+      width: 50px;
+      height: 50px;
+      transform: scale(1.5);
+      transition: transform 0.3s;
+    }
+  }
+}
+
+.playStatus {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+.detail {
+  padding: 8px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.type {
+  margin-right: 8px;
+  padding: 0 8px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 13px;
+  color: $textColor;
+  border: 1px solid $textColor;
+  border-radius: 4px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.label {
+  flex: 1;
+  height: 20px;
+  line-height: 20px;
+  font-size: 15px;
+  color: #323232;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  color: #9b9b9b;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.userImage {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.userName {
+  flex: 1;
+  margin-left: 4px;
+  color: #505c74;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.heatIcon {
+  font-size: 16px;
+}
+
+.heatLabel {
+  margin-left: 4px;
+}
+
+.tagLabel {
+  margin-left: 4px;
+  width: 36px;
+  height: 15px;
+  line-height: 15px;
+  color: $textColor;
+  text-align: center;
+  background-color: rgba($textColor, 0.09);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}

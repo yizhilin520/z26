@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+
+  &.isReverse {
+    transform: rotateY(180deg);
+  }
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #606266;
+  font-size: 28px;
+  text-align: center;
+  transform: translateY(-50%);
+}

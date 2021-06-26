@@ -1,0 +1,66 @@
+.container {
+  position: relative;
+  padding: 10px 0;
+  background: #e7e9f0;
+  z-index: 2;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  width: 1400px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.statusMain {
+  display: flex;
+
+  .item {
+    padding: 0 12px;
+    height: 32px;
+    margin-right: 10px;
+    line-height: 32px;
+    text-align: center;
+    color: #434a66;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &:hover, &.isActive {
+      background: $buttonActiveBackground;
+      color: #fff;
+    }
+  }
+}
+
+.filterMain {
+  display: flex;
+
+  .item {
+    padding: 0 10px;
+    height: 32px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #434a66;
+    background: #fff;
+    border: 1px solid #d3d8e4;
+    border-radius: 6px 2px 6px 6px;
+    cursor: pointer;
+
+    &:hover, &.isActive {
+      color: $textColor;
+      border-color: $textColor;
+    }
+  }
+}
+@media only screen and (max-width: 1599px){
+  .wrapper {
+    width: 1200px;
+  }
+}

@@ -1,0 +1,567 @@
+@import '@/scss/helpers/_helpers.scss';
+
+.rangtop1 {
+  display: flex;
+  padding: 17px 0 0 0;
+  margin: 0 0 11px 0;
+  justify-content: space-between;
+}
+
+.hidetext {
+  width: 60px;
+  height: 29px;
+  font-size: 13px;
+  color: #2d2d2d;
+  background: #fff;
+  border-radius: 2.2px;
+  text-align: center;
+  line-height: 29px;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+  background-size: 100% 100%;
+}
+
+.showtext {
+  width: 88px;
+  height: 29px;
+  font-size: 13px;
+  color: #2d2d2d;
+  background: #fff;
+  // background-image: url(network($liveselect + 'btn-xiao'));
+  background-size: 100% 100%;
+  border-radius: 2.2px;
+  text-align: center;
+  line-height: 29px;
+  margin: 0 21px 0 0;
+  cursor: pointer;
+}
+.btnActive {
+  background-image: url(network($liveselect + 'btn-xiao')) !important;
+}
+
+.gswx {
+  font-size: 13px;
+  color: #2d2d2d;
+  line-height: 29px;
+}
+
+.nubrde {
+  color: #fd6703;
+}
+
+.ivutab {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+
+  tr {
+    .cel1 {
+      width: 130px;
+    }
+
+    .cel2 {
+      width: 185px;
+    }
+
+    .cel3 {
+      width: 138px;
+    }
+
+    .cel4 {
+      width: 112px;
+    }
+
+    .cel5 {
+      width: 112px;
+    }
+
+    .cel6 {
+      width: 112px;
+    }
+
+    .cel7 {
+      width: 113px;
+    }
+
+    .cel8 {
+      width: 113px;
+    }
+
+    .cel9 {
+      width: 262px;
+    }
+
+    .cel10 {
+      width: 145px;
+    }
+  }
+}
+
+.top {
+  margin-right: 20px;
+}
+
+.bottom {
+}
+
+.red {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.green {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: green;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.flex {
+  display: flex;
+}
+
+.listheader {
+  height: 64px;
+  border-radius: 4px;
+  background-color: #434a68;
+}
+
+.listheader2 {
+  width: 1434px;
+  position: fixed;
+  z-index: 10;
+  top: 118px;
+}
+
+.listtop {
+  display: flex;
+  overflow: hidden;
+
+  .cell {
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .cell1 {
+    width: 66px;
+    background-color: #161731;
+    cursor: pointer;
+  }
+
+  .cell2 {
+    width: 130px;
+    border-right: solid 1px #ffffff;
+  }
+
+  .cell3 {
+    width: 195px;
+    // border-right: solid 1px #ffffff;
+  }
+
+  .cell4 {
+    width: 130px;
+    // border-right: solid 1px #ffffff;
+  }
+
+  .cell5 {
+    width: 195px;
+    border-right: solid 1px #ffffff;
+  }
+
+  .cell6 {
+    width: 195px;
+    // border-right: solid 1px #ffffff;
+  }
+
+  .cell7 {
+    width: 80px;
+    // border-right: solid 1px #ffffff;
+  }
+
+  .cell8 {
+    width: 195px;
+    border-right: solid 1px #ffffff;
+  }
+
+  .cell9 {
+    width: 195px;
+    // border-right: solid 1px #ffffff;
+  }
+
+  .cell10 {
+    width: 130px;
+    // border-right: solid 1px #ffffff;
+  }
+  .cell11 {
+    width: 195px;
+    border-right: solid 1px #ffffff;
+  }
+  .cell12 {
+    width: 80px;
+    border-right: solid 1px #ffffff;
+  }
+  .cell13 {
+    width: 390px;
+    border-right: solid 1px #ffffff;
+  }
+  .cell14 {
+    width: 390px;
+    border-right: solid 1px #ffffff;
+  }
+  .cell15 {
+    width: 390px;
+    border-right: solid 1px #ffffff;
+  }
+}
+
+.zhidisaisi {
+  margin: 0 0 20px 0;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.zhidisaisi22 {
+  margin: 20px 0 20px 0;
+}
+
+.zdsstext {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2d2d2d;
+  margin: 0 0 10px 0;
+}
+
+.ulgame {
+  display: block;
+  border-radius: 4px;
+  background: #fff;
+  li:nth-child(even) .lic1 {
+    visibility: hidden;
+  }
+  li:nth-child(even) .lic2 {
+    visibility: hidden;
+  }
+}
+
+.shadow1 {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.22);
+}
+
+.ligame {
+  display: flex;
+  height: 39px;
+  color: #2d2d2d;
+}
+
+.lic1 {
+  width: 66px;
+  height: 100%;
+  cursor: pointer;
+  text-align: center;
+  line-height: 39px;
+
+  span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(network($score + 'selected-no'));
+    background-size: 100% 100%;
+  }
+
+  &.checked {
+    span {
+      background-image: url(network($score + 'selected'));
+      background-size: 100% 100%;
+    }
+  }
+}
+
+.lic2 {
+  width: 130px;
+  font-size: 13px;
+  color: #2d2d2d;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  .xjicon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    // background-image: url(network($score + 'xijia'));
+    background-size: 100% 100%;
+    margin: 0 4px 0 0;
+  }
+}
+
+.lic3 {
+  width: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: #a9adb9;
+
+  p {
+    color: red;
+  }
+}
+
+.lic4 {
+  width: 130px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 39px;
+  background-color: #ffe5e5;
+  color: red;
+}
+
+.jt {
+  display: inline-block;
+  width: 5px;
+  height: 9px;
+  background-image: url(network($score + 'arrow-left'));
+  background-size: 100% 100%;
+  margin: 0 0 0 3px;
+}
+
+.lic5 {
+  width: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: #a9adb9;
+
+  p {
+    color: #4af766;
+  }
+
+  .nubmer {
+    margin: 0 14px 0 19px;
+    color: #2d2d2d;
+  }
+
+  .biright {
+    span {
+      display: inline-block;
+      color: #2d2d2d;
+      margin: 0 12px 0 0;
+    }
+  }
+}
+
+.lic6 {
+  width: 195px;
+  line-height: 39px;
+  text-align: center;
+  font-size: 13px;
+
+  .bang {
+    display: inline-block;
+    width: 48px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 13px;
+    color: #3f7bfe;
+    background-image: url(network($score + 'border'));
+    background-size: 100% 100%;
+  }
+}
+
+.lic7 {
+  width: 80px;
+  line-height: 39px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.lic8 {
+  width: 195px;
+  line-height: 39px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.steam1 {
+  width: 62px;
+  height: 29px;
+  background-image: url(network($live + 'liverect'));
+  background-size: 100% 100%;
+  position: relative;
+  margin: 8px auto 0;
+  cursor: pointer;
+
+  .steam2 {
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+  }
+
+  .steam3 {
+    display: inline-block;
+    color: #ffffff;
+    margin: 0 0 0 5px;
+    font-size: 10px;
+    line-height: 1;
+    position: absolute;
+    top: 6px;
+    right: 12px;
+  }
+}
+
+.lic9 {
+  width: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+.linecell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 100%;
+}
+
+.linec1 {
+  width: 45px;
+  font-size: 13px;
+  color: #a9adb9;
+  position: relative;
+  line-height: 1;
+
+  &:before {
+    content: '';
+    width: 9px;
+    height: 8px;
+    background-image: url(network($score + 'jiantou2'));
+    background-size: 100% 100%;
+    position: absolute;
+    top: 2px;
+    right: -8px;
+    font-size: 12px;
+    font-style: normal;
+  }
+}
+
+.linec2 {
+  width: 45px;
+  font-size: 13px;
+  color: #a9adb9;
+  position: relative;
+  line-height: 1;
+
+  &:before {
+    content: '';
+    width: 9px;
+    height: 8px;
+    background-image: url(network($score + 'jiantou3'));
+    background-size: 100% 100%;
+    position: absolute;
+    top: 2px;
+    right: -8px;
+    font-size: 12px;
+    font-style: normal;
+  }
+}
+
+.lic10 {
+  width: 130px;
+  text-align: center;
+  line-height: 39px;
+  font-size: 13px;
+  color: #2d2d2d;
+  cursor: pointer;
+
+  span {
+    cursor: pointer;
+  }
+
+  .qingbao {
+    background-image: linear-gradient(to right, #ffb445, #fd6501);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .fenxi {
+    margin: 0 9px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:hover {
+      color: #ffb445;
+    }
+  }
+}
+.lic11 {
+  width: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+.lic12 {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+.downicon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url(network($score + 'download'));
+  background-size: 100% 100%;
+  margin: 0 5px 0 0;
+  cursor: pointer;
+}
+
+.keep {
+  width: 15px;
+  height: 15px;
+  background-image: url(network($score + 'guanzhu2'));
+  background-size: 100% 100%;
+  cursor: pointer;
+
+  &.actives {
+    background-image: url(network($score + 'guanzhu1'));
+    background-size: 100% 100%;
+  }
+}
+.none {
+  visibility: hidden;
+}
+.h64 {
+  height: 64px !important;
+  line-height: 64px !important;
+}
+.p32 {
+  position: relative;
+  top: -32px;
+}
+.hide {
+  visibility: hidden;
+}

@@ -1,0 +1,9 @@
+.container {
+  background-color: #f4f5f8;
+
+  &:before, &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

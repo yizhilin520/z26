@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  color: #fff;
+  background: url("../images/forecast_danmmaku_bg.png") no-repeat 18px center #0086E5;
+  background-size: 142px 30px;
+  border-radius: 16px;
+}
+
+.userImage {
+  margin-left: 4px;
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.text {
+  margin-right: 12px;
+  flex: 1;
+  color: #fff;
+  font-size: 14px;
+  text-shadow: none;
+  font-weight: 600;
+}

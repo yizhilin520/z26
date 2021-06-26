@@ -1,0 +1,217 @@
+
+.MuiDialog-container .Component-root-1 {
+  padding: 0;
+  background-color: #f5faff;
+}
+
+.MuiDialog-container .Component-root-12 {
+  padding: 0;
+}
+
+.MuiDialog-container .MuiDialogContent-dividers {
+  padding: 29px 32px 33px 31px;
+}
+
+.zhanghao {
+  margin: 0 0 42px;
+  position: relative;
+}
+
+.zhanghao .errorReg {
+  font-family: PingFangSC;
+  font-size: 10px;
+  color: #e04e4e;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  line-height: 1;
+}
+
+.zhanghao input {
+  width: 100%;
+  height: 38px;
+  margin: 0;
+  display: block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: solid 1px #e6eaf3;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, .85);
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.zhanghao input:hover {
+  border-color: $textColor;
+}
+
+.zhanghao input:focus {
+  border-color: $textColor;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, .2);
+}
+
+.password {
+  margin: 0 0 26px;
+}
+
+.password input {
+  width: 310px;
+  height: 38px;
+  margin: 0;
+  display: block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: solid 1px #e6eaf3;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, .85);
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.password input:hover {
+  border-color: $textColor;
+}
+
+.password input:focus {
+  border-color: $textColor;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, .2);
+}
+
+.ispassword {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 11px 0;
+}
+
+.ispassword .MuiSvgIcon-root {
+  width: 14px;
+  height: 14px;
+}
+
+.ispassword .MuiTypography-body1 {
+  font-family: PingFangSC;
+  font-size: 12px;
+  color: #9b9b9b;
+  line-height: 1;
+}
+
+.ispassword .PrivateSwitchBase-root-55,
+.ispassword .PrivateSwitchBase-root-8 {
+  padding: 0;
+  margin: 0 2px 0 0;
+}
+
+.nopassword {
+  font-family: PingFangSC;
+  font-size: 12px;
+  color: #9b9b9b;
+  cursor: pointer;
+}
+
+.passbtn .MuiButton-contained {
+  width: 310px;
+  height: 43px;
+  font-family: PingFangSC;
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 43px;
+  background: url('/static/images/user/button.webp');
+  box-shadow: none;
+}
+
+.logintext {
+  margin: 20px 0 0 0;
+  font-family: PingFangSC;
+  font-size: 11px;
+  text-align: center;
+  color: #9b9b9b;
+}
+
+.tabsCtn {
+  margin: 0 115px;
+}
+
+.tabsCtn .MuiTabs-root {
+  min-height: 56px;
+}
+
+.tabsCtn .MuiTabs-flexContainer {
+  justify-content: space-around;
+}
+
+.tabsCtn .MuiAppBar-colorPrimary {
+  background: none;
+  color: #9b9b9b;
+  font-family: PingFangSC;
+  font-size: 17px;
+  box-shadow: none;
+}
+
+.tabsCtn .MuiTab-root {
+  min-width: 33px;
+  max-width: 33px;
+  width: 33px;
+  padding: 0;
+}
+
+.tabsCtn .PrivateTabIndicator-colorSecondary-5 {
+  background: $buttonActiveBackground;
+}
+
+.regphone {
+  width: 310px;
+  margin: 0 0 26px 0;
+  position: relative;
+}
+
+.regyanzhengma {
+  display: flex;
+  margin: 0 0 31px 0;
+}
+
+
+.getImgCode {
+  width: 92px;
+  border: solid 1px #e6eaf3;
+  border-left: 0;
+  border-radius: 0 4px 4px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  line-height: 36px;
+}
+
+.regBtnt .MuiButton-contained {
+  width: 310px;
+  height: 43px;
+  font-family: PingFangSC;
+  font-size: 14px;
+  color: #ffffff;
+  border-radius: 43px;
+  background: url('/static/images/user/button.webp');
+  box-shadow: none;
+}
+
+.regBtnt .MuiButton-contained:hover {
+  box-shadow: 0px 2px 4px -3px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.regsttext {
+  font-family: PingFangSC;
+  font-size: 11px;
+  color: #9b9b9b;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+/* 禁止双击选中 */
+.treeNodeUnselectable {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select:none;
+  -o-user-select:none;
+  -ms-user-select:none;
+}

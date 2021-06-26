@@ -1,0 +1,32 @@
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -209px;
+  margin-left: -293px;
+  width: 586px;
+  height: 418px;
+  background: url("../images/download_image.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.text {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  color: #999;
+  font-size: 24px;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.link {
+  color: $textColor;
+  text-decoration: underline;
+}

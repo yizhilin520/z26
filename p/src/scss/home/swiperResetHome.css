@@ -1,0 +1,45 @@
+/* 重置swiper的样式，不要乱删 */
+.swiper-home {
+  width: 1414px;
+  height: 199px;
+}
+
+.swiper-home .swiperXin {
+  width: 1414px;
+  position: relative;
+}
+
+.swiper-home .swiperXin .swiper-container {
+  position: static;
+}
+
+.swiper-home .swiperXin .swiper-container .swiper-button-prev {
+  width: 22px;
+  height: 53px;
+  background-image: url("/static/images/home/notice-left-arrow.webp");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 48%;
+  left: -34px;
+  right: auto;
+
+}
+
+.swiper-home .swiperXin .swiper-container .swiper-button-prev:after {
+  content: none;
+}
+
+.swiper-home .swiperXin .swiper-container .swiper-button-next {
+  width: 22px;
+  height: 53px;
+  background-image: url(/static/images/home/notice-right-arrow.webp);
+  background-size: 100% 100%;
+  position: absolute;
+  top: 48%;
+  right: -34px;
+  cursor: pointer;
+}
+
+.swiper-home .swiperXin .swiper-container .swiper-button-next:after {
+  content: none;
+}

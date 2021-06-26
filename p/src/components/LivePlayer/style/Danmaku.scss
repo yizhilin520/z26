@@ -1,0 +1,57 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  &.isHidden {
+    visibility: hidden;
+  }
+
+  &.isFull {
+    height: 100%;
+  }
+
+  &.isBottom {
+    top: 50%;
+  }
+
+  &.isTop, &.isBottom {
+    height: 50%;
+  }
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 4px;
+  position: absolute;
+  right: 0;
+  user-select: none;
+  white-space: nowrap;
+  font-size: 22px;
+  color: #fff;
+  text-shadow: .5px .5px .5px rgba(0, 0, 0, .5);
+  transform: translateX(100%);
+  box-sizing: border-box;
+  cursor: default;
+
+  &.isMove {
+    will-change: transform;
+    animation-name: danmaku;
+    animation-timing-function: linear;
+  }
+
+  &.isBorder {
+    border: 2px solid #0289fa;
+    border-radius: 4px;
+  }
+}
+
+@keyframes danmaku {
+  from {
+    transform: translateX(100%);
+  }
+}

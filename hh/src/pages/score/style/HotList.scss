@@ -1,0 +1,65 @@
+.hotContainer {
+  .matchItem{
+    margin-bottom: 22px;
+    .matchDate{
+      height: 42px;
+      width: 100%;
+      margin: 10px 0;
+      text-align: center;
+      line-height: 42px;
+      font-size: 24px;
+      color: #fff;
+      background: rgba($textColor, 0.6);
+      border-radius: 10px;
+    }
+    .matchWrapper{
+      height: 158px;
+      display: flex;
+      align-items: center;
+      background: #fff;
+      .hotStatus{
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 36px;
+        color: #333;
+        font-size: 24px;
+        border-right: 1px solid #f2f2f2;
+        .going{
+          color: $textColor;
+        }
+        .leagueName{
+          color: #afacac;
+        }
+      }
+      .scoreInfo{
+        flex: 1;
+        padding-left: 44px;
+        .team{
+          display: flex;
+          align-items: center;
+          padding: 14px 0;
+          color: #000;
+          font-size: 24px;
+          img{
+            width: 40px;
+            height: 40px;
+            margin-right: 12px;
+            object-fit: contain;
+          }
+          .teamName{
+            flex: 1;
+          }
+        }
+      }
+      .videoBox{
+        width: 180px;
+        height: 60px;
+        &.hasVideo{
+          background: url('../../../assets/images/live.png') center/38px 36px no-repeat;
+        }
+      }
+    }
+  }
+}

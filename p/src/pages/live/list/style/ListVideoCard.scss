@@ -1,0 +1,18 @@
+.container {
+  margin-left: -16px;
+  margin-top: -16px;
+  min-height: 216px;
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.item {
+  float: left;
+  margin-top: 16px;
+  margin-left: 16px;
+  width: 278px;
+}

@@ -1,0 +1,62 @@
+.container {
+  padding: 60px 10px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 100%;
+  background-color: #1b1d2e;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.item {
+  display: block;
+  margin-top: 20px;
+  padding-bottom: 8px;
+  color: #d1d3dd;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+
+  &.isActive, &:hover {
+    color: $textColor;
+
+    .imageIcon {
+      display: none;
+    }
+
+    .imageActiveIcon {
+      display: block;
+    }
+  }
+}
+
+.icon, .imageIcon, .imageActiveIcon {
+  width: 20px;
+  height: 21px;
+  object-fit: contain;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.imageIcon, .imageActiveIcon {
+  margin: auto;
+  object-fit: contain;
+}
+
+.imageIcon {
+  display: block;
+}
+
+.imageActiveIcon {
+  display: none;
+}
+
+.label {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+}

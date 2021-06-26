@@ -1,0 +1,151 @@
+$borderColor: #55A6FF;
+main{
+    background: #f9fbff;
+}
+.container{
+    padding-bottom: 50px;
+    .inputArea{
+        display: flex;
+        justify-content: center;
+        padding: 44px 0 28px;
+        input{
+            width: 368px;
+            height: 54px;
+            padding-left: 24px;
+            color: #434A66;
+            font-size: 18px;
+            border: 1px solid $borderColor;
+            border-right: none;
+            border-radius: 27px 0 0 27px;
+            box-sizing: border-box;
+        }
+        .searchBtn{
+            width: 132px;
+            height: 54px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 16px;
+            background: linear-gradient(142deg, #56D6FF 0%, #1C75F0 100%);
+            box-sizing: border-box;
+            border-radius: 0 27px 27px 0;
+            cursor: pointer;
+
+            .searchIcon {
+                margin-right: 6px;
+                color: #fff;
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+    }
+    .tabList{
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #DDE6F8;
+        .tabItem{
+            width: 36px;
+            height: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 80px;
+            padding-bottom: 13px;
+            color: #434A66;
+            font-size: 18px;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            &:first-child{
+                margin-left: 0;
+            }
+            &.active{
+                color: #2883FF;
+                border-color: #2585F3;
+            }
+        }
+    }
+    .searchResult{
+        width: 1400px;
+        margin: 30px auto 0;
+        .resultPart{
+            .partTitle{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                color: #14162C;
+                font-size: 26px;
+                font-weight: 600;
+                .more{
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #14162C;
+                    .icon{
+                        font-size: 16px;
+                    }
+                }
+                &.liveTitle{
+                    margin-top: 50px;
+                    margin-bottom: 4px;
+                }
+            }
+            .resultList{
+                display: flex;
+                flex-wrap: wrap;
+                .anchorItem{
+                    width: 260px;
+                    height: 274px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 25px;
+                    background: #FFF;
+                    border-radius: 10px;
+                    border: 1px solid #E6EAF3;
+                    box-sizing: border-box;
+                    &:nth-child(5n){
+                        margin-right: 0;
+                    }
+                    &:nth-child(n + 6){
+                        margin-top: 30px;
+                    }
+                    &:hover{
+                        border-color: $borderColor;
+                        box-shadow: 0px 5px 12px 0px rgba(43, 67, 136, 0.1);
+                    }
+                    .imgWrapper{
+                        position: relative;
+                        .headImg{
+                            width: 110px;
+                            height: 110px;
+                            border-radius: 50%;
+                            object-fit: contain;
+                        }
+                        .playing{
+                            position: absolute;
+                            width: 20px;
+                            height: 20px;
+                            top: 3px;
+                            right: 3px;
+                            background: url("~@/assets/images/playing_icon.gif") center center/contain no-repeat, #D8D8D8 linear-gradient(180deg, #FFB445 0%, #FD6501 100%);
+                            border-radius: 50%;
+                        }
+                    }
+                    .nickName{
+                        margin-top: 30px;
+                        color: #14162C;
+                        font-size: 20px;
+                        white-space: nowrap;
+                    }
+                    .roomNo{
+                        margin-top: 4px;
+                        color: #9B9B9B;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

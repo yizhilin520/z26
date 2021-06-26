@@ -1,0 +1,43 @@
+.container {
+  position: relative;
+  margin: 42px 52px;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #EFF0F4;
+
+  .tab {
+    padding-bottom: 16px;
+    margin-right: 42px;
+    line-height: 30px;
+    color: #8F96A6;
+    font-size: 22px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.isActive {
+      position: relative;
+      color: $textColor;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 4px;
+        background-color: $textColor;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+.wrapper {
+  margin-top: 24px;
+}

@@ -1,0 +1,167 @@
+.container {
+  display: flex;
+}
+
+.inner, .item {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  position: relative;
+  margin-left: 18px;
+  height: 20px;
+
+  &.white {
+    color: $textColor;
+  }
+
+  &.transparent {
+    color: #fff;
+  }
+
+  &:hover {
+    .subNav {
+      display: block;
+    }
+  }
+}
+
+.isHover {
+  &:hover {
+    color: $textColor;
+  }
+}
+
+.isPointer {
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.label {
+  font-size: 14px;
+}
+
+.line {
+  margin: 0 8px;
+  width: 2px;
+  height: 12px;
+  background-color: currentColor;
+}
+
+.userImage {
+  padding: 2px;
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+
+.subNav {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &:before, .subWrapper {
+    margin: auto;
+    position: relative;
+  }
+
+  &.isArrow {
+    &:before {
+      margin-top: 16px;
+      display: block;
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-left: 1px solid hsla(0, 0%, 85.1%, .5);
+      border-top: 1px solid hsla(0, 0%, 85.1%, .5);
+      background-color: #fff;
+      transform: rotate(45deg);
+      z-index: 2;
+    }
+  }
+
+  .subWrapper {
+    margin-top: -4px;
+    z-index: 1;
+
+    &.isBackground {
+      background-color: #fff;
+    }
+
+    &.isShadow {
+      box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+    }
+
+    &.isShadow2 {
+      box-shadow: 0px 3px 5px 0px rgba(93, 162, 255, 0.24);
+    }
+
+    &.isRadius {
+      border-radius: 6px;
+    }
+
+    &.Radius10 {
+      border-radius: 10px;
+    }
+  }
+}
+.zhuanjiaIcon{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.searchWrapper{
+  position: relative;
+  &.transparent{
+    .searchInput{
+      color: #fff;
+      background: url("~@/assets/images/header/search-home-bg.png") center center/155px 31px no-repeat;
+      &::placeholder{
+        color: #fff;
+      }
+    }
+    .searchIcon{
+      color: #fff;
+    }
+  }
+  .searchInput{
+    width: 155px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    color: #A9ADB9;
+    font-size: 14px;
+    background: url("~@/assets/images/header/search-bg.png") center center/155px 31px no-repeat;
+    border-radius: 6px;
+    border: none;
+    box-sizing: border-box;
+    &::placeholder{
+      color: #A9ADB9;
+    }
+  }
+  .searchIcon{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 10px;
+    top: 0;
+    z-index: 10;
+    color: #A9ADB9;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}

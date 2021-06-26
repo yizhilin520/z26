@@ -1,0 +1,148 @@
+.container {
+  overflow: hidden;
+}
+
+.tips {
+  text-align: center;
+  background-color: #f5faff;
+  overflow: hidden;
+
+  .title {
+    position: relative;
+    margin-top: 30px;
+    display: inline-flex;
+    color: #464646;
+    font-size: 20px;
+    font-weight: 600;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -1px;
+      width: 20px;
+      height: 2px;
+      background-color: #696969;
+    }
+
+    &:before {
+      left: -36px;
+    }
+
+    &:after {
+      right: -36px;
+    }
+  }
+
+  .content {
+    margin: 16px auto;
+    width: 350px;
+    color: #f63838;
+    font-size: 14px;
+  }
+}
+
+.wrapper {
+  margin: 0 30px;
+
+  .title {
+    padding: 0 5px;
+    display: inline-block;
+    margin-top: 30px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 16px;
+    color: $textColor;
+    border: 1px solid $borderColor;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .service {
+    margin-top: 6px;
+    max-height: 224px;
+    overflow: auto;
+
+    .item {
+      padding-left: 20px;
+      margin-top: 6px;
+      display: flex;
+      height: 50px;
+      font-size: 16px;
+      align-items: center;
+      border-radius: 4px;
+      background-color: #eff5fb;
+      overflow: hidden;
+    }
+
+    .image {
+      margin-right: 12px;
+      height: 30px;
+    }
+
+    .label {
+      width: 120px;
+      color: #6b6b6b;
+    }
+
+    .value {
+      flex: 1;
+      color: $textColor;
+      overflow: hidden;
+    }
+  }
+
+  .button {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    background: $buttonActiveBackground;
+    cursor: pointer;
+  }
+
+  .copyBox {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 0 40px;
+    background-color: #eff5fb;
+    align-items: center;
+
+    .infos {
+      flex: 1;
+      margin-top: 14px;
+      margin-bottom: 14px;
+      border-right: 1px dashed #bbd3eb;
+      overflow: hidden;
+
+      .item {
+        margin-bottom: 14px;
+        display: flex;
+        height: 22px;
+        align-items: center;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .icon {
+        width: 20px;
+      }
+
+      .label {
+        margin-left: 10px;
+        color: #6c6c6c;
+        font-size: 16px;
+      }
+    }
+
+    .button {
+      margin-left: 40px;
+      border-radius: 4px;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import '@/scss/helpers/_helpers.scss';
+.dplayer {
+  height: 100%;
+  width: 100%;
+}
+.menu {
+  border: 1px solid red;
+  color: #fff;
+  height: 50px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  .menuLeft {
+    float: left;
+    line-height: 60px;
+    .playIcon {
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+      background-image: url(network($room + 'pause'));
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+    .refreshIcon {
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+      margin: 0 30px 0 20px;
+      background-image: url(network($room + 'refresh'));
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+    .matchTitle {
+      cursor: pointer;
+      display: inline-block;
+      line-height: 60px;
+      .liveGif {
+        width: 62px;
+        height: 29px;
+        background-image: url(/static/images/live/liverect.webp);
+        position: relative;
+        .gif {
+          height: 17px;
+          width: 16px;
+          position: absolute;
+          top: 4px;
+          left: 8px;
+          background-image: url(/static/images/home/steam.gif);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+        }
+        .textLIVE {
+          font-size: 14px;
+          height: 17px;
+          width: 16px;
+          position: absolute;
+          top: -14px;
+          left: 26px;
+        }
+      }
+
+    }
+  }
+  .menuRight {
+    float: right;
+    line-height: 50px;
+    .switch {
+      display: inline-block;
+    }
+  }
+}

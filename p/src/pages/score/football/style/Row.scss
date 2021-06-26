@@ -1,0 +1,84 @@
+.container {
+  margin: auto;
+  width: 1400px;
+  min-height: 40px;
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid #dfe6f0;
+  box-sizing: border-box;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:nth-of-type(even) {
+    background: #f4f5f8;
+  }
+}
+
+.cell {
+  position: relative;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  box-sizing: border-box;
+
+  &.isSelect {
+    width: 60px;
+  }
+
+  &.isLeagueName {
+    padding: 0;
+    width: 100px;
+  }
+
+  &.isMatchTime {
+    width: 60px;
+  }
+
+  &.isStatus {
+    width: 60px;
+  }
+
+  &.isHomeTeam, &.isGuestTeam {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  &.isHomeTeam {
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  &.isGuestTeam {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  &.isScore {
+    width: 80px;
+  }
+
+  &.isHalf, &.isCorner {
+    width: 60px;
+  }
+
+  &.isLive {
+    width: 60px;
+  }
+
+  &.isOdds {
+    flex-direction: column;
+    width: 270px;
+  }
+
+  &.isIndex {
+    width: 80px;
+  }
+
+  &.isHandle {
+    width: 80px;
+  }
+}

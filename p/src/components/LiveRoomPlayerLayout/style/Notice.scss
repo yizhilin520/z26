@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+  height: 44px;
+  cursor: pointer;
+  z-index: 3;
+
+  &:hover {
+    .text {
+      white-space: normal;
+    }
+  }
+}
+
+.text {
+  padding: 12px 20px;
+  color: #FF404B;
+  font-size: 12px;
+  line-height: 18px;
+  text-indent: 18px;
+  background: url("../images/notify_image.png") no-repeat 20px 12px #fff;
+  background-size: 14px auto;
+  box-sizing: border-box;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

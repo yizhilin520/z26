@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+  height: 166px;
+}
+
+.swiper {
+  overflow: hidden;
+}
+
+.inner {
+  display: flex;
+}
+
+.item {
+  margin-right: 16px;
+  width: 338px;
+  flex-shrink: 0;
+}
+
+.page {
+  position: absolute;
+  top: 50%;
+  margin-top: -26px;
+  width: 22px;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  background: rgba(20, 22, 44, .4);
+  border-radius: 4px;
+  cursor: pointer;
+
+  &.left {
+    left: -26px;
+  }
+
+  &.right {
+    right: -26px;
+  }
+}
+
+.dialogWrapper{
+  display: flex;
+  padding: 24px 32px 30px;
+  .qrcode{
+    width: 148px;
+    height: 148px;
+    margin-right: 44px;
+    border: 2px solid #E1E1E1;
+    border-radius: 6px;
+  }
+  .textArea{
+    padding-top: 29px;
+    .successTxt{
+      display: flex;
+      align-items: center;
+      color: #1C75F0;
+      font-size: 24px;
+      font-weight: 600;
+      .iconSuccess{
+        width: 44px;
+        height: 44px;
+        margin-right: 12px;
+      }
+    }
+    .tips{
+      margin-top: 16px;
+      line-height: 20px;
+      color: #8F96A6;
+      font-size: 14px;
+    }
+  }
+}

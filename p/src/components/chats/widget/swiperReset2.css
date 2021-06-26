@@ -1,0 +1,45 @@
+/* 重置swiper的样式，不要乱删 */
+.swiper-cont2 {
+  height: 46px;
+  /* overflow: hidden; */
+}
+
+.swiperXin22 {
+  width: 430px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.swiperXin22 .swiper-container {
+  position: static;
+}
+
+.swiperXin22 .swiper-container .swiper-button-prev {
+  width: 22px;
+  height: 45px;
+  background-image: url("/static/images/room/gift-left-arrow.webp");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 48%;
+  left: -28px;
+  right: auto;
+}
+
+.swiperXin22 .swiper-container .swiper-button-prev:after {
+  content: none;
+}
+
+.swiperXin22 .swiper-container .swiper-button-next {
+  width: 22px;
+  height: 45px;
+  background-image: url('/static/images/room/gift-right-arrow.webp');
+  background-size: 100% 100%;
+  position: absolute;
+  top: 48%;
+  right: -28px;
+  cursor: pointer;
+}
+
+.swiperXin22 .swiper-container .swiper-button-next:after {
+  content: none;
+}

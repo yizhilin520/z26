@@ -1,0 +1,119 @@
+.leagueName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+
+  .leagueNameText {
+    margin: 0 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.statusText {
+  color: #ff5338;
+
+  &.isDisable {
+    color: #999;
+  }
+}
+
+.statusAni {
+  margin-left: 4px;
+  color: #ff5338;
+  font-size: 14px;
+  animation: ani-status-keyframe 1s infinite;
+}
+
+@keyframes ani-status-keyframe {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.board {
+  margin: 0 1px;
+  padding: 0 3px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 3px;
+  transform: scale(.8);
+
+  &.isRed {
+    background-color: #f63315;
+  }
+
+  &.isYellow {
+    background-color: #ffb71c;
+  }
+}
+
+.teamText {
+  margin: 0 1px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.liveImage {
+  font-size: 18px;
+  color: $textColor;
+}
+
+.oddWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .oddItem {
+    flex: 1;
+    line-height: 16px;
+    font-size: 12px;
+    text-align: center;
+    overflow: hidden;
+  }
+}
+
+.indexText {
+  color: $textColor;
+}
+
+.handle {
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  vertical-align: middle;
+  cursor: pointer;
+
+  &.isTop {
+    background-image: url('../../images/top_icon.png');
+
+    &.isActive {
+      background-image: url('../../images/top_active_icon.png');
+    }
+  }
+
+  &.isFollow {
+    background-image: url('../../images/follow_icon.png');
+
+    &.isActive {
+      background-image: url('../../images/follow_active_icon.png');
+    }
+  }
+}

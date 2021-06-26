@@ -1,0 +1,55 @@
+.container {
+  margin-top: 8px;
+  width: 836px;
+}
+
+.title {
+  margin: 24px auto;
+  font-size: 13px;
+  color: #8d95a5;
+}
+
+.item {
+  padding: 0 18px;
+  display: flex;
+  height: 50px;
+  color: #8b93a3;
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+
+  &:nth-of-type(even) {
+    background-color: #f8f8f8;
+  }
+}
+
+.timer {
+  width: 120px;
+  text-align: left;
+}
+
+.addr {
+  padding-left: 40px;
+  flex: 1;
+}
+
+.device {
+  padding-right: 40px;
+  flex: 1;
+}
+
+.status {
+  width: 30px;
+  text-align: right;
+
+  &.isWarning {
+    color: #f63838;
+  }
+}
+
+.notData {
+  margin: 24px auto;
+  font-size: 13px;
+  color: #8d95a5;
+  text-align: center;
+}

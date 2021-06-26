@@ -1,0 +1,55 @@
+.container {
+  position: relative;
+  padding: 40px 28px;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, .04);
+  border-radius: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, .04);
+  background-color: #fafafa;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &.isActive {
+    position: relative;
+    padding-left: 8px;
+    background-color: #fff;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 8px;
+      height: 83%;
+      transform: translateY(-50%);
+      background-color: #ff0000;
+      border-radius: 0 16px 16px 0;
+    }
+  }
+}
+
+.minute {
+  width: 80px;
+  color: $textColor;
+  font-size: 22px;
+  text-align: center;
+}
+
+.text {
+  flex: 1;
+  padding: 30px 20px;
+  color: #464646;
+  font-size: 26px;
+  line-height: 30px;
+  border-left: 1px solid rgba(0, 0, 0, .04);
+  overflow: hidden;
+}

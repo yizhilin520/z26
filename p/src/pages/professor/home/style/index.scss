@@ -1,0 +1,19 @@
+.container {
+  background-color: #f4f5f9;
+}
+
+.wrapper {
+  margin: 20px auto;
+  width: 1400px;
+  min-height: 600px;
+  display: flex;
+}
+
+.main {
+  margin-left: 10px;
+  flex: 1;
+  background: #fff;
+  box-shadow: 0 3px 5px 0 rgba(93, 162, 255, 0.24);
+  border-radius: 10px;
+  overflow: hidden;
+}

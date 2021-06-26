@@ -1,0 +1,389 @@
+
+.container {
+  display: block;
+  height: 620px;
+  background-color: #ffffff;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.ctn{
+    position: relative;
+    display: block;
+
+}
+.tabctn{
+    padding: 41px 0 0;
+    position: relative;
+    display: none;
+    &.isActive11{
+      display: block;
+  }
+  .line1{
+    width: 808px;
+    height: 1px;
+    background-color: #d8dce7;
+    position: absolute;
+    top: 39px;
+    left: 20px;
+  }
+}
+.liveul{
+  width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 0 10px;
+    box-sizing: border-box;
+    .liveli{
+      font-family: PingFangSC;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      div{
+          text-align: center;
+          line-height: 38px;
+
+      }
+      .liveborder{
+          display: block;
+          width: 86px;
+          height: 3px;
+          background-image: transparent;
+          margin: 0 0 0 0;
+      }
+      &.isActive{
+          div{
+              background: $buttonActiveBackground;
+          -webkit-background-clip: text;
+          color: transparent;
+          }
+          .liveborder{
+              background: $buttonActiveBackground;
+          }
+      }
+    }
+}
+.tabmain{
+    height: 575px;
+    padding: 29px 20px 11px;
+    box-sizing: border-box;
+    .wrap{
+        padding: 0 52px;
+        height: 100%;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+          width: 4px;
+          border-radius: 3px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: rgba(115, 159, 255, .3);
+          border-radius: 3px;
+        }
+
+        &::after{
+          clear: both;
+          content: '.';
+          display: block;
+          overflow: hidden;
+          visibility: hidden;
+          line-height: 0;
+          width: 0;
+          height: 0;
+        }
+      .wrapli{
+          width: 95px;
+          height: 32px;
+          margin-right: 25px;
+          margin-bottom: 18px;
+          padding: 0 2px;
+          border-radius: 6px;
+          border: solid 1px #e0e2ec;
+          background-color: #ffffff;
+          box-sizing: border-box;
+          float: left;
+          font-family: PingFangSC;
+          font-size: 14px;
+          color: #434a66;
+          text-align: center;
+          line-height: 32px;
+          cursor: pointer;
+
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          &:nth-child(6n){
+              margin-right: 0;
+          }
+          transition: color,border .2s ease;
+          &:hover{
+              border-color: $borderColor;
+              color: $textColor;
+          }
+      }
+    }
+}
+
+//   头部
+.titlectn{
+  width: 100%;
+  display: flex;
+  height: 56px;
+  font-size: 16px;
+  // background-image: linear-gradient(127deg, #56d6ff 0%, #1c75f0 82%);
+  background: #f3f6ff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 65px 0 32px;
+  box-sizing: border-box;
+  border-radius: 6px 6px 0 0;
+  .titletext{
+      font-family: PingFangSC;
+      font-size: 21px;
+      line-height: 29px;
+      color: #585e80;
+      letter-spacing: 1.2px;
+  }
+  .inputctn{
+      width: 225px;
+      height: 32px;
+      border: solid 1.5px #e0e2ec;
+      border-radius: 100px;
+      box-sizing: border-box;
+      position: relative;
+      background: #fff;
+      &:hover{
+        border-color: $borderColor;
+      }
+      .input{
+          width: 200px;
+          height: 32px;
+          margin: 0;
+          padding: 6px 9px 6px 12px;
+          object-fit: contain;
+          border: none;
+          background-color: transparent;
+          box-sizing: border-box;
+          font-family: PingFangSC;
+          font-size: 14px;
+          outline: none;
+      }
+      .sousou{
+          display: inline-block;
+          width: 17px;
+          height: 17px;
+          background-image: url("../images/live_sousao.webp");
+          background-size: 100% 100%;
+          position: absolute;
+          right: 10px;
+          top: 8px;
+      }
+  }
+}
+
+
+.selectwrap{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  &.isActive{
+      display: block;
+  }
+
+}
+.selecttop{
+  width: 808px;
+  height: 39px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #d8dce7;
+
+  .blackl{
+      position: absolute;
+      top: 12px;
+      left: 13px;
+      font-family: PingFangSC;
+      font-size: 16px;
+      color: $textColor;
+      cursor: pointer;
+  }
+  .text{
+      font-family: PingFangSC;
+      font-size: 18px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.1px;
+      color: #5f5f5f;
+  }
+}
+.selectmain{
+  // height: 575px;
+  padding: 29px 20px 24px 31px;
+  box-sizing: border-box;
+  .seleul{
+      height: 492px;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+          width: 4px;
+          border-radius: 3px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: rgba(115, 159, 255, .3);
+          border-radius: 3px;
+        }
+
+      &::after{
+          clear: both;
+          content: '.';
+          display: block;
+          overflow: hidden;
+          visibility: hidden;
+          line-height: 0;
+          width: 0;
+          height: 0;
+        }
+        .seleli{
+          width: 367px;
+          height: 32px;
+          float: left;
+          padding: 0 15px;
+          margin-right: 27px;
+          margin-bottom: 19px;
+          border-radius: 6px;
+          border: solid 1.5px #e6eaf3;
+          box-sizing: border-box;
+          color: #434a66;
+          font-family: PingFangSC;
+          font-size: 14px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: color,border .2s ease;
+          cursor: pointer;
+          &:nth-child(2n){
+              margin-right: 0;
+          }
+          &.isActive3{
+              border: solid 1.5px $borderColor;
+              color: $textColor;
+          }
+          &:hover{
+              border: solid 1.5px $borderColor;
+              color: $textColor;
+          }
+        }
+        .matchname{
+            display: inline-block;
+            width: 178px;
+            overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+  }
+  .buttons{
+      height: 32px;
+      display: block;
+      margin: 2px 0 0 0;
+      font-family: PingFangSC;
+      font-size: 14px;
+      color: #ffffff;
+     display: flex;
+     justify-content: flex-end;
+      .quxiao{
+          display: block;
+          width: 89px;
+          height: 32px;
+          margin: 0 16px 0 0;
+          object-fit: contain;
+          border-radius: 6px;
+          background-image: $defaultButtonBackgroundColor;
+          border: none;
+          outline: none;
+          color: #ffffff;
+          font-size: 14px;
+          cursor: pointer;
+          transition: all .2s ease;
+          &:hover{
+              background: $buttonActiveBackground;
+          }
+      }
+      .queren{
+          display: block;
+          width: 89px;
+          height: 32px;
+          margin: 0 ;
+          object-fit: contain;
+          border-radius: 6px;
+          background-image: $defaultButtonBackgroundColor;
+          border: none;
+          outline: none;
+          color: #ffffff;
+          font-size: 14px;
+          cursor: pointer;
+          transition: all .2s ease;
+          &.isActive, &:hover{
+              background: $buttonActiveBackground;
+          }
+      }
+  }
+}
+
+
+.codeList {
+  position: absolute;
+  left: 0;
+  top: 34px;
+  width: 100%;
+  min-height: 170px;
+  border-radius: 4px;
+  border: 1px solid #e6eaf3;
+  background: #fff;
+  z-index: 22;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 3px;
+  }
+
+  .codeItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    font-size: 14px;
+    color: #434a66;
+    cursor: pointer;
+
+    &.isActive, &:hover {
+      background-color: #f0f2f8;
+    }
+  }
+
+  .codeLabel {
+    display: block;
+    margin-left: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+}
+

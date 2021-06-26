@@ -1,0 +1,23 @@
+.passwordContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+
+  .item {
+    display: block;
+    color: #A9ADB9;
+    font-size: 14px;
+    cursor: pointer;
+
+    &.isSave {
+      padding-left: 22px;
+      background: url("../images/uncheck_icon.png") no-repeat left center;
+      background-size: 16px 16px;
+
+      &.isActive {
+        background-image: url("../images/check_icon.png");
+      }
+    }
+  }
+}

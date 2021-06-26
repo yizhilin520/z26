@@ -1,0 +1,101 @@
+.form {
+  position: relative;
+
+  &:before, &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.protocol {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+
+  .text {
+    color: #A9ADB9;
+    font-size: 14px;
+    text-decoration: underline;
+
+    &.isLink {
+      &:hover {
+        color: $textColor;
+      }
+    }
+  }
+}
+
+.item {
+  position: relative;
+  margin-top: 24px;
+
+  .message {
+    padding-left: 14px;
+    margin-top: 2px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: 18px;
+    font-size: 12px;
+    color: #FF5C5B;
+    background: url("../images/error_icon.png") no-repeat left center;
+    background-size: 12px 12px;
+  }
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  height: 54px;
+  background: #FBFBFB;
+  border-radius: 4px;
+  border: 1px solid #F0F0F0;
+  box-sizing: border-box;
+
+  .inputInner {
+    flex: 1;
+    padding: 0 16px;
+    height: 100%;
+    line-height: 54px;
+
+    background: none;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    appearance: none;
+
+    &::placeholder {
+      color: #A9ADB9;
+    }
+  }
+
+  .prefix {
+    padding: 0 16px;
+  }
+
+  .suffix {
+    padding: 0 16px;
+  }
+}
+
+.button {
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 4px;
+  background: $buttonActiveBackground;
+  box-shadow: 0 6px 16px -2px rgba(61, 137, 234, 0.39);
+  cursor: pointer;
+
+  &.isDisable {
+    background: #D8D8D8;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+}

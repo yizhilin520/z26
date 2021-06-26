@@ -1,0 +1,88 @@
+$height: 98px;
+
+.container {
+  height: $height;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: $height;
+  background-color: #fff;
+}
+
+.item {
+  flex: 1;
+  cursor: pointer;
+  overflow: hidden;
+
+  &.isLive {
+    .icon {
+      background-image: url("./images/live_icon.png");
+    }
+  }
+
+  &.isScore {
+    .icon {
+      background-image: url("./images/score_icon.png");
+    }
+  }
+
+  &.isForecast {
+    .icon {
+      background-image: url("./images/forecast_icon.png");
+    }
+  }
+
+  &.isDownload {
+    .icon {
+      background-image: url("./images/download_icon.png");
+    }
+  }
+
+  &.isActive {
+    .label {
+      color: $textColor;
+    }
+
+    &.isLive {
+      .icon {
+        background-image: url("./images/live_icon_active.png");
+      }
+    }
+
+    &.isScore {
+      .icon {
+        background-image: url("./images/score_icon_active.png");
+      }
+    }
+
+    &.isForecast {
+      .icon {
+        background-image: url("./images/forecast_icon_active.png");
+      }
+    }
+  }
+}
+
+.icon {
+  margin: auto;
+  width: 42px;
+  height: 46px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.label {
+  margin-top: 4px;
+  color: #999;
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+}

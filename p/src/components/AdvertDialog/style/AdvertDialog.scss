@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+}
+
+.wrapper {
+  display: block;
+  width: 403px;
+  height: 481px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 6px;
+}
+
+.close {
+  margin: 16px auto;
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  border: 2px solid #fff;
+  border-radius: 18px;
+  box-sizing: border-box;
+  cursor: pointer;
+}

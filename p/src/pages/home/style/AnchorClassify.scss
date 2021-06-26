@@ -1,0 +1,94 @@
+.container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.item {
+  float: left;
+  position: relative;
+  width: (100% / 7);
+  height: 195px;
+  color: #fff;
+  overflow: hidden;
+
+  &:hover {
+    .image {
+      transform: scale(1.1);
+    }
+  }
+
+  &.more {
+    background: url("../images/star_more_bg.jpg") no-repeat center;
+    background-size: 100% 100%;
+  }
+}
+
+.title {
+  margin-top: 20px;
+  margin-left: 12px;
+  font-size: 24px;
+}
+
+.summary {
+  margin-top: 8px;
+  margin-left: 12px;
+  font-size: 14px;
+}
+
+.link {
+  position: absolute;
+  bottom: 20px;
+  right: 12px;
+  font-size: 16px;
+  color: #F9FBFF;
+  cursor: pointer;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all .1s ease-out;
+}
+
+.liveStatus {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 40px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  background: $liveStatusButtonColor;
+  border-radius: 2px;
+}
+
+.infos {
+  position: absolute;
+  left: 0;
+  bottom: -34px;
+  padding: 0 12px;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(180deg,transparent,rgba(0,0,0,.7));
+  overflow: hidden;
+  box-sizing: border-box;
+
+  .userName {
+    float: left;
+    font-size: 14px;
+  }
+
+  .number {
+    padding-left: 13px;
+    float: right;
+    font-size: 12px;
+    background: url("../images/live_fans_icon.png")no-repeat left center;
+    background-size: 11px auto;
+  }
+}

@@ -1,0 +1,42 @@
+.container {
+  width: 400px;
+  background: #fff;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.text {
+  margin: 50px 40px auto 40px;
+  color: #6D6F89;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.buttons {
+  margin: 32px auto 40px auto;
+  width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 32px;
+  color: #2C2F57;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #2C2F57;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &.isActive {
+    color: #fff;
+    border: none;
+    background: $buttonActiveBackground;
+  }
+}

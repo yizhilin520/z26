@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<%
+var dayJs = require('dayjs')
+var {version} = require('./package.json')
+var NODE_MODE = process.env.NODE_MODE
+var NODE_ENV = process.env.NODE_ENV
+var isProd = NODE_MODE === 'prod'
+%>
+<head>
+    <!-- 构建信息 -->
+    <meta
+            build-time="<%= dayJs().format('YYYY-MM-DD HH:mm:ss') %>"
+            build-env="<%= NODE_ENV %>"
+            build-mode="<%= NODE_MODE || NODE_ENV %>"
+            build-version="<%= version %>"
+    >
+    <!-- 设置字符集格式 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 网页不会被缓存 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 忽略页面中的数字识别为电话号码、email识别 -->
+    <meta name="format-detection" content="telephone=no, email=no">
+</head>
+<% if(!isProd){ %>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.4.0/vconsole.min.js"></script>
+    <script type="text/javascript">
+        // init vConsole
+        new VConsole();
+    </script>
+<% } %>
+<% if(isProd){ %>
+    <script type="text/javascript">
+        //线上去掉react dev tools
+        if ('__REACT_DEVTOOLS_GLOBAL_HOOK__' in window) {
+            window.__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function () {
+            };
+        }
+        if ('__REDUX_DEVTOOLS_EXTENSION_COMPOSE__' in window) {
+            window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ = function () {
+            };
+        }
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?14555bdac9422b99d92f26c9e766a49f";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script>
+        var protocol = window.location.protocol;
+        if (protocol.includes("https:")) {
+            var metaTag = document.createElement("meta");
+            metaTag.httpEquiv = "Content-Security-Policy";
+            metaTag.content = "upgrade-insecure-requests";
+            document.getElementsByTagName("head")[0].appendChild(metaTag);
+        }
+    </script>
+<% } %>
+<body>
+<div id="app-main"/>
+</body>
+<script>
+    function is_weixin() {
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            return true;
+        } else if (ua.match(/QQ/i) == "qq") {
+             return true;
+        }else {
+            return false;
+        }
+    }
+    var isWeixin = is_weixin();
+
+    if (isWeixin) {
+        document.getElementById('weixin').style.display = 'block'
+    }
+
+</script>
+</html>

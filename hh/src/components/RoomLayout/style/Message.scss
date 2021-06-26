@@ -1,0 +1,140 @@
+$footerHeight: 116px;
+
+.container {
+  padding-bottom: $footerHeight;
+  height: 100%;
+  background-color: #f9f9fd;
+  box-sizing: border-box;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wrapper {
+  padding: 14px 0;
+  color: #666;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.message {
+  padding: 4px 26px;
+  margin-bottom: 20px;
+}
+.box {
+  margin: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.onlyOne {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  justify-content: center;
+}
+.contact {
+  width: 342px;
+  height: 80px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  padding: 0 24px 0 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .left {
+    line-height: 80px;
+  }
+  .contactImage {
+    width: 48px;
+  }
+  .label {
+    margin-left: 4px;
+    font-size: 28px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #1E1E1E;
+  }
+  .copy {
+    font-size: 24px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #1C75F0;
+    margin-left: 33px;
+  }
+}
+
+.noticeIcon {
+  margin-right: 10px;
+  width: 28px;
+  height: 28px;
+}
+
+.userImage {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.anchorIcon {
+  padding: 0 10px;
+  margin-right: 10px;
+  display: inline-block;
+  height: 30px;
+  line-height: 34px;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  background: $buttonActiveBackground;
+  border-radius: 4px;
+}
+
+.label {
+  margin-right: 10px;
+  vertical-align: middle;
+  word-break: break-all;
+}
+
+.footer {
+  padding: 0 26px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: $footerHeight;
+  background-color: #fff;
+  box-sizing: border-box;
+
+  .leave {
+    width: 92px;
+    height: 40px;
+    line-height: 44px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #E6BA6D;
+  }
+
+  .input {
+    margin-left: 10px;
+    padding: 0 34px;
+    flex: 1;
+    color: #A5A6A9;
+    font-size: 28px;
+    height: 74px;
+    line-height: 78px;
+    background-color: #F5F5F5;
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .gift {
+    margin-left: 26px;
+    width: 56px;
+  }
+}

@@ -1,0 +1,119 @@
+$color-theme: $textColor;
+.pro-iview {
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    width: 4px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #F1F1F1;
+  }
+
+  ::-webkit-scrollbar-track {
+    width: 0px;
+    color: #fff;
+    background: #fff;
+    opacity: 0;
+  }
+
+  /deep/ {
+    //日历控件
+    .ivu-date-picker {
+      border: 1px solid #D3D8E4;
+      border-radius: 6px;
+      overflow: hidden;
+
+      &:focus-within {
+        border-color: $color-theme;
+      }
+
+      .ivu-date-picker-rel {
+        border-radius: 6px;
+      }
+    }
+
+    .ivu-date-picker-cells-cell-today em::after, //当前日期的active点
+    .ivu-date-picker-cells-cell-selected em, //选中日期范围的起始天
+    .ivu-date-picker-cells-cell-selected:hover em {
+      background: $color-theme;
+    }
+
+    .ivu-date-picker-cells-focused em { //选中日期范围的起始天的阴影
+      box-shadow: 0 0 0 1px $color-theme inset;
+    }
+
+    .ivu-date-picker-cells-cell-range:before { //选中日期范围的非起始天
+      background: rgba(201, 174, 110, 0.2);
+    }
+
+    //表格
+    .ivu-table-wrapper {
+      border-color: #E6EAF3;
+      border-radius: 6px;
+      border: none;
+
+      .ivu-table {
+        color: #434a66;
+        border-radius: 6px;
+        border: 1px solid #E6EAF3;
+
+        &::before,
+        &::after {
+          display: none;
+        }
+
+        th {
+          background-color: #F3F6FF;
+        }
+
+        tbody > tr:last-child > td {
+          border-bottom: 0;
+        }
+
+        td {
+          border-right: 1px solid #e6eaf3;
+
+          &:last-child {
+            border-right: 0;
+            // border-bottom: 0;
+          }
+        }
+
+        .ivu-table-overflowX {
+          overflow-x: hidden;
+        }
+      }
+
+      .ivu-table-tip { //无数据样式
+        border: none;
+        overflow-x: hidden;
+      }
+
+      tr.ivu-table-row-hover td, //鼠标悬停行样式
+      .ivu-table-row-hover {
+        background: #FEF3E7;
+      }
+
+    }
+
+    //弹窗
+    .ivu-modal-header {
+      height: 60px;
+      line-height: 45px;
+      color: #434A66;
+      font-size: 16px;
+      background-color: #EAF1FF;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .ivu-modal-header-inner {
+      font-size: 16px;
+    }
+
+    .ivu-modal-body {
+      padding: 15px 54px 25px 45px;
+    }
+  }
+}

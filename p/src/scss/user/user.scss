@@ -1,0 +1,905 @@
+@import '@/scss/helpers/_helpers.scss';
+.userMain{
+  padding: 14px 0 84px 0;
+  background-color: #f9fbff;
+}
+.userWrap{
+  width: 1400px;
+  margin:  0 auto;
+
+  box-sizing: border-box;
+  .userContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    // portrait scss
+    .portraitWrap{
+      text-align: center;
+      width: 98px;
+      height: 98px;
+      box-sizing: border-box;
+      border-radius: 100%;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #2883ff;
+      padding: 2px;
+      margin: 0 auto;
+      font-size: 50px;
+      line-height: 98px;
+      font-weight: 500;
+      color: #ffffff;
+      .portraitInner{
+        width: 100%;
+        height: 100%;
+        // background: #b4aeae;
+        // border-radius: 100%;
+        overflow: hidden;
+        img{
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+        }
+      }
+    }
+
+    .leftctn{
+      user-select: none;
+      color: #505c74;
+      width: 236px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 40px 0 100px 0;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      .name{
+        font-size: 22px;
+        margin-top: 16px;
+        line-height: 30px;
+        font-weight: bold;
+      }
+      .joinDay{
+        font-size: 15px;
+        margin-top: 10px;
+        line-height: 20px;
+      }
+      .ulist{
+        margin-top: 20px;
+        text-align: center;
+        padding: 0 39px;
+        .ulistItem{
+          margin-bottom: 25px;
+          line-height: 22px;
+          // display: flex;
+          // align-items: center;
+          // align-content: center;
+          &:hover{
+            color: #3977fe;
+          }
+          .icon{
+            display: inline-block;
+            width: 17px;
+            height: 16px;
+            margin: 0 10px 0 0;
+            vertical-align: middle;
+          }
+          .infoicon1 {
+            background-image: url(network($user + 'group-icon'));
+            background-size: 100% 100%;
+          }
+          .infoicon2 {
+            background-image: url(network($user + 'group-icon2'));
+            background-size: 100% 100%;
+          }
+
+          .guanzhuicon1 {
+            width: 16px;
+            height: 14px;
+            background-image: url(network($user + 'shape-icon'));
+            background-size: 100% 100%;
+          }
+          .guanzhuicon2 {
+            width: 16px;
+            height: 14px;
+            background-image: url(network($user + 'shape-icon2'));
+            background-size: 100% 100%;
+          }
+          .myzichang1{
+            width: 16px;
+            height: 16px;
+            background-image: url(network($user + 'qian-icon'));
+            background-size: 100% 100%;
+          }
+          .myzichang2{
+            width: 16px;
+            height: 16px;
+            background-image: url(network($user + 'qian-icon2'));
+            background-size: 100% 100%;
+          }
+          .liveset1{
+            width: 17px;
+            height: 18px;
+            background-image: url(network($user + 'live-icon'));
+            background-size: 100% 100%;
+          }
+          .liveset2{
+            width: 17px;
+            height: 18px;
+            background-image: url(network($user + 'live-icon2'));
+            background-size: 100% 100%;
+          }
+          .roomguangli1{
+            width: 19px;
+            height: 17px;
+            background-image: url(network($user + 'room-icon'));
+            background-size: 100% 100%;
+          }
+          .roomguangli2{
+            width: 19px;
+            height: 17px;
+            background-image: url(network($user + 'room-icon2'));
+            background-size: 100% 100%;
+          }
+          .myyuyan1{
+            width: 20px;
+            height: 15px;
+            background-image: url(network($user + 'see-icon'));
+            background-size: 100% 100%;
+          }
+          .myyuyan2{
+            width: 20px;
+            height: 15px;
+            background-image: url(network($user + 'see-icon2'));
+            background-size: 100% 100%;
+          }
+          .dingyuehelisi1{
+            width: 18px;
+            height: 17px;
+            background-image: url(network($user + 'history-icon'));
+            background-size: 100% 100%;
+          }
+          .dingyuehelisi2{
+            width: 18px;
+            height: 17px;
+            background-image: url(network($user + 'history-icon2'));
+            background-size: 100% 100%;
+          }
+          cursor: pointer;
+        }
+        .active{
+          color: #3977fe;
+          .usertab {
+            background: linear-gradient(to right, #83c8ff, #3977fe);
+            -webkit-background-clip: text;
+            color: transparent;
+          }
+        }
+      }
+    }
+
+    .centermain{
+      padding: 40px 210px 100px 40px;
+    }
+    .right{
+      width: 1144px;
+      min-height: 905px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      .hide{
+        display: none !important;
+      }
+      .title{
+        color: #363636;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25px;
+      }
+      .infoWrap{
+        width: 100%;
+        min-height: 200px;
+        position: relative;
+        .info{
+          line-height: 18px;
+          margin-top: 15px;
+          font-size: 13px;
+          color: #505c74;
+          .infoItem{
+            margin-bottom: 10px;
+          }
+        }
+        .posiPortrail{
+          position: absolute;
+          right: 0;
+          top: 0;
+          .editBtn{
+            width: 136px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            font-size: 18px;
+            color: #ffffff;
+            background-image: url(network($user + 'roomjinyan'));
+            background-size: 100% 100%;
+            border-radius: 4px;
+            overflow: hidden;
+            user-select: none;
+            cursor: pointer;
+            &:hover{
+              opacity: 0.8;
+            }
+          }
+          .touxiangEdit{
+            margin-top: 20px;
+            width: 136px;
+            height: 45px;
+            position: relative;
+          }
+          .baseUploadInput{
+            opacity: 0;
+            width: 136px;
+            height: 45px;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+        .bindWrap{
+          margin-top: 20px;
+          .bindItem{
+            height: 86px;
+            width: 574px;
+            border-bottom: 1px solid rgba(66, 82, 117, 0.14);
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+            font-size: 15px;
+            color: #464646;
+            .iconWrap{
+              width: 42px;
+              height: 42px;
+              border-radius: 50%;
+              overflow: hidden;
+              background-image: url(network($user + 'center-weixi'));
+              background-size: 100% 100%;
+              margin-right: 30px;
+            }
+            .iconWrap2{
+              width: 42px;
+              height: 42px;
+              border-radius: 50%;
+              overflow: hidden;
+              background-image: url(network($user + 'center-qq'));
+              background-size: 100% 100%;
+              margin-right: 30px;
+            }
+            .bindName{
+              flex: 1;
+            }
+            .bindBtn{
+              margin-left: 30px;
+              height: 37px;
+              line-height: 37px;
+              width: 97px;
+              border: 1px solid #363636;
+              border-radius: 4px;
+              text-align: center;
+              user-select: none;
+
+              &:hover{
+                opacity: 0.8;
+              }
+            }
+            .addicon{
+              display: inline-block;
+              width: 13px;
+              height: 13px;
+              background-image: url(network($user + 'jia'));
+              background-size: 100% 100%;
+              margin: 0 10px 0 0;
+            }
+            .addicontext{
+              background-image: linear-gradient(to right, #4ab9fe,#4895ff);
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+            }
+            .active{
+              border: 1px solid #4895ff;
+              color: #4895ff;
+            }
+          }
+        }
+      }
+
+      .basicSetWrap{
+        margin-top: 34px;
+        .basicList{
+          font-size: 13px;
+          color: #505c74;
+          padding-top: 5px;
+          width: 574px;
+          .basicListItem{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            height: 22px;
+            margin-top: 10px;
+            user-select: none;
+            .closeBtn{
+              width: 32px;
+              height: 20px;
+              background: #666666;
+              color: #ffffff;
+              border-radius: 10px;
+              text-align: center;
+              line-height: 20px;
+              &:hover{
+                opacity: 0.8;
+              }
+            }
+            .openBtn{
+              width: 32px;
+              height: 20px;
+              background: #3977fe;
+              color: #ffffff;
+              border-radius: 10px;
+              text-align: center;
+              line-height: 20px;
+              &:hover{
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+      }
+
+      .secritWrap{
+        margin-top: 25px;
+        .secritItem{
+          margin-top: 15px;
+          display: flex;
+          .label{
+            font-size: 13px;
+            color: #505c74;
+            line-height: 18px;
+          }
+          .inputWrap{
+            border: 1px solid #e6eaf3;
+            border-radius: 4px;
+            padding: 5px;
+            height: 38px;
+            width: 250px;
+            box-sizing: border-box;
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+            &:hover{
+              border: 1px solid #4895ff;
+            }
+          }
+          .inputPwd{
+            width: 100%;
+            line-height: 29px;
+            flex: 1;
+            padding: 0 9px;
+            color: #323232;
+            font-size: 13px;
+          }
+          .editPwd{
+            width: 82px;
+            height: 29px;
+            border-radius: 4px;
+            user-select: none;
+            background-image: url(network($user + 'modpassword'));
+            text-align: center;
+            line-height: 29px;
+            color: #ffffff;
+            &:hover{
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+
+      .myguangzu{
+        padding: 40px 40px 100px 40px;
+      }
+      .careList{
+        .careItem{
+          height: 86px;
+          width: 100%;
+          box-sizing: border-box;
+          // padding: 0 19px;
+          border-bottom: 1px solid rgba(66, 82, 117, 0.3);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          align-content: center;
+          .picWrap{
+            width: 49px;
+            height: 49px;
+            position: relative;
+            .picInner{
+              width: 100%;
+              height: 100%;
+              border-radius: 100%;
+              overflow: hidden;
+              .picture{
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .steamWrap{
+              background-image: linear-gradient(113deg, #ffb445 -3%, #fd6501 94%), linear-gradient(305deg, #ff2500 72%, #ff8909 -24%), linear-gradient(314deg, #ff2500 74%, #ff8500 -63%), linear-gradient(to bottom, #d8d8d8, #d8d8d8);
+              border-radius: 8px 0px 8px 8px;
+              width: 34px;
+              height: 15px;
+              position: absolute;
+              bottom: -4px;
+              left: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .steamplay{
+                height: 15px;
+              }
+            }
+            .steamno{
+              width: 35px;
+              height: 16px;
+              background-image: url(network($user + 'res-end2'));
+              background-size: 100% 100%;
+              position: absolute;
+              bottom: -4px;
+              left: 8px;
+            }
+          }
+          .careContent{
+            padding: 0 13px;
+            flex: 1;
+            line-height: 20px;
+            .subjectWrap{
+              display: flex;
+              font-size: 14px;
+              color: #323232;
+              .tag{
+                height: 18px;
+                line-height: 17px;
+                color: #ffffff;
+                border-radius: 4px;
+                margin-left: 10px;
+                padding: 0 5px;
+                font-size: 10px;
+                background-image: linear-gradient(to left, #83c8ff, #3977fe);
+                .tagText{
+                  transform: scale(0.9);
+                }
+              }
+            }
+            .careInfo{
+              font-size: 13px;
+              color: #a5a6a9;
+            }
+          }
+          .cancelCare{
+            width: 95px;
+            height: 35px;
+            border-radius: 4px;
+            border: 1px solid #363636;
+            text-align: center;
+            line-height: 35px;
+            user-select: none;
+            &:hover{
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.dailogTitle{
+  text-align: center;
+  font-size: 17px;
+  color: #464646;
+}
+.dailogBody{
+  // height: 500px;
+  width: 373px;
+  padding: 0 31px 60px;
+  box-sizing: border-box;
+  .accountInfo{
+    color: #49b5fe;
+    font-size: 13px;
+    line-height: 29px;
+  }
+  .inputEmailWrap{
+    width: 310px;
+    height: auto;
+    border-radius: 4px;
+    margin: 6px 0 20px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .inputEmail{
+      width: 100%;
+      height: 38px;
+      line-height: 38px;
+      border: 1px solid #e6eaf3;
+      border-radius: 4px;
+      box-sizing: border-box;
+      padding-left: 10px;
+      box-sizing: border-box;
+      font-size: 13px;
+      &:hover{
+        border-color: #40a9ff;
+      }
+    }
+  }
+}
+.iponenub{
+  width: 310px;
+  height: auto;
+  border-radius: 4px;
+  margin: 6px 0 20px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #e6eaf3;
+  .inputEmail{
+    width: 249px;
+    height: 38px;
+    line-height: 38px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 13px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+  }
+}
+
+.emailcuowu{
+  height: 20px;
+  font-size: 10px;
+  color: #e04e4e;
+  text-align: left;
+  line-height: 20px;
+  position: absolute;
+  top: 38px;
+  left: 0;
+
+}
+
+.codectn{
+  width: 310px;
+  display: flex;
+  align-items: center;
+  height: 38px;
+  border-radius: 4px;
+  border: solid 1px #e6eaf3;
+  box-sizing: border-box;
+  margin: 0 0 36px 0;
+  position: relative;
+  .codeinput{
+    width: 133px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    font-size: 13px;
+  }
+  .coderight{
+    width: 105px;
+    height: 38px;
+  }
+  .codeset{
+    width: 100%;
+    height: 100%;
+    background-image: url(network($live + 'rectangle'));
+    background-size: 100% 100%;
+    cursor: pointer;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 38px;
+    text-align: center;
+    &.disable {
+      pointer-events: none;
+    }
+  }
+  .codecuowu{
+    font-size: 10px;
+    color: #e04e4e;
+    text-align: left;
+    position: absolute;
+    top: 40px;
+  }
+}
+.codetext{
+  width: 71px;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  border-right: 1px solid #d8d8d8;
+  font-size: 15px;
+  color: #323232;
+  box-sizing: border-box;
+}
+.emailbtn{
+  display: block;
+  width: 180px;
+  height: 43px;
+  background-image: url(network($user + 'roombtn'));
+  background-size: 100% 100%;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 43px;
+  cursor: pointer;
+  margin: 0 auto;
+  border: 0;
+  outline: none;
+}
+
+.areaCode{
+  width: 71px;
+  height: 23px;
+  border-right: 1px solid #d8d8d8;
+  color: #323232;
+  font-size: 15px;
+  box-sizing: border-box;
+
+}
+.inputPhone{
+  width: 239px;
+  height: 38px;
+  line-height: 38px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 13px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+// 修改昵称弹框
+.setname{
+  display: inline-block;
+  font-size: 13px;
+  color: #4895ff;
+  margin: 0 0 0 5px;
+  border-bottom: 1px solid #4895ff;
+  cursor: pointer;
+}
+
+.userclose{
+  width: 14px;
+  height: 14px;
+  background-image: url(network($user + '11close'));
+  background-size: 100% 100%;
+}
+
+.iphonectn{
+  width: 310px;
+  display: flex;
+  align-items: center;
+  height: 38px;
+  box-sizing: border-box;
+  margin: 29px 0 22px 0;
+  position: relative;
+  .codeinput{
+    width: 250px;
+    height: 38px;
+    border: solid 1px #e6eaf3;
+    border-radius: 4px;
+    outline: none;
+    background: transparent;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    font-size: 13px;
+  }
+  .iphonecuowu{
+    font-size: 10px;
+    color: #e04e4e;
+    text-align: left;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+  }
+
+}
+.regnichen{
+  width: 250px;
+  height: 38px;
+  position: relative;
+}
+
+.iphonetext{
+  width: 61px;
+  height: 38px;
+  line-height: 38px;
+  text-align: left;
+  font-size: 15px;
+  color: #323232;
+  box-sizing: border-box;
+}
+.iphonebtn{
+  display: block;
+  width: 180px;
+  height: 43px;
+  background-image: url(network($user + 'roombtn'));
+  background-size: 100% 100%;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 43px;
+  text-align: center;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  border-radius: 43px;
+  margin: 0 auto;
+}
+
+.mima1{
+  margin: 0 121px 0 0;
+}
+.zuijdl{
+  margin: 32px 0 0 0;
+}
+.zuijtext{
+  font-size: 13px;
+  font-weight: 500;
+  color: #505c74;
+  margin: 0 0 25px 0;
+}
+.zuijList{
+  height: 255px;
+  .zuiLi{
+    width: 837px;
+    height: 51px;
+    padding: 0 30px 0 18px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #8b93a3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    &:nth-child(odd){
+      background-color: #f8f8f8;
+    }
+  }
+  .phoneInfo{
+    display: inline-block;
+    width: 220px;
+    text-align: center;
+  }
+  .textbzc01{
+    color: #f63838;
+  }
+}
+.zjdljl{
+  font-size: 13px;
+  color: #8b93a3;
+  text-align: center;
+  margin: 25px 0 0 0;
+}
+
+.mimaSet1{
+  width: 310px;
+  height: auto;
+  margin: 0 0 20px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #e6eaf3;
+  box-sizing: border-box;
+  &.mimaSet2{
+    margin: 0 0 37px 0;
+  }
+  &:hover{
+    border: 1px solid #5697ff;
+  }
+  .jmmtext{
+    width: 129px;
+    height: 23px;
+    line-height: 23px;
+    border-right: solid 1px #e6eaf3;
+    box-sizing: border-box;
+    padding-left: 5px;
+    font-size: 15px;
+    color: #323232;
+  }
+  .inputEmail{
+    width: 180px;
+    height: 38px;
+    line-height: 38px;
+    box-sizing: border-box;
+    padding-left: 6px;
+    box-sizing: border-box;
+    font-size: 13px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+  }
+  .emailcuowu{
+    height: 20px;
+    font-size: 10px;
+    color: #e04e4e;
+    text-align: left;
+    line-height: 20px;
+    position: absolute;
+    top: 38px;
+    left: 0;
+
+  }
+
+
+}
+.passwordbtn{
+  display: block;
+  width: 180px;
+  height: 43px;
+  background-image: url(network($user + 'roombtn'));
+  background-size: 100% 100%;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 43px;
+  text-align: center;
+  border: 0;
+  outline: none;
+  border-radius: 43px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.nulldata{
+  height: 370px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #afafb2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+.paginations{
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.HeadsImgBody{
+  width: 488px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+.previewss{
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  border: 1px solid #ddd;
+}
+.headsright{
+  width: 330px;
+  height: 330px;
+  padding-left: 15px;
+  border-left: 1px solid #f2f2f2;
+}
+
+

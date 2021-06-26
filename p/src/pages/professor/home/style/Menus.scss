@@ -1,0 +1,41 @@
+.container {
+  width: 275px;
+  height: 804px;
+  background-color: #fff;
+  box-shadow: 0 3px 5px 0 rgba(58, 123, 211, 0.35);
+  border-radius: 10px;
+}
+
+.item {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  cursor: pointer;
+
+  &.isActive, &:hover {
+    position: relative;
+    background-color: $ActiveOrHoverBackgroundColor;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background-color: $textColor;
+    }
+  }
+}
+
+.icon {
+  width: 26px;
+}
+
+.label {
+  margin-left: 10px;
+  color: #9EAAD6;
+  font-size: 18px;
+}

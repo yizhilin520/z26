@@ -1,0 +1,125 @@
+@import '@/scss/helpers/_helpers.scss';
+
+.homeheadr {
+  width: 100%;
+  height: 735px;
+  margin: 0;
+  // padding: 69px 0 0 0;
+  background-image: url(network($home + 'bg'));
+  background-size: 100% 100%;
+  box-sizing: border-box;
+}
+
+// 直播
+.homeplay {
+  width: 1400px;
+  height: 666px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 100px;
+  .playleft {
+    width: 1197px;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+    background-color: #222222;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.playright {
+  width: 218px;
+  height: 100%;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0 20px 20px 0;
+  box-sizing: border-box;
+  padding: 9px 10px 0 15px;
+}
+
+.playtab {
+  li {
+    width: 186px;
+    height: 103px;
+    border-radius: 5px;
+    margin: 0 0 6px 0;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    // transition: all 0.6s;
+    // border: 2px solid rgba(255, 255, 255, 0);
+    transition: border .15s;
+
+    span {
+      position: absolute;
+      bottom: 4px;
+      left: 6px;
+      overflow: hidden;
+      width: 168px;
+      height: 17px;
+      font-family: PingFangSC;
+      font-size: 12px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.07px;
+      color: #ffffff;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      white-space: nowrap;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+
+    &:hover {
+      border: 2px solid #2883ff;
+
+      // transform: scale(1.05);
+      &:after {
+        position: absolute;
+        top: 50%;
+        left: -16px;
+        transform: translateY(-50%);
+        display: inline-block;
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: solid 8px transparent;
+        border-left: solid 8px transparent;
+        border-right: solid 8px#2883ff;
+        border-bottom: solid 8px transparent;
+      }
+    }
+
+    &.active {
+      border: 2px solid #2883ff;
+
+      &:after {
+        position: absolute;
+        top: 50%;
+        left: -16px;
+        transform: translateY(-50%);
+        display: inline-block;
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: solid 8px transparent;
+        border-left: solid 8px transparent;
+        border-right: solid 8px#2883ff;
+        border-bottom: solid 8px transparent;
+      }
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+}

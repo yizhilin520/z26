@@ -1,0 +1,75 @@
+.container {
+  margin-top: 38px;
+  display: flex;
+}
+
+.userContainer {
+  width: 364px;
+
+  .info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 10px;
+    background: url("../../images/user_bg.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+
+    .image {
+      width: 64px;
+      height: 64px;
+      border: 1px solid #E1EAFF;
+      border-radius: 32px;
+      object-fit: cover;
+      box-sizing: border-box;
+    }
+
+    .label {
+      margin-top: 10px;
+      color: #000;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  .menu {
+    margin-top: -10px;
+    padding: 0 15px;
+    height: 240px;
+    background-color: #fff;
+    border: 1px solid #E6EAF3;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+
+    .item {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      height: 22px;
+      font-size: 16px;
+
+      &.isActive, &:hover {
+        .label, .value {
+          color: $textColor;
+        }
+      }
+    }
+
+    .label {
+      color: #14162C;
+    }
+
+    .value {
+      color: #949BB1;
+    }
+  }
+}
+
+.listContainer {
+  margin-left: 15px;
+  flex: 1;
+}

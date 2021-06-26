@@ -1,0 +1,66 @@
+$height: 56px;
+
+.container {
+  position: relative;
+  margin: auto;
+  width: 1400px;
+  display: flex;
+  align-items: center;
+  height: $height;
+  background-color: #f0f1f4;
+  box-shadow: 0 2px 4px 1px hsla(0, 0%, 46.7%, .15);
+  z-index: 1;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  flex: 1;
+  color: #434a66;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+
+  &.isActive {
+    color: #e65d1e;
+    background: #fff;
+  }
+}
+
+.value {
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.label {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.datePicker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: $height;
+  color: #434a66;
+  cursor: pointer;
+
+  .pickerIcon {
+    font-size: 24px;
+  }
+
+  .pickerLabel {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+
+  .pickerArrow {
+    font-size: 12px;
+    transform: rotate(90deg);
+  }
+}

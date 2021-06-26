@@ -1,0 +1,151 @@
+@import '@/scss/helpers/_helpers.scss';
+
+.dplayer:-webkit-full-screen
+  .dplayer-danmaku
+  .dplayer-danmaku-right.dplayer-danmaku-move {
+  animation-play-state: running !important;
+}
+
+.isHiddenChat {
+  width: 100%;
+  height: 100%;
+  // min-width: 600px;
+}
+
+.hidden {
+  display: none;
+}
+
+.topbj {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1455px;
+  min-width: 1200px;
+  height: 67px;
+  border-radius: 6px;
+  background-color: #161731;
+  box-sizing: border-box;
+  padding: 0 167px;
+}
+
+.lefttit {
+  display: flex;
+}
+
+.leftimg {
+  width: 172px;
+  height: 67px;
+  background-image: url(network($room + 'banner-left'));
+  background-size: 100% 100%;
+  margin: 0 78px 0 0;
+}
+
+.leftimglogo1 {
+  height: 52px;
+  margin: 9px 0 0 86px;
+}
+
+.lefttext {
+  height: 67px;
+  line-height: 67px;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: PingFangSC;
+  display: flex;
+  align-items: center;
+
+  .zoo {
+    display: inline-block;
+    font-family: adineuePROCond;
+    font-size: 41px;
+    margin: 0 0 0 12px;
+  }
+}
+
+.zoo2 {
+  display: inline-block;
+  font-family: adineuePROCond;
+  font-size: 41px;
+  margin: 0 12px 0 0;
+}
+
+.leftcent {
+  width: 92px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 2.4px;
+  color: #ffffff;
+  padding: 8px 0 0 0;
+}
+
+.rightimg {
+  width: 172px;
+  height: 67px;
+  background-image: url(network($room + 'banner-right'));
+  background-size: 100% 100%;
+  margin: 0 0 0 82px;
+}
+
+.rightimglogo1 {
+  height: 49px;
+  margin: 10px 0 0 44px;
+}
+
+.dateing {
+  margin: 4px 0;
+}
+
+.qualityItem {
+  font-size: 20px;
+}
+
+.qualityItemActive {
+  // color: #dfa868;
+  background-image: linear-gradient(to right, #83c8ff, #3977fe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+// 进入直播间提示
+
+.dmkInput {
+  width: 469px;
+  height: 22px;
+  padding: 2px 357px 2px 8px;
+  object-fit: contain;
+  border-radius: 4px;
+  background-color: #757575;
+  font-family: PingFangSC;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #f8f8f6;
+}
+
+.iconSimple {
+  width: 66px;
+  height: 22px;
+  padding: 2px 20px;
+  object-fit: contain;
+  border-radius: 4px;
+  background-color: #383838;
+
+  span {
+    background-image: linear-gradient(to right, #83c8ff, #3977fe),
+      linear-gradient(to bottom, #eeeeee, #d8d8d8);
+    font-family: PingFangSC;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.07px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

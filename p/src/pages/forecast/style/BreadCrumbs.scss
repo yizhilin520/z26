@@ -1,0 +1,30 @@
+.container {
+  margin: 20px 0 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  margin-right: 6px;
+  color: #949BB1;
+  font-size: 12px;
+
+  &.isActive {
+    color: #2C2F57;
+  }
+
+  &:last-child {
+    .icon {
+      display: none;
+    }
+  }
+}
+
+.label {
+  margin-right: 2px;
+}
+
+.icon {
+  color: inherit;
+  font-size: inherit;
+}

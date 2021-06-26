@@ -1,0 +1,36 @@
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid #E6EAF3;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  color: #434A66;
+  font-size: 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #E6EAF3;
+
+  &:first-child {
+    color: #333;
+    font-size: 14px;
+    background-color: #F6F8FD;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.cell {
+  width: 450px;
+  text-align: center;
+  height: 38px;
+  line-height: 38px;
+  border-right: 1px solid #E6EAF3;
+
+  &:last-child {
+    border-right: none;
+  }
+}

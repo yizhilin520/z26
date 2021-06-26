@@ -1,0 +1,248 @@
+@import '@/scss/helpers/_helpers.scss';
+
+.main {
+  width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.mainleft {
+  width: 100%;
+}
+
+// .mainright {
+//   width: 264px;
+// }
+
+.eventtop {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  margin: 0 0 20px 0;
+  justify-content: space-between;
+}
+
+.eventtopleft {
+  display: flex;
+}
+
+.eveniocn {
+  width: 29px;
+  height: 30px;
+  background-image: url(network($home + 'recommend-icon'));
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.eventitle {
+  margin: 0 24px 0 9px;
+  font-family: PingFangSC;
+  font-size: 26px;
+  font-weight: 500;
+  color: #464646;
+}
+
+.eventabs {
+  display: flex;
+
+  li {
+    padding: 0 3px;
+    margin: 0 34px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #505c74;
+
+    &.action2 {
+      border: 1.5px solid #3171fc;
+      border-radius: 5px;
+
+      a {
+        background-image: linear-gradient(to right, #83c8ff, #3977fe);
+        background-clip: text;
+        color: transparent;
+      }
+    }
+  }
+
+  a {
+    display: inline-block;
+    font-family: PingFangSC;
+    font-size: 16px;
+  }
+}
+
+.chakan {
+  font-family: PingFangSC;
+  font-size: 18px;
+  color: #505c74;
+  cursor: pointer;
+  line-height: 27px;
+  float: right;
+
+  span {
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    background-image: url(network($home + 'notice-top-right-arrow'));
+    background-size: 100% 100%;
+    margin: 0 0 0 6px;
+  }
+}
+
+// tab切换内容区
+.contnul {
+  width: 100%;
+
+
+  &:after {
+    clear: both;
+    content: '.';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    line-height: 0;
+    width: 0;
+    height: 0;
+  }
+
+  li {
+    width: 264px;
+    height: 211px;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    background-color: #ffffff;
+    float: left;
+    margin: 0 18.5px 23px 0;
+    overflow: hidden;
+
+    &:nth-child(5) {
+      margin: 0;
+    }
+  }
+}
+
+.images {
+  width: 264px;
+  height: 140px;
+  background-image: url(network($home + 'banner-bg'));
+  background-size: 100% 100%;
+  border-radius: 10.8px 10.8px 0 0;
+  margin: 0 0 11px 0;
+  transition: all 0.6s;
+  position: relative;
+  cursor: pointer;
+
+  .play {
+    display: none;
+    transition: all 0.6s;
+  }
+
+  &:hover {
+
+    transform: scale(1.1);
+
+    // filter: blur(1px);
+    .play {
+      display: block;
+      height: 50px;
+      position: absolute;
+      top: calc(50% - 25px);
+      left: calc(50% - 25px);
+      opacity: 1;
+      transition: opacity .3s;
+      transition-property: opacity;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+      transition-delay: 0s;
+    }
+  }
+}
+
+.steam {
+  width: 53px;
+  height: 18px;
+  background-image: url(network($home + 'steam-bg'));
+  background-size: 100% 100%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  .steamplay {
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 1px;
+    left: 5px;
+  }
+}
+
+.ouzhoubei {
+  font-family: PingFangSC;
+  font-size: 14.7px;
+  font-weight: 500;
+  color: #323232;
+  padding: 0 0 0 8px;
+  margin: 0 0 9px 0;
+  text-align: left;
+}
+
+.people {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 26px;
+  padding: 0 9px 0 8px;
+  font-size: 12.7px;
+  color: #505c74;
+  box-sizing: border-box;
+
+  .name {
+    height: 26px;
+    line-height: 26px;
+    display: flex;
+  }
+
+  .touxiang {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 4px 7px 0 0;
+    background-image: url(network($home + 'heat'));
+    // background-size: 100% 100%;
+  }
+
+  .nubmer {
+    height: 26px;
+    line-height: 26px;
+    display: flex;
+  }
+
+  .hotimg {
+    display: inline-block;
+    width: 24px;
+    height: 26px;
+    background-image: url(network($home + 'heat'));
+    background-size: 100% 100%;
+    margin: 0 6px 0 0;
+  }
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #464646;
+  line-height: 28px;
+
+  .titleimg {
+    display: inline-block;
+    width: 27px;
+    height: 28px;
+    background-image: url(network($home + 'anchor-icon'));
+    background-size: 100% 100%;
+    margin: 0 11px 0 0;
+  }
+}

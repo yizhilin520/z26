@@ -1,0 +1,123 @@
+.container {
+  position: relative;
+  padding: 14px 20px;
+  width: 446px;
+  min-height: 370px;
+  background: url("../images/result_bg.png") no-repeat;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+}
+
+.close {
+  position: absolute;
+  left: 50%;
+  bottom: -70px;
+  margin-left: -23px;
+  width: 46px;
+  height: 46px;
+  line-height: 42px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  border: 2px solid #fff;
+  border-radius: 23px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.tips {
+  margin-bottom: -26px;
+  display: flex;
+  height: 164px;
+  align-items: center;
+
+  .image {
+    width: 214px;
+    margin-left: 26px;
+  }
+
+  .content {
+    margin-left: -10px;
+    color: #fff;
+  }
+
+  .label {
+    font-size: 36px;
+  }
+
+  .summary {
+    margin-top: 8px;
+    font-size: 20px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  margin-top: 14px;
+  height: 90px;
+  border-radius: 20px;
+  border: solid 3px #dcdcf9;
+  background-color: #fff;
+  align-items: center;
+  box-sizing: border-box;
+
+  .image {
+    margin-left: 40px;
+    width: 48px;
+  }
+
+  .content {
+    padding-left: 30px;
+    margin-left: 30px;
+    flex: 1;
+    height: 60px;
+    border-left: 1px solid #3e7dfe;
+    overflow: hidden;
+  }
+
+  .money {
+    font-size: 28px;
+    color: #6853ff;
+  }
+
+  .summary {
+    margin-top: 4px;
+    font-size: 18px;
+    color: #3e7dfe;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.footer {
+  margin-top: 24px;
+  display: flex;
+  font-size: 16px;
+
+  .label {
+    flex: 1;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  .mark {
+    padding: 0 2px;
+  }
+
+  .button, .mark {
+    color: #ffff00;
+  }
+
+  .button {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .icon {
+    font-size: 14px;
+    margin-left: 4px;
+  }
+}

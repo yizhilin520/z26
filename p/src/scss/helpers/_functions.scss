@@ -1,0 +1,35 @@
+/**
+* rem单位转换
+* @param $size 传入数值
+* @examp rem(100rem) => 1rem
+*/
+@function rem($size) {
+  @return $size / 100;
+}
+
+/**
+* rem单位转换 (用于iphone6 375 * 667 设计稿)
+* @param $size 传入数值
+* @examp Rem(100rem) => 2rem
+*/
+@function Rem($size) {
+  @return rem($size) * 2;
+}
+
+/**
+* 拼接静态资源路径
+* @param $url 传入静态资源路径
+* @examp link('/assets/demo.png') => '/assets/demo.png?__static_hash__'
+*/
+@function link($url) {
+  @return $url+'?__static_hash__';
+}
+
+/**
+* 拼接网络资源路径
+* @param $url 传入静态资源路径
+* @examp link('/assets/demo.png') => '/assets/demo.png?__static_hash__'
+*/
+@function network($url) {
+  @return '/static/images/'+$url+'.webp';
+}

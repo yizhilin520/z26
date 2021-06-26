@@ -1,0 +1,24 @@
+.container {
+  min-width: 84px;
+  margin: 5px 0;
+  padding: 5px 0;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+}
+
+.item {
+  padding: 7px 0;
+  color: #333;
+  font-size: 12px;
+  cursor: pointer;
+
+  &.isActive, &:hover {
+    color: $textColor;
+  }
+
+  &:hover {
+    background: #f3f3f3;
+  }
+}

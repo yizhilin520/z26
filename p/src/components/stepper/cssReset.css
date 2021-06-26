@@ -1,0 +1,9 @@
+.MuiPaper-root .MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #323232;
+}
+
+.MuiPaper-root.MuiStepper-root{
+  padding: 0;
+}

@@ -1,0 +1,84 @@
+.container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.title {
+  padding: 0 25px;
+  width: 100%;
+  color: #434a66;
+  font-size: 18px;
+  font-weight: 600;
+  height: 60px;
+  line-height: 60px;
+  background: #ebf0fb;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 14px 25px 20px 25px;
+  height: 523px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #ebf0fb;
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: -30px;
+}
+
+.item {
+  display: flex;
+  margin-right: 14px;
+}
+
+.text {
+  flex: 1;
+  height: 38px;
+  font-size: 15px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #949bb1;
+  line-height: 38px;
+  text-align: right;
+}
+
+.content {
+  margin: 0 -30px;
+}
+
+.order {
+  font-size: 12px;
+  color: $textColor;
+  cursor: pointer;
+}
+
+.successOrder {
+  font-size: 12px;
+  color: #434A66;
+  cursor: pointer;
+}
+
+.tableHandle {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+// ::-webkit-scrollbar {
+//   width: 12px;
+//   height: 12px;
+// }
