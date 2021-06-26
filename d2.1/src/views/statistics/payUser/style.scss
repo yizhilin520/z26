@@ -1,0 +1,105 @@
+.disflex {
+  display: flex;
+  align-items: center;
+}
+.s-pay {
+  padding: 10px 15px 20px;
+  overflow: auto;
+  .base {
+    background: #fff;
+    // border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px 20px;
+    // &:hover {
+    //   box-shadow: 1px 3px 8px -3px rgba(0, 0, 0, 0.5);
+    // }
+  }
+  .el-form-item {
+    margin: 0;
+  }
+  .title {
+    font-size: 15px;
+    margin-left: 5px;
+    font-weight: bold;
+  }
+  .des {
+    display: flex;
+
+    &-img {
+      width: 45px;
+      height: 45px;
+      object-fit: none;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+  .e_form {
+    margin-right: 10px;
+  }
+  .btns {
+    @extend .disflex;
+    width: 25%;
+    justify-content: space-evenly;
+  }
+  .right-date {
+    @extend .disflex;
+    justify-content: flex-end;
+  }
+  .btn-txt,
+  .btn-active {
+    // width: 130px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 15px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  .btn-active {
+    background: #169bd5;
+    color: #fff;
+  }
+  .btn-txt {
+    border: 1px solid #ccc;
+  }
+  .trend {
+    height: 600px;
+  }
+  .top {
+    height: 500px;
+  }
+  .top-text {
+    @extend .disflex;
+  }
+  .subtitle {
+    height: 35px;
+    line-height: 35px;
+  }
+  .title-box {
+    @extend .disflex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .text_right {
+    margin-right: 10px;
+  }
+  .p_chart {
+    .btns {
+      width: 45%;
+      justify-content: space-between;
+    }
+    .p_line {
+      margin-top: 40px;
+    }
+  }
+  .base-content {
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+}
